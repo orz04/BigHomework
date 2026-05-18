@@ -1,0 +1,80 @@
+<view class="container">
+  <view wx:if="{{missing}}" class="empty panel">未找到战甲信息</view>
+
+  <view wx:else class="detail">
+    <view class="page-title centered-title">{{tenno.title}}</view>
+
+    <view class="image-card panel">
+      <image class="tenno-detail-image" src="{{tenno.image}}" mode="aspectFit"></image>
+    </view>
+
+    <view class="info-card panel">
+      <view class="section-title">基础信息</view>
+      <view class="basic-table">
+        <block wx:for="{{tenno.basicInfo}}" wx:key="label">
+          <view class="basic-row">
+            <view class="basic-cell basic-label">{{item.label}}</view>
+            <view class="basic-cell basic-value">{{item.value}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <view class="info-card panel">
+      <view class="section-title">锻造需求</view>
+      <block wx:for="{{tenno.forging.components}}" wx:key="name">
+        <view class="forging-row">
+          <view class="forging-materials">
+            <block wx:for="{{item.materials}}" wx:key="index">
+              <view class="forging-material{{item.amount === 'N/A' ? ' na-material' : ''}}">
+                <block wx:if="{{item.amount !== 'N/A'}}">
+                  <image wx:if="{{item.icon}}" class="material-icon" src="{{item.icon}}" mode="aspectFit"></image>
+                  <view wx:else class="material-placeholder"></view>
+                </block>
+                <text class="material-amount">{{item.amount}}</text>
+              </view>
+            </block>
+          </view>
+          <view class="forging-info">
+            <view class="forging-time">用时: {{item.time}}</view>
+            <view class="forging-speed">加速: <image class="speed-icon" src="{{platinumIcon}}" mode="aspectFit"></image> {{item.speed}}</view>
+          </view>
+        </view>
+        <view wx:if="{{index === 0}}" class="forging-price-row">
+          <block wx:for="{{tenno.forging.prices}}" wx:key="type">
+            <view class="forging-price-cell">
+              <text>{{item.type}}价格：</text>
+              <image wx:if="{{item.icon}}" class="price-icon" src="{{item.icon}}" mode="aspectFit"></image>
+              <text>{{item.amount}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="forging-component-name">{{item.name}}</view>
+      </block>
+    </view>
+
+    <view class="info-card panel">
+      <view class="section-title">入手方式</view>
+      <block wx:for="{{tenno.acquisition.paragraphs}}" wx:key="index">
+        <view class="info-text">{{item}}</view>
+      </block>
+      <view wx:if="{{tenno.acquisition.drops && tenno.acquisition.drops.length > 0}}" class="drops-table">
+        <view class="drops-header">
+          <view class="drops-cell">物品</view>
+          <view class="drops-cell">来源</view>
+          <view class="drops-cell">概率</view>
+          <view class="drops-cell">期望次数</view>
+        </view>
+        <block wx:for="{{tenno.acquisition.drops}}" wx:key="item">
+          <view class="drops-row">
+            <view class="drops-cell">{{item.item}}</view>
+            <view class="drops-cell">{{item.source}}</view>
+            <view class="drops-cell">{{item.probability}}</view>
+            <view class="drops-cell">{{item.expected}}</view>
+          </view>
+        </block>
+      </view>
+      <view wx:if="{{tenno.acquisition.note}}" class="info-text note">{{tenno.acquisition.note}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.centered-title {
+  text-align: center;
+}
+
+.faction-section {
+  padding: 24rpx 28rpx;
+}
+
+.faction-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.group-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18rpx;
+  margin-top: 20rpx;
+}
+
+.group-card {
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+  padding: 20rpx 22rpx;
+  border-radius: 20rpx;
+  background: rgba(30, 41, 59, 0.72);
+}
+
+.group-image {
+  width: 120rpx;
+  height: 120rpx;
+  flex-shrink: 0;
+}
+
+.group-name {
+  flex: 1;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #e2e8f0;
+}

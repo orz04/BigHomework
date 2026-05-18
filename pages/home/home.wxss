@@ -1,0 +1,91 @@
+.home-page {
+  padding-bottom: 56rpx;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 36rpx 32rpx 32rpx;
+  border-radius: 32rpx;
+  background:
+    radial-gradient(circle at top right, rgba(244, 201, 107, 0.22), transparent 34%),
+    linear-gradient(160deg, rgba(15, 23, 42, 0.98) 0%, rgba(8, 16, 29, 0.96) 100%);
+}
+
+.hero-title {
+  position: relative;
+  font-size: 64rpx;
+  letter-spacing: 2rpx;
+}
+
+.search-wrap {
+  margin-top: 24rpx;
+}
+
+.section-search {
+  position: relative;
+  margin-top: 24rpx;
+  padding: 28rpx;
+  border: 1rpx solid rgba(244, 201, 107, 0.28);
+  box-shadow: 0 18rpx 40rpx rgba(0, 0, 0, 0.18);
+}
+
+.search-panel-accent {
+  position: absolute;
+  top: 0;
+  left: 24rpx;
+  right: 24rpx;
+  height: 6rpx;
+  border-radius: 999rpx;
+  background: linear-gradient(90deg, rgba(244, 201, 107, 0.95) 0%, rgba(244, 201, 107, 0.08) 100%);
+}
+
+.section-featured {
+  margin-top: 24rpx;
+  padding: 28rpx;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20rpx;
+  margin-bottom: 22rpx;
+}
+
+.section-result {
+  margin-top: 10rpx;
+  font-size: 22rpx;
+  color: #cbd5e1;
+}
+
+.section-mark {
+  color: rgba(148, 163, 184, 0.3);
+  font-size: 44rpx;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.section-mark-search {
+  color: rgba(244, 201, 107, 0.52);
+}
+
+.section-empty {
+  padding: 44rpx 24rpx;
+  border-radius: 24rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #94a3b8;
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.base-section-hint {
+  margin-top: 18rpx;
+  padding: 0 8rpx;
+  font-size: 22rpx;
+  color: #7c8aa0;
+}
+
+.feature-grid {
+  gap: 22rpx;
+}

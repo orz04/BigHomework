@@ -1,0 +1,25 @@
+.field + .field {
+  margin-top: 28rpx;
+}
+
+.field-label {
+  margin-bottom: 14rpx;
+  font-size: 26rpx;
+  color: #cbd5e1;
+}
+
+.field-value,
+.field-input {
+  min-height: 84rpx;
+  padding: 24rpx;
+  border-radius: 20rpx;
+  background: rgba(30, 41, 59, 0.95);
+  color: #f8fafc;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+
+.result-card {
+  margin-top: 32rpx;
+  padding: 28rpx;
+}

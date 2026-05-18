@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "集团信息",
+  "usingComponents": {
+    "section-card": "/components/section-card/section-card"
+  }
+}

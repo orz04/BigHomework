@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "近战武器",
+  "usingComponents": {
+    "section-card": "/components/section-card/section-card"
+  }
+}

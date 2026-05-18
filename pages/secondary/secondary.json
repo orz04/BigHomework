@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "次要武器",
+  "usingComponents": {
+    "section-card": "/components/section-card/section-card"
+  }
+}

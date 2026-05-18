@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "资源获取",
+  "usingComponents": {
+    "section-card": "/components/section-card/section-card"
+  }
+}

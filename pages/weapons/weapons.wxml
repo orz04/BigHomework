@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="page-header">
+    <view class="page-title">武器信息</view>
+    <view class="page-desc">先总览武器信息模块，再按主要武器、次要武器与近战武器继续细分。</view>
+  </view>
+
+  <view class="list">
+    <block wx:for="{{items}}" wx:key="title">
+      <section-card title="{{item.title}}" desc="{{item.desc}}" tag="{{item.tag}}" page="{{item.page}}"></section-card>
+    </block>
+  </view>
+</view>

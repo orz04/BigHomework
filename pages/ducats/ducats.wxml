@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="page-header">
+    <view class="page-title">杜卡德金币计算器</view>
+    <view class="page-desc">首版先提供基础换算框架，后续可补 Prime 部件映射、批量清单和精确规则。</view>
+  </view>
+
+  <view class="form-card panel">
+    <view class="field">
+      <view class="field-label">部件稀有度</view>
+      <picker mode="selector" range="{{rarityOptions}}" range-key="label" value="{{rarityIndex}}" bindchange="handleRarityChange">
+        <view class="field-value">{{rarityOptions[rarityIndex].label}} · 单件 {{singleValue}} 金币</view>
+      </picker>
+    </view>
+
+    <view class="field">
+      <view class="field-label">件数</view>
+      <input class="field-input" type="number" value="{{quantity}}" bindinput="handleQuantityInput"></input>
+    </view>
+  </view>
+
+  <view class="section panel result-card">
+    <view class="section-title">计算结果</view>
+    <view class="page-desc">当前预计可兑换</view>
+    <view class="result-value">{{totalValue}} 杜卡德金币</view>
+  </view>
+</view>

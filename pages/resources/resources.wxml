@@ -1,0 +1,67 @@
+<view class="container">
+  <view class="page-header">
+    <view class="page-title">资源获取</view>
+    <view class="page-desc">整理资源刷取位置。</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">资源标签</view>
+    <view class="chips">
+      <block wx:for="{{tags}}" wx:key="*this">
+        <view class="chip">{{item}}</view>
+      </block>
+    </view>
+  </view>
+
+  <view class="list section">
+    <block wx:for="{{items}}" wx:key="title">
+      <view class="resource-card panel">
+        <view class="section-title" wx:if="{{item.title}}">{{item.title}}</view>
+        <view class="resource-table" wx:if="{{item.table && item.table.headers.length === 2}}">
+          <view class="resource-table-row resource-table-head">
+            <view class="resource-table-cell">{{item.table.headers[0]}}</view>
+            <view class="resource-table-cell">{{item.table.headers[1]}}</view>
+          </view>
+          <block wx:for="{{item.table.rows}}" wx:key="resource">
+            <view class="resource-table-row">
+              <view class="resource-table-cell resource-name-cell">
+                <image class="resource-icon" wx:if="{{item.icon}}" src="{{item.icon}}" mode="aspectFit"></image>
+                <text>{{item.resource}}</text>
+              </view>
+              <view class="resource-table-cell">{{item.location}}</view>
+            </view>
+          </block>
+        </view>
+        <view class="star-table-wrap" wx:if="{{item.table && item.table.headers.length > 2}}">
+          <view class="star-fixed-table">
+            <view class="star-table-cell star-table-head-cell">{{item.table.headers[0]}}</view>
+            <block wx:for="{{item.table.rows}}" wx:for-item="row" wx:key="name">
+              <view class="star-table-cell star-fixed-cell {{index === item.table.rows.length - 1 ? 'star-last-row-cell' : ''}}">
+                <view class="star-resource-name">
+                  <image class="star-resource-icon" wx:if="{{row.icon}}" src="{{row.icon}}" mode="aspectFit"></image>
+                  <text>{{row.name}}</text>
+                </view>
+              </view>
+            </block>
+          </view>
+          <scroll-view class="star-table-scroll" scroll-x>
+            <view class="star-scroll-table">
+              <view class="star-table-row star-table-head">
+                <block wx:for="{{item.table.headers}}" wx:key="*this">
+                  <view class="star-table-cell" wx:if="{{index > 0}}">{{item}}</view>
+                </block>
+              </view>
+              <block wx:for="{{item.table.rows}}" wx:for-item="row" wx:key="name">
+                <view class="star-table-row {{index === item.table.rows.length - 1 ? 'star-last-row' : ''}}">
+                  <block wx:for="{{row.cells}}" wx:key="*this">
+                    <view class="star-table-cell">{{item}}</view>
+                  </block>
+                </view>
+              </block>
+            </view>
+          </scroll-view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

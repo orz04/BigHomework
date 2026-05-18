@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "search-bar": "/components/search-bar/search-bar",
+    "section-card": "/components/section-card/section-card"
+  }
+}

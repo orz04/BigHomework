@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "战甲信息",
+  "usingComponents": {
+    "section-card": "/components/section-card/section-card"
+  }
+}

@@ -1,0 +1,26 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  padding: 10rpx 14rpx 10rpx 24rpx;
+}
+
+.search-input {
+  flex: 1;
+  height: 72rpx;
+  color: #f8fafc;
+  font-size: 28rpx;
+}
+
+.search-placeholder {
+  color: #64748b;
+}
+
+.search-action {
+  padding: 16rpx 24rpx;
+  border-radius: 18rpx;
+  background: linear-gradient(135deg, #f4c96b 0%, #c7921c 100%);
+  color: #111827;
+  font-size: 24rpx;
+  font-weight: 700;
+}
