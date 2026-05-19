@@ -1,23 +1,23 @@
 module.exports = [
   {
     title: 'Ash',
-    image: '/images/tennoimg/Ash.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Ash.png?sign=a27212c192793541d6c87eeae2d2dce0&t=1779158328',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
-          name: 'Ash头部神经光元蓝图',
           materials: [
             { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Helmet.png?sign=9a3f04dad4419d540d1d46464f7f9737&t=1779160938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chassis.png?sign=cbf1d7b63abd5e82c070bb7c94bde34c&t=1779160971', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Systems.png?sign=cb12d71a8f8e1d8231880ab9adbbc94c&t=1779160991', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/OrokinCell.png?sign=0f9ba8a0d571996039899c358c510e1c&t=1779161833', amount: '1' }
           ],
           time: '3天',
           speed: '50'
@@ -25,11 +25,11 @@ module.exports = [
         {
           name: 'Ash头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/AlloyPlate.png?sign=c26bf827be815cf9684c84d0edb3326c&t=1779161783', amount: '150' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NeuralSensor.png?sign=23ef6cb387796c0229661b67f0bcf313&t=1779162117', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=35d3f9df0f806cda4b27818be0abf67f&t=1779161983', amount: '150' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=3fdd5519434f488fd17060256ec4b156&t=1779162015', amount: '500' }
           ],
           time: '12小时',
           speed: '25'
@@ -37,10 +37,10 @@ module.exports = [
         {
           name: 'Ash机体蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
             { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
             { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=3fdd5519434f488fd17060256ec4b156&t=1779162015', amount: '300' },
             { icon: '', amount: 'N/A' }
           ],
           time: '12小时',
@@ -49,7 +49,7 @@ module.exports = [
         {
           name: 'Ash系统蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
             { icon: '/images/resourceimg/Morphics.png', amount: '1' },
             { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
             { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
@@ -57,23 +57,11 @@ module.exports = [
           ],
           time: '12小时',
           speed: '25'
-        },
-        {
-          name: 'Ash总图',
-          materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
-            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
-            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
-          ],
-          time: '72小时',
-          speed: '100'
         }
       ],
       prices: [
-        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
-        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=5cd80582566639d1f3e7404674d1d499&t=1779161920', amount: '375' },
+        { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=928ea774ea82886cfacd530b63ddafb9&t=1779161893', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '35,000' }
       ]
     },
     acquisition: {
@@ -98,13 +86,14 @@ module.exports = [
   },
   {
     title: 'Atlas',
-    image: '/images/tennoimg/Atlas.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Atlas.png?sign=4d62576726bb6882818e19b500414ef1&t=1779158426',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -195,13 +184,14 @@ module.exports = [
   },
   {
     title: 'Banshee',
-    image: '/images/tennoimg/Banshee.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Banshee.png?sign=6eee74bfab0e94b46416bbf8a6779a3b&t=1779158517',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -292,13 +282,14 @@ module.exports = [
   },
   {
     title: 'Baruuk',
-    image: '/images/tennoimg/Baruuk.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Baruuk.png?sign=f35305dafbb456469ce025699ae06b74&t=1779158543',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -389,13 +380,14 @@ module.exports = [
   },
   {
     title: 'Caliban',
-    image: '/images/tennoimg/Caliban.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Caliban.png?sign=5b496aede512e07e972de999455198d0&t=1779158942',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -486,13 +478,14 @@ module.exports = [
   },
   {
     title: 'Chroma',
-    image: '/images/tennoimg/Chroma.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chroma.png?sign=9f7a40a71a0b6346152274ca706b51c7&t=1779158971',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -583,13 +576,14 @@ module.exports = [
   },
   {
     title: 'Citrine',
-    image: '/images/tennoimg/Citrine.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Citrine.png?sign=6339463b422084dfb8536d2f356892cd&t=1779158997',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -680,13 +674,14 @@ module.exports = [
   },
   {
     title: 'Cyte-09',
-    image: '/images/tennoimg/Cyte-09.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Cyte-09.png?sign=6a0d4db0f2358a9ce191c1e82b9cac85&t=1779159019',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -777,13 +772,14 @@ module.exports = [
   },
   {
     title: 'Dagath',
-    image: '/images/tennoimg/Dagath.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Dagath.png?sign=3db7eb1a03ac2e0e847f979e5de1f47e&t=1779159040',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -854,9 +850,9 @@ module.exports = [
     },
     acquisition: {
       paragraphs: [
-        '当前Dante的蓝图可在商店中购买获得，Dagath的部件蓝图可由以下方式获得：',
+        '当前Dagath的蓝图可在商店中购买获得，Dagath的部件蓝图可由以下方式获得：',
         '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
-        'Dante的蓝图也可以从无尽回廊中获得。'
+        'Dagath的蓝图也可以从无尽回廊中获得。'
       ],
       drops: [
         { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
@@ -874,13 +870,14 @@ module.exports = [
   },
   {
     title: 'Dante',
-    image: '/images/tennoimg/Dante.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Dante.png?sign=c5fc3806017abeb41344a6f894824da8&t=1779159084',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -971,13 +968,14 @@ module.exports = [
   },
   {
     title: 'Ember',
-    image: '/images/tennoimg/Ember.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Ember.png?sign=cb02a289882702462e11b089d02a75fe&t=1779159123',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1068,13 +1066,14 @@ module.exports = [
   },
   {
     title: 'Equinox',
-    image: '/images/tennoimg/Equinox.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Equinox.png?sign=1ba6a4c9bb8d07d051a55523dbf81f76&t=1779159142',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1165,13 +1164,14 @@ module.exports = [
   },
   {
     title: 'Excalibur',
-    image: '/images/tennoimg/Excalibur.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Excalibur.png?sign=9ba7e34ecacef8d773d7265e6c32b46d&t=1779159167',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1262,13 +1262,14 @@ module.exports = [
   },
   {
     title: 'Follie',
-    image: '/images/tennoimg/Follie.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Follie.png?sign=cacf0ed566e8ae6111b44d87b432a8be&t=1779159194',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1359,13 +1360,14 @@ module.exports = [
   },
   {
     title: 'Frost',
-    image: '/images/tennoimg/Frost.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Frost.png?sign=29d1cf5fe075a940eee8b05a2e656bbf&t=1779159261',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1456,13 +1458,14 @@ module.exports = [
   },
   {
     title: 'Gara',
-    image: '/images/tennoimg/Gara.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Gara.png?sign=ec7154026f66ed96d5871de1dc93efe7&t=1779159279',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1553,13 +1556,14 @@ module.exports = [
   },
   {
     title: 'Garuda',
-    image: '/images/tennoimg/Garuda.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Garuda.png?sign=d6af6ef535f539a897df4adcaef62eb5&t=1779159295',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1650,13 +1654,14 @@ module.exports = [
   },
   {
     title: 'Gauss',
-    image: '/images/tennoimg/Gauss.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Gauss.png?sign=370c7b7c009465afb3e3d54618ad39fa&t=1779159314',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1747,13 +1752,14 @@ module.exports = [
   },
   {
     title: 'Grendel',
-    image: '/images/tennoimg/Grendel.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Grendel.png?sign=904c1d1d9bdc957d405375513e721f81&t=1779159325',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1844,13 +1850,14 @@ module.exports = [
   },
   {
     title: 'Gyre',
-    image: '/images/tennoimg/Gyre.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Gyre.png?sign=81a3a6c3138111fd8d904152eeaed26a&t=1779159343',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1941,13 +1948,14 @@ module.exports = [
   },
   {
     title: 'Harrow',
-    image: '/images/tennoimg/Harrow.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Harrow.png?sign=076059f413fa32a405d1460a90d8a8c6&t=1779159359',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2038,13 +2046,14 @@ module.exports = [
   },
   {
     title: 'Hildryn',
-    image: '/images/tennoimg/Hildryn.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Hildryn.png?sign=4d8bcb46a01db4e679c635efe50acbc0&t=1779159393',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2135,13 +2144,14 @@ module.exports = [
   },
   {
     title: 'Hydroid',
-    image: '/images/tennoimg/Hydroid.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Hydroid.png?sign=7fb9c1837958d9e54fc1a13288021441&t=1779159414',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2232,13 +2242,14 @@ module.exports = [
   },
   {
     title: 'Inaros',
-    image: '/images/tennoimg/Inaros.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Inaros.png?sign=d58acd1961899688c94c0f051c31aee7&t=1779159440',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2329,13 +2340,14 @@ module.exports = [
   },
   {
     title: 'Ivara',
-    image: '/images/tennoimg/Ivara.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Ivara.png?sign=eafbca7bea7366cf7090d6c58a4590e5&t=1779159457',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2426,13 +2438,14 @@ module.exports = [
   },
   {
     title: 'Jade',
-    image: '/images/tennoimg/Jade.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Jade.png?sign=11eee59237345c1e97e2388d9691b267&t=1779159471',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2523,13 +2536,14 @@ module.exports = [
   },
   {
     title: 'Khora',
-    image: '/images/tennoimg/Khora.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Khora.png?sign=1a55e630a463aae04ec57adbbbe1ce40&t=1779159493',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2620,13 +2634,14 @@ module.exports = [
   },
   {
     title: 'Koumei',
-    image: '/images/tennoimg/Koumei.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Koumei.png?sign=309b363e36258ec59bc2cd83b6e5830e&t=1779159507',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2717,13 +2732,14 @@ module.exports = [
   },
   {
     title: 'Kullervo',
-    image: '/images/tennoimg/Kullervo.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Kullervo.png?sign=33cbf5d10fcf5126ec2240bc8b381b5b&t=1779159524',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2814,13 +2830,14 @@ module.exports = [
   },
   {
     title: 'Lavos',
-    image: '/images/tennoimg/Lavos.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Lavos.png?sign=b650b685c38180aefc1fcaf500b33216&t=1779159537',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2911,13 +2928,14 @@ module.exports = [
   },
   {
     title: 'Limbo',
-    image: '/images/tennoimg/Limbo.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Limbo.png?sign=5e2b766b8e031d10f87751b493da4df7&t=1779159551',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3008,13 +3026,14 @@ module.exports = [
   },
   {
     title: 'Loki',
-    image: '/images/tennoimg/Loki.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Loki.png?sign=6d4a0be0abda5fa60922123bf95ab6f6&t=1779159566',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3105,13 +3124,14 @@ module.exports = [
   },
   {
     title: 'Mag',
-    image: '/images/tennoimg/Mag.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Mag.png?sign=f1041d111d135de316f675eab1adc645&t=1779159583',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3202,13 +3222,14 @@ module.exports = [
   },
   {
     title: 'Mesa',
-    image: '/images/tennoimg/Mesa.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Mesa.png?sign=419a8ad56b4ffa37d7f003bb4f2256d3&t=1779159595',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3299,13 +3320,14 @@ module.exports = [
   },
   {
     title: 'Mirage',
-    image: '/images/tennoimg/Mirage.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Mirage.png?sign=c078bfa30635c3a37920c7c43858bd6b&t=1779159621',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3396,13 +3418,14 @@ module.exports = [
   },
   {
     title: 'Nekros',
-    image: '/images/tennoimg/Nekros.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Nekros.png?sign=aeceac4a489f07035be4c231b2c34686&t=1779159641',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3493,13 +3516,14 @@ module.exports = [
   },
   {
     title: 'Nezha',
-    image: '/images/tennoimg/Nezha.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Nezha.png?sign=26340a61be4c39e2eaffac620b53fafb&t=1779159661',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3590,13 +3614,14 @@ module.exports = [
   },
   {
     title: 'Nidus',
-    image: '/images/tennoimg/Nidus.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Nidus.png?sign=fe814ecc002bd346cbe893f14758340a&t=1779159701',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3687,13 +3712,14 @@ module.exports = [
   },
   {
     title: 'Nokko',
-    image: '/images/tennoimg/Nokko.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Nokko.png?sign=12e4b7e64bde500612ff040b0ba90576&t=1779159719',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3784,13 +3810,14 @@ module.exports = [
   },
   {
     title: 'Nova',
-    image: '/images/tennoimg/Nova.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Nova.png?sign=f9216859a1bd4a51cfb1fa0c92611725&t=1779159735',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3881,13 +3908,14 @@ module.exports = [
   },
   {
     title: 'Nyx',
-    image: '/images/tennoimg/Nyx.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Nyx.png?sign=5c492fd92dd8a71afe3c7d6d620e2229&t=1779159745',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3978,13 +4006,14 @@ module.exports = [
   },
   {
     title: 'Oberon',
-    image: '/images/tennoimg/Oberon.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Oberon.png?sign=9d7d3431fae7e2b24affcaa74db086bd&t=1779159767',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4075,13 +4104,14 @@ module.exports = [
   },
   {
     title: 'Octavia',
-    image: '/images/tennoimg/Octavia.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Octavia.png?sign=7b123f5fa444107ba9ab279ee71d0a1e&t=1779159787',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4172,13 +4202,14 @@ module.exports = [
   },
   {
     title: 'Oraxia',
-    image: '/images/tennoimg/Oraxia.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Oraxia.png?sign=ae5478d0b7c1a5ccb9e15310d9e5c1b3&t=1779159800',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4269,13 +4300,14 @@ module.exports = [
   },
   {
     title: 'Protea',
-    image: '/images/tennoimg/Protea.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Protea.png?sign=31ba93ab2c8acffcc17a5c05906aaa25&t=1779159821',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4366,13 +4398,14 @@ module.exports = [
   },
   {
     title: 'Qorvex',
-    image: '/images/tennoimg/Qorvex.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Qorvex.png?sign=d4199feee2fc7cd9cc981e38551b2c51&t=1779159834',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4463,13 +4496,14 @@ module.exports = [
   },
   {
     title: 'Revenant',
-    image: '/images/tennoimg/Revenant.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Revenant.png?sign=4f82fcd28065f5456dd9ec71ad1537ba&t=1779159846',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4560,13 +4594,14 @@ module.exports = [
   },
   {
     title: 'Rhino',
-    image: '/images/tennoimg/Rhino.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Rhino.png?sign=b8042c4fd89b17520989df866871ef4f&t=1779159866',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4657,13 +4692,14 @@ module.exports = [
   },
   {
     title: 'Saryn',
-    image: '/images/tennoimg/Saryn.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Saryn.png?sign=b7ab6c95d7df07083d0f6390c39ce627&t=1779159885',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4754,13 +4790,14 @@ module.exports = [
   },
   {
     title: 'Sevagoth',
-    image: '/images/tennoimg/Sevagoth.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Sevagoth.png?sign=b817d770a91c3cc39b3e104f2eafd8de&t=1779159900',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4851,13 +4888,14 @@ module.exports = [
   },
   {
     title: 'Styanax',
-    image: '/images/tennoimg/Styanax.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Styanax.png?sign=5a443b7b2ed9e5d8409d3421b365f995&t=1779159919',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4948,13 +4986,14 @@ module.exports = [
   },
   {
     title: 'Temple',
-    image: '/images/tennoimg/Temple.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Temple.png?sign=2c8f55d9ed2414b9c00094cf3bb81d63&t=1779159948',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5045,13 +5084,14 @@ module.exports = [
   },
   {
     title: 'Titania',
-    image: '/images/tennoimg/Titania.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Titania.png?sign=39dc1b0559bbb92a96e14337d3e34d4a&t=1779159968',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5142,13 +5182,14 @@ module.exports = [
   },
   {
     title: 'Trinity',
-    image: '/images/tennoimg/Trinity.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Trinity.png?sign=f13bb30c21a789d4f499277888f29cdc&t=1779159983',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5239,13 +5280,14 @@ module.exports = [
   },
   {
     title: 'Uriel',
-    image: '/images/tennoimg/Uriel.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Uriel.png?sign=f84a9b16a95a05b0d0ce6ec4d603003d&t=1779159996',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5336,13 +5378,14 @@ module.exports = [
   },
   {
     title: 'Valkyr',
-    image: '/images/tennoimg/Valkyr.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Valkyr.png?sign=6e260bd8f19f2417e667d8d3684f2b1c&t=1779160006',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5433,13 +5476,14 @@ module.exports = [
   },
   {
     title: 'Vauban',
-    image: '/images/tennoimg/Vauban.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Vauban.png?sign=c6c9f4e1cda69e131693798b60f5b38a&t=1779160038',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5530,13 +5574,14 @@ module.exports = [
   },
   {
     title: 'Volt',
-    image: '/images/tennoimg/Volt.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Volt.png?sign=69897f5a0ad834073c252d1b14752a1b&t=1779160067',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5627,13 +5672,14 @@ module.exports = [
   },
   {
     title: 'Voruna',
-    image: '/images/tennoimg/Voruna.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Voruna.png?sign=e4af64cc8e02622d4472fcb9fffa6007&t=1779160085',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5724,13 +5770,14 @@ module.exports = [
   },
   {
     title: 'Wisp',
-    image: '/images/tennoimg/Wisp.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Wisp.png?sign=e8f675e65cfb853a921a07ed2b20c45c&t=1779160098',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5821,13 +5868,14 @@ module.exports = [
   },
   {
     title: 'Wukong',
-    image: '/images/tennoimg/Wukong.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Wukong.png?sign=5895d77c47b559c86949cac53c9b5491&t=1779160113',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5918,13 +5966,14 @@ module.exports = [
   },
   {
     title: 'Xaku',
-    image: '/images/tennoimg/Xaku.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Xaku.png?sign=588779419c2b165cd4f8c634e90931f2&t=1779160125',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -6015,13 +6064,14 @@ module.exports = [
   },
   {
     title: 'Yareli',
-    image: '/images/tennoimg/Yareli.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Yareli.png?sign=03035e5fc5cddd1f72c72db70bf7678e&t=1779160141',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -6112,13 +6162,14 @@ module.exports = [
   },
   {
     title: 'Zephyr',
-    image: '/images/tennoimg/Zephyr.png',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Zephyr.png?sign=cd7dac317b94bd09ebecb69c6971b4e6&t=1779160151',
     health: '455（30级时555）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
