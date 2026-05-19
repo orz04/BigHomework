@@ -2,7 +2,20 @@ const homeData = require('../../data/home')
 const frameSections = require('../../data/indexs')
 
 function normalizeText(value) {
-  return String(value || '').trim().toLowerCase().replace(/\s+/g, '')
+  return String(value || '').trim().replace(/\s+/g, '')
+}
+
+function getEnglishInitials(title) {
+  const value = String(title || '').trim()
+  if (!/[A-Za-z]/.test(value)) {
+    return ''
+  }
+
+  return value
+    .split(/[\s\-_]+/)
+    .filter(Boolean)
+    .map((token) => token[0])
+    .join('')
 }
 
 function getFrameDetailPage(title) {
@@ -17,7 +30,15 @@ function getSearchResults(keyword) {
   }
 
   return frameSections
-    .filter((item) => normalizeText(item.title).includes(normalizedKeyword))
+    .filter((item) => {
+      const titleKey = normalizeText(item.title)
+      const initials = getEnglishInitials(item.title)
+
+      return (
+        titleKey.includes(normalizedKeyword) ||
+        (initials && initials.startsWith(normalizedKeyword))
+      )
+    })
     .map((item) => ({
       title: item.title,
       desc: '战甲详情',

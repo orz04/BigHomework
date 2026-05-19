@@ -40,7 +40,7 @@ module.exports = {
       title: '虚空遗物',
       desc: '查看遗物类型、奖励内容与掉落信息。',
       tag: 'Relic',
-      page: '/pages/relics/relics'
+      page: '/pages/relics-void/relics-void'
     },
     {
       title: '杜卡德金币计算器',

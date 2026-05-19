@@ -12,6 +12,9 @@
     "pages/mods/mods",
     "pages/resources/resources",
     "pages/relics/relics",
+    "pages/relics-void/relics-void",
+    "pages/relics-void-item1/relics-void-item1",
+    "pages/relics-void-item2/relics-void-item2",
     "pages/ducats/ducats"
   ],
   "window": {

@@ -5527,16 +5527,9 @@ module.exports = [
       ],
       note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
     }
-  },
-  {
-    title: 'Acolyte',
-    image: '/images/tennoimg/Acolyte.png',
-    health: '455（30级时555）',
-    shield: '270（30级时370）',
-    armor: '105（30级时105）',
-    energy: '100（30级时150）',
-    sprintSpeed: '1.15',
-    helminthElement: '辐射',
+  }
+]
+
     forging: {
       components: [
         {
@@ -5598,16 +5591,9 @@ module.exports = [
           ],
           time: '72小时',
           speed: '100'
-        }
-      ],
-      prices: [
-        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
-        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
-      ]
-    },
-    acquisition: {
-      paragraphs: [
-        '当前Acolyte的蓝图可在商店中购买获得，Acolyte的部件蓝图可由以下方式获得：',
+  }
+]
+
         '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
         'Acolyte的蓝图也可以从无尽回廊中获得。'
       ],
@@ -5620,13 +5606,13 @@ module.exports = [
         { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
         { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
         { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次A轮' }
       ],
       note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
     }
-  },
-  {
-    title: 'Amalgam',
+  }
+]
+
     image: '/images/tennoimg/Amalgam.png',
     health: '455（30级时555）',
     shield: '270（30级时370）',

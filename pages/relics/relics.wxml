@@ -4,18 +4,9 @@
     <view class="page-desc">先搭建遗物资料入口，后续再补精炼、掉落和 Prime 部件明细。</view>
   </view>
 
-  <view class="section">
-    <view class="section-title">遗物梯队</view>
-    <view class="chips">
-      <block wx:for="{{tiers}}" wx:key="*this">
-        <view class="chip">{{item}}</view>
-      </block>
-    </view>
-  </view>
-
   <view class="list section">
     <block wx:for="{{items}}" wx:key="title">
-      <section-card title="{{item.title}}" desc="{{item.desc}}" tag="{{item.tag}}"></section-card>
+      <section-card title="{{item.title}}" desc="{{item.desc}}" tag="{{item.tag}}" page="{{item.page}}"></section-card>
     </block>
   </view>
 </view>
