@@ -20,7 +20,8 @@ const defaultForging = {
 function buildBasicInfo(tenno) {
   return basicInfoLabels.map((item) => ({
     label: item.label,
-    value: tenno[item.key] || '待补充'
+    value: tenno[item.key] || '待补充',
+    icon: item.iconKey ? tenno[item.iconKey] || '' : ''
   }))
 }
 
