@@ -854,9 +854,106 @@ module.exports = [
     },
     acquisition: {
       paragraphs: [
-        '当前Dagath的蓝图可在商店中购买获得，Dagath的部件蓝图可由以下方式获得：',
+        '当前Dante的蓝图可在商店中购买获得，Dagath的部件蓝图可由以下方式获得：',
         '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
-        'Dagath的蓝图也可以从无尽回廊中获得。'
+        'Dante的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
+    title: 'Dante',
+    image: '/images/tennoimg/Dante.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Dante头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Dante头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Dante机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Dante系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Dante总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Dante的蓝图可在商店中购买获得，Dante的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Dante的蓝图也可以从无尽回廊中获得。'
       ],
       drops: [
         { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
@@ -1148,6 +1245,103 @@ module.exports = [
         '当前Excalibur的蓝图可在商店中购买获得，Excalibur的部件蓝图可由以下方式获得：',
         '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
         'Excalibur的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
+    title: 'Follie',
+    image: '/images/tennoimg/Follie.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Follie头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Follie头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Follie机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Follie系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Follie总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Follie的蓝图可在商店中购买获得，Follie的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Follie的蓝图也可以从无尽回廊中获得。'
       ],
       drops: [
         { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
@@ -1649,6 +1843,103 @@ module.exports = [
     }
   },
   {
+    title: 'Gyre',
+    image: '/images/tennoimg/Gyre.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Gyre头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Gyre头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Gyre机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Gyre系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Gyre总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Gyre的蓝图可在商店中购买获得，Gyre的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Gyre的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
     title: 'Harrow',
     image: '/images/tennoimg/Harrow.png',
     health: '455（30级时555）',
@@ -2134,6 +2425,103 @@ module.exports = [
     }
   },
   {
+    title: 'Jade',
+    image: '/images/tennoimg/Jade.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Jade头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Jade头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Jade机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Jade系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Jade总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Jade的蓝图可在商店中购买获得，Jade的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Jadea的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
     title: 'Khora',
     image: '/images/tennoimg/Khora.png',
     health: '455（30级时555）',
@@ -2215,6 +2603,103 @@ module.exports = [
         '当前Khora的蓝图可在商店中购买获得，Khora的部件蓝图可由以下方式获得：',
         '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
         'Khora的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
+    title: 'Koumei',
+    image: '/images/tennoimg/Koumei.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Koumei头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Koumei头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Koumei机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Koumei系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Koumei总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Koumei的蓝图可在商店中购买获得，Koumei的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Koumei的蓝图也可以从无尽回廊中获得。'
       ],
       drops: [
         { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
@@ -3104,6 +3589,200 @@ module.exports = [
     }
   },
   {
+    title: 'Nidus',
+    image: '/images/tennoimg/Nidus.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Nidus头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Nidus头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Nidus机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Nidus系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Nidus总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Nidus的蓝图可在商店中购买获得，Nidus的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Nidus的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
+    title: 'Nokko',
+    image: '/images/tennoimg/Nokko.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Nokko头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Nokko头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Nokko机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Nokko系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Nokko总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Nokko的蓝图可在商店中购买获得，Nokko的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Nokko的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
     title: 'Nova',
     image: '/images/tennoimg/Nova.png',
     health: '455（30级时555）',
@@ -3476,6 +4155,103 @@ module.exports = [
         '当前Octavia的蓝图可在商店中购买获得，Octavia的部件蓝图可由以下方式获得：',
         '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
         'Octavia的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
+    title: 'Oraxia',
+    image: '/images/tennoimg/Oraxia.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Oraxia头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Oraxia头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Oraxia机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Oraxia系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Oraxia总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Oraxia的蓝图可在商店中购买获得，Oraxia的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Oraxia的蓝图也可以从无尽回廊中获得。'
       ],
       drops: [
         { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
@@ -4074,6 +4850,200 @@ module.exports = [
     }
   },
   {
+    title: 'Styanax',
+    image: '/images/tennoimg/Styanax.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Styanax头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Styanax头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Styanax机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Styanax系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Styanax总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Styanax的蓝图可在商店中购买获得，Styanax的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Styanax的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
+    title: 'Temple',
+    image: '/images/tennoimg/Temple.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Temple头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Temple头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Temple机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Temple系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Temple总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Temple的蓝图可在商店中购买获得，Temple的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Temple的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
     title: 'Titania',
     image: '/images/tennoimg/Titania.png',
     health: '455（30级时555）',
@@ -4252,6 +5222,103 @@ module.exports = [
         '当前Trinity的蓝图可在商店中购买获得，Trinity的部件蓝图可由以下方式获得：',
         '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
         'Trinity的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
+    title: 'Uriel',
+    image: '/images/tennoimg/Uriel.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Uriel头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Uriel头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Uriel机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Uriel系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Uriel总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Uriel的蓝图可在商店中购买获得，Uriel的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Uriel的蓝图也可以从无尽回廊中获得。'
       ],
       drops: [
         { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
@@ -4737,6 +5804,103 @@ module.exports = [
         '当前Wisp的蓝图可在商店中购买获得，Wisp的部件蓝图可由以下方式获得：',
         '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
         'Wisp的蓝图也可以从无尽回廊中获得。'
+      ],
+      drops: [
+        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
+        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
+        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+      ],
+      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+    }
+  },
+  {
+    title: 'Wukong',
+    image: '/images/tennoimg/Wukong.png',
+    health: '455（30级时555）',
+    shield: '270（30级时370）',
+    armor: '105（30级时105）',
+    energy: '100（30级时150）',
+    sprintSpeed: '1.15',
+    helminthElement: '辐射',
+    forging: {
+      components: [
+        {
+          name: 'Wukong头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
+            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+          ],
+          time: '3天',
+          speed: '50'
+        },
+        {
+          name: 'Wukong头部神经光元蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
+            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
+            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Wukong机体蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: '', amount: 'N/A' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Wukong系统蓝图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
+            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+          ],
+          time: '12小时',
+          speed: '25'
+        },
+        {
+          name: 'Wukong总图',
+          materials: [
+            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
+            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
+            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
+            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
+            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
+          ],
+          time: '72小时',
+          speed: '100'
+        }
+      ],
+      prices: [
+        { type: '商店', icon: '/images/resourceimg/MarketIcon.png', currencyIcon: '/images/resourceimg/Platinum.png', amount: '375' },
+        { type: '蓝图', icon: '/images/resourceimg/Blueprint2.svg.png', currencyIcon: '/images/resourceimg/Credits.png', amount: '35,000' }
+      ]
+    },
+    acquisition: {
+      paragraphs: [
+        '当前Wukong的蓝图可在商店中购买获得，Wukong的部件蓝图可由以下方式获得：',
+        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Wukong的蓝图也可以从无尽回廊中获得。'
       ],
       drops: [
         { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
