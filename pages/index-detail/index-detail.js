@@ -9,7 +9,7 @@ const basicInfoLabels = [
   { key: 'armor', label: '护甲' },
   { key: 'energy', label: '能量' },
   { key: 'sprintSpeed', label: '冲刺速度' },
-  { key: 'helminthElement', label: '源身元素' }
+  { key: 'helminthElement', label: '源身元素', iconKey: 'helminthElementIcon' }
 ]
 
 const defaultForging = {

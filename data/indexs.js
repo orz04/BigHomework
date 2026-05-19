@@ -8,7 +8,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -38,8 +37,8 @@ module.exports = [
           name: 'Ash机体蓝图',
           materials: [
             { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=f95ce874b56d096048e5baef430cdba1&t=1779162930', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Ferrite.png?sign=9e8b72f93c84fb763c3be5e648069ff9&t=1779162947', amount: '1,000' },
             { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=3fdd5519434f488fd17060256ec4b156&t=1779162015', amount: '300' },
             { icon: '', amount: 'N/A' }
           ],
@@ -50,8 +49,8 @@ module.exports = [
           name: 'Ash系统蓝图',
           materials: [
             { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ControlModule.png?sign=612aa182b2c2e10cba7d035e386198fc&t=1779162994', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=a5b9c2aaca1c74ca056ebcb14ca1b71b&t=1779162962', amount: '1' },
             { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
             { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
           ],
@@ -93,7 +92,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -191,7 +189,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -289,7 +286,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -387,7 +383,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -485,7 +480,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -583,7 +577,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -681,7 +674,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -779,7 +771,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -877,7 +868,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -975,7 +965,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1073,7 +1062,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1171,7 +1159,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1269,7 +1256,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1367,7 +1353,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1465,7 +1450,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1563,7 +1547,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1661,7 +1644,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1759,7 +1741,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1857,7 +1838,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -1955,7 +1935,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2053,7 +2032,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2151,7 +2129,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2249,7 +2226,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2347,7 +2323,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2445,7 +2420,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2543,7 +2517,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2641,7 +2614,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2739,7 +2711,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2837,7 +2808,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -2935,7 +2905,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3033,7 +3002,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3131,7 +3099,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3229,7 +3196,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3327,7 +3293,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3425,7 +3390,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3523,7 +3487,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3621,7 +3584,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3719,7 +3681,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3817,7 +3778,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -3915,7 +3875,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4013,7 +3972,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4111,7 +4069,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4209,7 +4166,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4307,7 +4263,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4405,7 +4360,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4503,7 +4457,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4601,7 +4554,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4699,7 +4651,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4797,7 +4748,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4895,7 +4845,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -4993,7 +4942,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5091,7 +5039,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5189,7 +5136,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5287,7 +5233,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5385,7 +5330,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5483,7 +5427,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5581,7 +5524,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5679,7 +5621,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5777,7 +5718,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5875,7 +5815,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -5973,7 +5912,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -6071,7 +6009,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
@@ -6169,7 +6106,6 @@ module.exports = [
     energy: '100（30级时150）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=7a95ea2596c51e5aaef4d1cdc29203ca&t=1779163323',
     forging: {
       components: [
         {
