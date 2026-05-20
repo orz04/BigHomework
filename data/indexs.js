@@ -641,9 +641,9 @@ module.exports = [
           materials: [
             { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: '15,000' },
             { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Vainthorn.png?sign=19e4d0bd7370c14a292c0765ecae0642&t=1779264171', amount: '34' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/AlloyPlate.png?sign=155f71c1056198c1e7422f16b8857e4c&t=1779264351', amount: '2,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Neurodes.png?sign=2ab914688cd1d43fe57502cf9544277c&t=1779264867', amount: '3' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NeuralSensor.png?sign=468f071456af73f281e20dba774651c5&t=1779264406', amount: '3' }
           ],
           time: '12小时',
           speed: '25'
@@ -653,9 +653,9 @@ module.exports = [
           materials: [
             { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: '15,000' },
             { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Vainthorn.png?sign=19e4d0bd7370c14a292c0765ecae0642&t=1779264171', amount: '34' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
-            { icon: '', amount: 'N/A' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Salvage.png?sign=fa477ef3656f5124ee14999ce6b32c89&t=1779264904', amount: '1,500' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=a183d550bf88b65f669e93681ea63c91&t=1779265006', amount: '4' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ArgonCrystal.png?sign=75bb5322f582f64e66da3a077474a9fc&t=1779264927', amount: '2' }
           ],
           time: '12小时',
           speed: '25'
@@ -665,9 +665,9 @@ module.exports = [
           materials: [
             { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: '15,000' },
             { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Vainthorn.png?sign=19e4d0bd7370c14a292c0765ecae0642&t=1779264171', amount: '34' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Circuits.png?sign=5b6f29ec177b2677a107e7fc2959b715&t=1779265041', amount: '1,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ControlModule.png?sign=b5794116b5423194e2ea795ccbd9be14&t=1779265064', amount: '5' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Gallium.png?sign=4483ec6a2ac883289b936edde1d9af18&t=1779265083', amount: '4' }
           ],
           time: '12小时',
           speed: '25'
@@ -680,22 +680,11 @@ module.exports = [
     },
     acquisition: {
       paragraphs: [
-        '当前Dagath的蓝图可在商店中购买获得，Dagath的部件蓝图可由以下方式获得：',
-        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
-        'Dagath的蓝图也可以从无尽回廊中获得。'
-      ],
-      drops: [
-        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
-      ],
-      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+        'Dagath的蓝图和部件蓝图可从氏族道场的Dagath的空阁获取。与大多数氏族道场研究不同，Dagath不需要研究，在其房间建造完成后即可获取蓝图。',
+        '制造Dagath需要102个浮华荆棘，该资源可于谷神星的深渊区域，完成特殊歼灭任务获取。进入该任务需要花费深渊信标。',
+        '深渊信标可在主要集团 (钢铁防线，均衡仲裁者，中枢苏达，佩兰数列，血色面纱，以及新世间) 达到声望等级 等级2 时，花费5,000声望购买。',
+        '在任务完成时仅消耗开启玩家的信标，每场任务会获得6，7，或者8个浮华荆棘(钢铁之路模式下将为8，11，或12个以及一个钢铁精华)。'
+      ]
     }
   },
   {
