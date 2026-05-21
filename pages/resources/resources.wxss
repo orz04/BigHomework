@@ -1,0 +1,144 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.resource-card {
+  padding: 28rpx;
+  border-radius: 24rpx;
+}
+
+.resource-table {
+  margin-top: 22rpx;
+  overflow: hidden;
+  border: 1rpx solid rgba(148, 163, 184, 0.2);
+  border-radius: 18rpx;
+}
+
+.resource-table-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  border-top: 1rpx solid rgba(148, 163, 184, 0.16);
+}
+
+.resource-table-row:first-child {
+  border-top: 0;
+}
+
+.resource-table-head {
+  background: rgba(59, 130, 246, 0.12);
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.resource-table-cell {
+  padding: 18rpx 20rpx;
+  color: #cbd5e1;
+  font-size: 24rpx;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+.resource-table-cell + .resource-table-cell {
+  border-left: 1rpx solid rgba(148, 163, 184, 0.16);
+}
+
+.resource-name-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rpx;
+}
+
+.resource-icon {
+  width: 64rpx;
+  height: 64rpx;
+  flex-shrink: 0;
+}
+
+
+.star-table-wrap {
+  display: flex;
+  margin-top: 22rpx;
+  width: 100%;
+  overflow: hidden;
+  border: 1rpx solid rgba(148, 163, 184, 0.2);
+  border-radius: 18rpx;
+}
+
+.star-fixed-table {
+  width: 190rpx;
+  flex-shrink: 0;
+  background: #111827;
+  border-right: 1rpx solid rgba(148, 163, 184, 0.16);
+}
+
+.star-table-scroll {
+  flex: 1;
+  min-width: 0;
+}
+
+.star-scroll-table {
+  display: inline-block;
+  min-width: 2160rpx;
+}
+
+.star-table-row {
+  display: grid;
+  grid-template-columns: repeat(18, 120rpx);
+}
+
+.star-table-cell {
+  box-sizing: border-box;
+  height: 96rpx;
+  padding: 0 12rpx;
+  border-top: 1rpx solid rgba(148, 163, 184, 0.16);
+  border-left: 1rpx solid rgba(148, 163, 184, 0.16);
+  color: #cbd5e1;
+  font-size: 22rpx;
+  line-height: 96rpx;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.star-table-head .star-table-cell,
+.star-table-head-cell {
+  border-top: 0;
+  background: #1e293b;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.star-table-row .star-table-cell:first-child {
+  border-left: 0;
+}
+
+.star-table-head-cell,
+.star-fixed-cell {
+  border-left: 0;
+}
+
+.star-resource-name {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8rpx;
+}
+
+.star-resource-name text {
+  line-height: 1.2;
+}
+
+.star-resource-icon {
+  width: 44rpx;
+  height: 44rpx;
+  flex-shrink: 0;
+}
+
+.star-last-row-cell,
+.star-last-row .star-table-cell {
+  border-bottom: 2rpx solid rgba(148, 163, 184, 0.45);
+}

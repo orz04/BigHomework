@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "MOD",
+  "usingComponents": {
+    "section-card": "/components/section-card/section-card"
+  }
+}

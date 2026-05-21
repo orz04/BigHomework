@@ -1,0 +1,13 @@
+<view class="search-bar panel">
+  <input
+    class="search-input"
+    type="text"
+    placeholder="{{placeholder}}"
+    placeholder-class="search-placeholder"
+    value="{{value}}"
+    confirm-type="search"
+    bindinput="handleInput"
+    bindconfirm="handleConfirm"
+  />
+  <view class="search-action" bindtap="handleTap">搜索</view>
+</view>

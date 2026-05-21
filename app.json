@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/indexs/indexs",
+    "pages/index-detail/index-detail",
+    "pages/weapons/weapons",
+    "pages/mastery/mastery",
+    "pages/primary/primary",
+    "pages/secondary/secondary",
+    "pages/melee/melee",
+    "pages/factions/factions",
+    "pages/mods/mods",
+    "pages/resources/resources",
+    "pages/relics/relics",
+    "pages/relics-void/relics-void",
+    "pages/relics-void-item1/relics-void-item1",
+    "pages/relics-void-item2/relics-void-item2",
+    "pages/ducats/ducats"
+  ],
+  "window": {
+    "navigationBarTitleText": "Warframe Wiki",
+    "navigationBarBackgroundColor": "#0b1220",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#050b16",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

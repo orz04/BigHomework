@@ -1,0 +1,29 @@
+<view class="reward-page">
+  <view class="reward-header">
+    <view class="reward-title">遗物奖励</view>
+  </view>
+
+  <scroll-view class="reward-scroll" scroll-y>
+    <view class="reward-table">
+      <block wx:for="{{rewards}}" wx:key="name" wx:for-item="group">
+        <view class="reward-group">
+          <view class="item-name" style="{{'height: ' + (group.rowCount * 82) + 'rpx;'}}">{{group.name}}</view>
+          <view class="group-body">
+            <block wx:for="{{group.rows}}" wx:key="part" wx:for-item="row">
+              <view class="reward-row">
+                <view class="part-name">{{row.part}}</view>
+                <view class="relic-list">
+                  <block wx:for="{{row.rewards}}" wx:key="name" wx:for-item="relic">
+                    <view class="relic-card {{relic.rarityClass}}">
+                      <text>{{relic.name}}</text>
+                    </view>
+                  </block>
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

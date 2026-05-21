@@ -1,0 +1,62 @@
+<view class="container home-page">
+  <view class="hero panel">
+    <view class="hero-title">Warframe Wiki</view>
+  </view>
+
+  <view class="search-wrap">
+    <search-bar
+      placeholder="搜索词条、MOD、遗物、资源"
+      value="{{keyword}}"
+      bind:change="handleSearchChange"
+      bind:search="handleSearch"
+    />
+  </view>
+
+  <view class="section section-search panel" wx:if="{{hasSearched}}">
+    <view class="search-panel-accent"></view>
+    <view class="section-heading">
+      <view>
+        <view class="section-title">搜索结果</view>
+        <view class="section-result">关键词：{{keyword}} · 共 {{resultCount}} 项结果</view>
+      </view>
+      <view class="section-mark section-mark-search">00</view>
+    </view>
+
+    <view class="section-empty" wx:if="{{resultCount === 0}}">无结果</view>
+
+    <view class="grid feature-grid" wx:if="{{resultCount > 0}}">
+      <block wx:for="{{filteredQuickLinks}}" wx:key="title">
+        <section-card
+          title="{{item.title}}"
+          desc="{{item.desc}}"
+          tag="{{item.tag}}"
+          page="{{item.page}}"
+          compact="{{true}}"
+        />
+      </block>
+    </view>
+  </view>
+
+  <view class="base-section-hint" wx:if="{{hasSearched}}">下方仍保留原始模块入口</view>
+
+  <view class="section section-featured panel">
+    <view class="section-heading">
+      <view>
+        <view class="section-title">基础信息</view>
+      </view>
+      <view class="section-mark">01</view>
+    </view>
+
+    <view class="grid feature-grid">
+      <block wx:for="{{quickLinks}}" wx:key="title">
+        <section-card
+          title="{{item.title}}"
+          desc="{{item.desc}}"
+          tag="{{item.tag}}"
+          page="{{item.page}}"
+          compact="{{true}}"
+        />
+      </block>
+    </view>
+  </view>
+</view>

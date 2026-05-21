@@ -1,0 +1,78 @@
+<view class="container">
+  <view class="page-header">
+    <view class="page-title">{{intro.title}}</view>
+    <view class="page-desc">{{intro.desc}}</view>
+  </view>
+
+  <view class="list">
+    <section-card title="概述" desc="玩家必须通过段位考试晋升段位等级。段位考试总是单人进行的，根据考试内容将出现一些操作限制。" tag="Intro"></section-card>
+
+    <block wx:for="{{groups}}" wx:key="title" wx:for-item="group" wx:for-index="groupIndex">
+      <view class="group-card">
+        <view class="group-header" data-index="{{groupIndex}}" bindtap="handleGroupToggle">
+          <view class="group-title">{{group.title}}</view>
+          <view class="group-action">{{group.expanded ? '点击收起' : '点击展开'}}</view>
+        </view>
+
+        <view class="group-body" wx:if="{{group.expanded}}">
+          <block wx:for="{{group.sections}}" wx:key="title" wx:for-item="section" wx:for-index="sectionIndex">
+            <view class="exam-section {{sectionIndex > 0 ? 'exam-section-spaced' : ''}}">
+              <view class="exam-section-title">{{section.title}}</view>
+              <scroll-view class="wheel-scroll" scroll-x enable-flex show-scrollbar="false">
+                <view class="wheel-track">
+                  <block wx:for="{{section.exams}}" wx:key="id" wx:for-item="exam" wx:for-index="examIndex">
+                    <view
+                      class="wheel-button {{section.activeExamIndex === examIndex ? 'wheel-button-active' : ''}}"
+                      data-group-index="{{groupIndex}}"
+                      data-section-index="{{sectionIndex}}"
+                      data-exam-index="{{examIndex}}"
+                      bindtap="handleExamSelect"
+                    >
+                      {{exam.label}}
+                    </view>
+                  </block>
+                </view>
+              </scroll-view>
+
+              <view class="wheel-content">
+                <view class="wheel-content-title">{{section.exams[section.activeExamIndex].title}}</view>
+                <view class="wheel-content-body">{{section.exams[section.activeExamIndex].content}}</view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+
+    <view class="group-card">
+      <view class="group-header static-header">
+        <view class="group-title">段位等级</view>
+      </view>
+      <view class="rank-table-wrap">
+        <scroll-view class="rank-table-scroll" scroll-x show-scrollbar="false">
+          <view class="rank-table">
+            <view class="rank-table-row rank-table-head">
+              <block wx:for="{{rankTable.columns}}" wx:key="*this" wx:for-item="column">
+                <view class="rank-table-cell rank-table-head-cell">{{column}}</view>
+              </block>
+            </view>
+            <block wx:for="{{rankTable.rows}}" wx:key="id" wx:for-item="row">
+              <view class="rank-table-row">
+                <view class="rank-table-cell">
+                  <image wx:if="{{row.iconSrc}}" class="rank-icon" src="{{row.iconSrc}}" mode="aspectFit"></image>
+                  <view wx:else class="rank-icon-placeholder">{{row.icon}}</view>
+                </view>
+                <view class="rank-table-cell">{{row.name}}</view>
+                <view class="rank-table-cell">{{row.level}}</view>
+                <view class="rank-table-cell">{{row.nextRequirement}}</view>
+                <view class="rank-table-cell">{{row.totalExp}}</view>
+                <view class="rank-table-cell">{{row.exam}}</view>
+                <view class="rank-table-cell rank-note-cell">{{row.note}}</view>
+              </view>
+            </block>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>

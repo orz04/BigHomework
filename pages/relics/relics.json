@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "遗物",
+  "usingComponents": {
+    "section-card": "/components/section-card/section-card"
+  }
+}

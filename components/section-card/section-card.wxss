@@ -1,0 +1,38 @@
+.section-card {
+  padding: 28rpx;
+  border-radius: 24rpx;
+}
+
+.section-card.compact {
+  padding: 22rpx;
+}
+
+.section-tag {
+  display: inline-block;
+  margin-bottom: 14rpx;
+  padding: 8rpx 14rpx;
+  border-radius: 999rpx;
+  background: rgba(59, 130, 246, 0.18);
+  color: #93c5fd;
+  font-size: 20rpx;
+}
+
+.section-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.section-desc {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  line-height: 1.7;
+  color: #94a3b8;
+}
+
+.section-link {
+  margin-top: 22rpx;
+  color: #f4c96b;
+  font-size: 24rpx;
+  font-weight: 600;
+}

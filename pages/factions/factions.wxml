@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="page-header">
+    <view class="page-title centered-title">集团信息</view>
+  </view>
+
+  <view class="list">
+    <block wx:for="{{items}}" wx:key="title">
+      <view class="faction-section panel">
+        <view class="faction-title">{{item.title}}</view>
+        <view class="group-list" wx:if="{{item.groups}}">
+          <block wx:for="{{item.groups}}" wx:key="name">
+            <view class="group-card">
+              <image class="group-image" src="{{item.image}}" mode="aspectFit"></image>
+              <view class="group-name">{{item.name}}</view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
