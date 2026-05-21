@@ -1,16 +1,28 @@
 <view class="container">
   <view class="page-header">
     <view class="page-title">虚空遗物</view>
+<<<<<<< HEAD
+=======
+    <view class="page-desc">四个方块为纯展示；下面两条可各自点击打开弹窗。</view>
+>>>>>>> c4bf4bbe3bd87a7526014ab304575c73df637cfa
   </view>
 
   <view class="grid">
     <view class="grid-item panel">
       <image class="grid-image" src="/images/relicimg/ancient.png" mode="aspectFit"></image>
+<<<<<<< HEAD
       <view class="grid-text">古纪（丽斯）</view>
     </view>
     <view class="grid-item panel">
       <image class="grid-image" src="/images/relicimg/preceding.png" mode="aspectFit"></image>
       <view class="grid-text">前纪（美索）</view>
+=======
+      <view class="grid-text">古纪</view>
+    </view>
+    <view class="grid-item panel">
+      <image class="grid-image" src="/images/relicimg/preceding.png" mode="aspectFit"></image>
+      <view class="grid-text">前纪</view>
+>>>>>>> c4bf4bbe3bd87a7526014ab304575c73df637cfa
     </view>
     <view class="grid-item panel">
       <image class="grid-image" src="/images/relicimg/middle.png" mode="aspectFit"></image>
@@ -18,21 +30,37 @@
     </view>
     <view class="grid-item panel">
       <image class="grid-image" src="/images/relicimg/later.png" mode="aspectFit"></image>
+<<<<<<< HEAD
       <view class="grid-text">后</view>
+=======
+      <view class="grid-text">后纪</view>
+>>>>>>> c4bf4bbe3bd87a7526014ab304575c73df637cfa
     </view>
   </view>
 
   <view class="section">
+<<<<<<< HEAD
     <view class="expand-row panel" data-target="relics-void-item1" bindtap="openItem">
       <view class="expand-row-header">
         <view class="expand-row-title">虚空遗物对应奖励</view>
+=======
+    <view class="section-title">交互</view>
+
+    <view class="expand-row panel" data-target="relics-void-item1" bindtap="openItem">
+      <view class="expand-row-header">
+        <view class="expand-row-title">条目 1</view>
+>>>>>>> c4bf4bbe3bd87a7526014ab304575c73df637cfa
         <view class="expand-row-icon">打开</view>
       </view>
     </view>
 
     <view class="expand-row panel" data-target="relics-void-item2" bindtap="openItem">
       <view class="expand-row-header">
+<<<<<<< HEAD
         <view class="expand-row-title">虚空遗物来源表</view>
+=======
+        <view class="expand-row-title">条目 2</view>
+>>>>>>> c4bf4bbe3bd87a7526014ab304575c73df637cfa
         <view class="expand-row-icon">打开</view>
       </view>
     </view>

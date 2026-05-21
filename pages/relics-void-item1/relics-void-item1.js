@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const rewardText = require('../../data/relic-void-reward-text')
 
 const RARITY_PRIORITY = {
@@ -119,3 +120,9 @@ Page({
     rewards: parseRewards(rewardText)
   }
 })
+=======
+Page({
+  data: {},
+  onLoad() {}
+})
+>>>>>>> c4bf4bbe3bd87a7526014ab304575c73df637cfa

@@ -4,6 +4,17 @@
   gap: 20rpx;
 }
 
+<<<<<<< HEAD
+=======
+.section-title-center {
+  margin-top: 24rpx;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+>>>>>>> c4bf4bbe3bd87a7526014ab304575c73df637cfa
 .centered-title {
   text-align: center;
 }

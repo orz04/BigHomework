@@ -26,6 +26,10 @@
     <view class="info-card panel">
       <view class="section-title">锻造需求</view>
       <block wx:for="{{tenno.forging.components}}" wx:key="name">
+<<<<<<< HEAD
+=======
+        <view wx:if="{{item.sectionTitle}}" class="section-title-center">{{item.sectionTitle}}</view>
+>>>>>>> c4bf4bbe3bd87a7526014ab304575c73df637cfa
         <view wx:if="{{item.name}}" class="forging-component-name">{{item.name}}</view>
         <view class="forging-row">
           <view class="forging-materials">

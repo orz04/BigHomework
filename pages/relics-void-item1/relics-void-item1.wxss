@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 page {
   background: #f2f3f5;
 }
@@ -137,3 +138,11 @@ page {
 .rarity-3::after {
   background: #e5dd2f;
 }
+=======
+.container{padding:24rpx;color:#d7e2ff;}
+.page-header{margin-bottom:20rpx;}
+.page-title{font-size:40rpx;font-weight:700;}
+.page-desc{margin-top:8rpx;font-size:26rpx;color:#9fb0d6;}
+.panel{background:#0b1220;border-radius:16rpx;padding:24rpx;}
+.placeholder{font-size:28rpx;color:#d7e2ff;}
+>>>>>>> c4bf4bbe3bd87a7526014ab304575c73df637cfa
