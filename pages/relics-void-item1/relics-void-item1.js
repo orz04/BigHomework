@@ -6,8 +6,7 @@ const RARITY_PRIORITY = {
   稀有: 3
 }
 const ERA_PATTERN = /^(古纪|前纪|中纪|后纪|安魂|先锋)$/
-const REWARD_PATTERN = /(古纪|前纪|中纪|后纪|安魂|先锋)
-\s+([^\s]+?(?:常见|罕见|稀有))/g
+const REWARD_PATTERN = /(古纪|前纪|中纪|后纪|安魂|先锋)\s+([^\s]+?(?:常见|罕见|稀有))/g
 const PART_ORDER = ['枪管', '蓝图', '连接器', '枪机', '枪托']
 
 function parseRewards(text) {
