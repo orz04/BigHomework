@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <view class="reward-page">
   <view class="reward-header">
     <view class="reward-title">遗物奖励</view>
@@ -7,10 +6,12 @@
   <scroll-view class="reward-scroll" scroll-y>
     <view class="reward-table">
       <block wx:for="{{rewards}}" wx:key="name" wx:for-item="group">
+        <!-- 一组代表一个武器，左侧是武器名，右侧是多行配件 -->
         <view class="reward-group">
-          <view class="item-name" style="{{'height: ' + (group.rowCount * 82) + 'rpx;'}}">{{group.name}}</view>
+          <view class="item-name">{{group.name}}</view>
           <view class="group-body">
             <block wx:for="{{group.rows}}" wx:key="part" wx:for-item="row">
+              <!-- 一行代表一个配件及其对应遗物 -->
               <view class="reward-row">
                 <view class="part-name">{{row.part}}</view>
                 <view class="relic-list">
@@ -27,15 +28,4 @@
       </block>
     </view>
   </scroll-view>
-=======
-<view class="container">
-  <view class="page-header">
-    <view class="page-title">条目 1</view>
-    <view class="page-desc">占位页面：后续可替换为实际内容。</view>
-  </view>
-
-  <view class="panel">
-    <view class="placeholder">这里是条目 1 的内容。</view>
-  </view>
->>>>>>> c4bf4bbe3bd87a7526014ab304575c73df637cfa
 </view>
