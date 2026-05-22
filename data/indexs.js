@@ -846,13 +846,13 @@ module.exports = [
   {
     title: 'Equinox',
     image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Equinox.png?sign=1ba6a4c9bb8d07d051a55523dbf81f76&t=1779159142',
-    health: '455（30级时555）',
+    health: '270（30级时370）',
     shield: '270（30级时370）',
-    armor: '105（30级时105）',
-    energy: '100（30级时150）',
+    armor: '135（30级时135）',
+    energy: '175（30级时225）',
     sprintSpeed: '1.15',
     helminthElement: '辐射',
-    helminthElementIcon: '',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=b153a5ec0f62b0957aef49cd108e0de5&t=1779431503',
     forging: {
       components: [
         {
