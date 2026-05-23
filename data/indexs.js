@@ -1843,35 +1843,34 @@ module.exports = [
   {
     title: 'Inaros',
     image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Inaros.png?sign=d58acd1961899688c94c0f051c31aee7&t=1779159440',
-    health: '455（30级时555）',
-    shield: '270（30级时370）',
-    armor: '105（30级时105）',
+    health: '2110（30级时2310）',
+    shield: '0（30级时3）',
+    armor: '240（30级时240）',
     energy: '100（30级时150）',
-    sprintSpeed: '1.15',
-    helminthElement: '辐射',
-    helminthElementIcon: '',
+    sprintSpeed: '1.0',
+    helminthElement: '火焰',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Fire.png?sign=5096893fd2cb923e9c19985c7edc7d67&t=1779532415',
     forging: {
       components: [
         {
-          name: 'Inaros头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '25,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Helmet.png?sign=9a3f04dad4419d540d1d46464f7f9737&t=1779160938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chassis.png?sign=cbf1d7b63abd5e82c070bb7c94bde34c&t=1779160971', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Systems.png?sign=cb12d71a8f8e1d8231880ab9adbbc94c&t=1779160991', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/OrokinCell.png?sign=0f9ba8a0d571996039899c358c510e1c&t=1779161833', amount: '1' }
           ],
-          time: '3天',
+          time: '72小时',
           speed: '50'
         },
         {
           name: 'Inaros头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/AlloyPlate.png?sign=a946dfa7624a6725c6e01abd605b2a42&t=1779532629', amount: '1,500' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=e2d48abc5cfccedb2226597e72213c40&t=1779532829', amount: '350' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Plastids.png?sign=1be15fa24902347425ce90b9933fb9bd&t=1779532722', amount: '500' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NitainExtract.png?sign=f7dd708ae7a53cf146e6cd913c2a91f1&t=1779532703', amount: '2' }
           ],
           time: '12小时',
           speed: '25'
@@ -1879,11 +1878,11 @@ module.exports = [
         {
           name: 'Inaros机体蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
-            { icon: '', amount: 'N/A' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Neurodes.png?sign=ed8a869cfd0c4cb816d9908927f4185b&t=1779532815', amount: '3' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NanoSpores.png?sign=79f283f1b17498d42850ad28de32354e&t=1779532747', amount: '1,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Plastids.png?sign=1be15fa24902347425ce90b9933fb9bd&t=1779532722', amount: '300' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Oxium.png?sign=186111efdfe53f0c67b652aee166c4cd&t=1779532792', amount: '100' }
           ],
           time: '12小时',
           speed: '25'
@@ -1891,85 +1890,59 @@ module.exports = [
         {
           name: 'Inaros系统蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ArgonCrystal.png?sign=cb80c8b7ef46ab260e69c7249c33ad2c&t=1779532667', amount: '2' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=e2d48abc5cfccedb2226597e72213c40&t=1779532829', amount: '300' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NanoSpores.png?sign=79f283f1b17498d42850ad28de32354e&t=1779532747', amount: '1,600' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Circuits.png?sign=aef943f7801ac7800874a945517856cb&t=1779532773', amount: '500' }
           ],
           time: '12小时',
           speed: '25'
-        },
-        {
-          name: 'Inaros总图',
-          materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
-            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
-            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
-          ],
-          time: '72小时',
-          speed: '100'
         }
       ],
       prices: [
-        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '275' },
+        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '225' },
         { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: 'N/A' }
       ]
     },
     acquisition: {
       paragraphs: [
-        '当前Inaros的蓝图可在商店中购买获得，Inaros的部件蓝图可由以下方式获得：',
-        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'naros的所有蓝图都可以通过Inaros之沙系列任务获得。该任务的蓝图可在Baro Ki’Teer处以100杜卡德金币和25,000现金的价格购买。完成系列任务后，可在中枢Simaris处分别以50,000声望和25,000声望的价格购买战甲与部件蓝图。',
         'Inaros的蓝图也可以从无尽回廊中获得。'
-      ],
-      drops: [
-        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
-      ],
-      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+      ]
     }
   },
   {
     title: 'Ivara',
     image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Ivara.png?sign=eafbca7bea7366cf7090d6c58a4590e5&t=1779159457',
-    health: '455（30级时555）',
+    health: '180（30级时280）',
     shield: '270（30级时370）',
     armor: '105（30级时105）',
-    energy: '100（30级时150）',
+    energy: '215（30级时265）',
     sprintSpeed: '1.15',
-    helminthElement: '辐射',
-    helminthElementIcon: '',
+    helminthElement: '毒素',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Toxin.png?sign=87970c323aedff9fe7738b302f07175c&t=1779532923',
     forging: {
       components: [
         {
-          name: 'Ivara头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '25,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Helmet.png?sign=9a3f04dad4419d540d1d46464f7f9737&t=1779160938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chassis.png?sign=cbf1d7b63abd5e82c070bb7c94bde34c&t=1779160971', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Systems.png?sign=cb12d71a8f8e1d8231880ab9adbbc94c&t=1779160991', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/OrokinCell.png?sign=0f9ba8a0d571996039899c358c510e1c&t=1779161833', amount: '1' }
           ],
-          time: '3天',
+          time: '72小时',
           speed: '50'
         },
         {
           name: 'Ivara头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Neurodes.png?sign=4f6f8e2e5df66af5095ae587d12ad5ab&t=1779533256', amount: '5' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Plastids.png?sign=763369f7f3acd578a639411e79713439&t=1779533330', amount: '800' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=65463068a1d5503ee624b768c3d91517&t=1779533347', amount: '2,600' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ArgonCrystal.png?sign=2a185b871a8f0410d1d1ef249fd80517&t=1779533302', amount: '2' }
           ],
           time: '12小时',
           speed: '25'
@@ -1977,11 +1950,11 @@ module.exports = [
         {
           name: 'Ivara机体蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
-            { icon: '', amount: 'N/A' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=2fe5c7fe4c33e315e2a9f241eb974ebf&t=1779533371', amount: '5' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Cryotic.png?sign=646689e02408550afd79d6c7adc5ec85&t=1779533406', amount: '2,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=f5800c74fdd47a6a8e1eecac9eed5472&t=1779533421', amount: '700' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NitainExtract.png?sign=1371f8d2c17273060cf55ed0857e0a46&t=1779533276', amount: '4' }
           ],
           time: '12小时',
           speed: '25'
@@ -1989,49 +1962,33 @@ module.exports = [
         {
           name: 'Ivara系统蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ControlModule.png?sign=c4098d9588027d4a3d8c861a5264406f&t=1779533387', amount: '5' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=f5800c74fdd47a6a8e1eecac9eed5472&t=1779533421', amount: '1,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NitainExtract.png?sign=1371f8d2c17273060cf55ed0857e0a46&t=1779533276', amount: '5' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ArgonCrystal.png?sign=2a185b871a8f0410d1d1ef249fd80517&t=1779533302', amount: '1' }
           ],
           time: '12小时',
           speed: '25'
-        },
-        {
-          name: 'Ivara总图',
-          materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
-            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
-            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
-          ],
-          time: '72小时',
-          speed: '100'
         }
       ],
       prices: [
-        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '275' },
-        { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: 'N/A' }
+        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '325' },
+        { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: '35,000' }
       ]
     },
     acquisition: {
       paragraphs: [
-        '当前Ivara的蓝图可在商店中购买获得，Ivara的部件蓝图可由以下方式获得：',
-        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Ivara的蓝图可以在商店购买。Ivara的部件蓝图都由间谍任务掉落，不同蓝图的掉落以间谍任务的等级区分。所有的蓝图都在C轮奖励中，意味着需要成功骇入三个金库才可能获取。',
         'Ivara的蓝图也可以从无尽回廊中获得。'
       ],
       drops: [
-        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+        { item: '头部神经光元蓝图', source: '3阶难度间谍任务C轮', probability: '22.56%', expected: '4-5次C轮' },
+        { item: '头部神经光元蓝图', source: '冥王星比邻星域间谍任务C轮', probability: '36%', expected: '2-3次C轮' },
+        { item: '机体蓝图', source: '2阶难度间谍任务C轮', probability: '22.56%', expected: '4-5次C轮' },
+        { item: '机体蓝图', source: '海王星比邻星域间谍任务C轮', probability: '36%', expected: '2-3次C轮' },
+        { item: '系统蓝图', source: '1阶难度间谍任务C轮', probability: '22.56%', expected: '4-5次C轮' },
+        { item: '系统蓝图', source: '金星比邻星域间谍任务C轮', probability: '36%', expected: '2-3次C轮' }
       ],
       note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
     }
@@ -2039,35 +1996,34 @@ module.exports = [
   {
     title: 'Jade',
     image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Jade.png?sign=11eee59237345c1e97e2388d9691b267&t=1779159471',
-    health: '455（30级时555）',
-    shield: '270（30级时370）',
-    armor: '105（30级时105）',
-    energy: '100（30级时150）',
-    sprintSpeed: '1.15',
-    helminthElement: '辐射',
-    helminthElementIcon: '',
+    health: '365（30级时465）',
+    shield: '450（30级时550）',
+    armor: '135（30级时135）',
+    energy: '150（30级时200）',
+    sprintSpeed: '1.0',
+    helminthElement: '火焰',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Fire.png?sign=2899662d6ca6e17b7dc97b415fb163cb&t=1779533499',
     forging: {
       components: [
         {
-          name: 'Jade头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '25,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Helmet.png?sign=9a3f04dad4419d540d1d46464f7f9737&t=1779160938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chassis.png?sign=cbf1d7b63abd5e82c070bb7c94bde34c&t=1779160971', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Systems.png?sign=cb12d71a8f8e1d8231880ab9adbbc94c&t=1779160991', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/OrokinCell.png?sign=0f9ba8a0d571996039899c358c510e1c&t=1779161833', amount: '3' }
           ],
-          time: '3天',
+          time: '72小时',
           speed: '50'
         },
         {
           name: 'Jade头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Circuits.png?sign=5e15752c8defecd9a7456087dde68fef&t=1779536633', amount: '1,000' }, 
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=0007bad27e461aed51c5eef09260a7a1&t=1779536690', amount: '750' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NeuralSensor.png?sign=e261f5a9f063e1d9e8b3d670ea0f4107&t=1779536718', amount: '3' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Neurodes.png?sign=00cedf662f4d1e9b9c16a2f9849308c5&t=1779536710', amount: '4' }
           ],
           time: '12小时',
           speed: '25'
@@ -2075,11 +2031,11 @@ module.exports = [
         {
           name: 'Jade机体蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
-            { icon: '', amount: 'N/A' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/AlloyPlate.png?sign=5c330c37a7b034efed523f3e67e81b31&t=1779536651', amount: '600' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NanoSpores.png?sign=951d1c1cbded6e9bd1f43c011e9be7d6&t=1779536746', amount: '4,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Plastids.png?sign=0cf4ff2552faf57a85c3d003a47a408a&t=1779536767', amount: '1,500' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=009b56921f89d6be2aaedbc715aaa7e8&t=1779536734', amount: '6' }
           ],
           time: '12小时',
           speed: '25'
@@ -2087,49 +2043,30 @@ module.exports = [
         {
           name: 'Jade系统蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Ferrite.png?sign=714822bd7d560769d8c1f956ba303715&t=1779536790', amount: '600' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Plastids.png?sign=0cf4ff2552faf57a85c3d003a47a408a&t=1779536767', amount: '600' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=6fdbf85ecca2283a3844b732d973bc92&t=1779536819', amount: '1,100' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ControlModule.png?sign=2cfc702aca689832515d3d6b02550dcf&t=1779536806', amount: '10' }
           ],
           time: '12小时',
           speed: '25'
-        },
-        {
-          name: 'Jade总图',
-          materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
-            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
-            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
-          ],
-          time: '72小时',
-          speed: '100'
         }
       ],
       prices: [
-        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '275' },
+        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '325' },
         { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: 'N/A' }
       ]
     },
     acquisition: {
       paragraphs: [
-        '当前Jade的蓝图可在商店中购买获得，Jade的部件蓝图可由以下方式获得：',
-        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        '完成Jade之影系列任务后会获得战甲蓝图。部件蓝图则可在位于天王星的布鲁图斯节点的扬升任务中获得。也可在Ordis处使用残存微粒兑换获得。',
         'Jadea的蓝图也可以从无尽回廊中获得。'
       ],
       drops: [
-        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+        { item: '机体蓝图', source: '天王星布鲁图斯', probability: '5%', expected: '20次' },
+        { item: '头部神经光元蓝图', source: '天王星布鲁图斯', probability: '5%', expected: '20次' },
+        { item: '系统蓝图', source: '天王星布鲁图斯', probability: '5%', expected: '20次' }
       ],
       note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
     }
@@ -2137,35 +2074,34 @@ module.exports = [
   {
     title: 'Khora',
     image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Khora.png?sign=1a55e630a463aae04ec57adbbbe1ce40&t=1779159493',
-    health: '455（30级时555）',
+    health: '365（30级时465）',
     shield: '270（30级时370）',
-    armor: '105（30级时105）',
-    energy: '100（30级时150）',
-    sprintSpeed: '1.15',
-    helminthElement: '辐射',
-    helminthElementIcon: '',
+    armor: '290（30级时290）',
+    energy: '140（30级时190）',
+    sprintSpeed: '1.05',
+    helminthElement: '毒素',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Toxin.png?sign=a38b1f0dcb4ef80d59d4812a14109ab6&t=1779536955',
     forging: {
       components: [
         {
-          name: 'Khora头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '25,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Helmet.png?sign=9a3f04dad4419d540d1d46464f7f9737&t=1779160938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chassis.png?sign=cbf1d7b63abd5e82c070bb7c94bde34c&t=1779160971', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Systems.png?sign=cb12d71a8f8e1d8231880ab9adbbc94c&t=1779160991', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/OrokinCell.png?sign=0f9ba8a0d571996039899c358c510e1c&t=1779161833', amount: '3' }
           ],
-          time: '3天',
+          time: '72小时',
           speed: '50'
         },
         {
           name: 'Khora头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/KavatGeneticCode.png?sign=54170a5c60851d017e47bc3b2eaa064f&t=1779537115', amount: '2' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/KuakaSpinalClaw.png?sign=6b39b8c36fb8f8c765876d8086a6d425&t=1779537196', amount: '35' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=760d01a6d09a44e372ba73b0d1c72546&t=1779537250', amount: '1,500' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Salvage.png?sign=69b8898f6277a2e2506849713a871757&t=1779537276', amount: '16,000' }
           ],
           time: '12小时',
           speed: '25'
@@ -2173,11 +2109,11 @@ module.exports = [
         {
           name: 'Khora机体蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
-            { icon: '', amount: 'N/A' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/KavatGeneticCode.png?sign=54170a5c60851d017e47bc3b2eaa064f&t=1779537115', amount: '5' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Iradite.png?sign=b5f539f68bd8f58bc64f6f8ce4ca0e83&t=1779537226', amount: '65' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/AlloyPlate.png?sign=3b85a878d18b01abea869d14010b2213&t=1779537320', amount: '12,250' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=9d7f1e8b210b547cf82c7a5fe1b690a7&t=1779537305', amount: '4,300' }
           ],
           time: '12小时',
           speed: '25'
@@ -2185,49 +2121,31 @@ module.exports = [
         {
           name: 'Khora系统蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/KavatGeneticCode.png?sign=54170a5c60851d017e47bc3b2eaa064f&t=1779537115', amount: '2' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Plastids.png?sign=f68dd20f7c94e97acce04dc8a12b6e2a&t=1779537400', amount: '1,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Circuits.png?sign=b25c85057405e658083ecce163f71478&t=1779537349', amount: '2,600' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Ferrite.png?sign=c34840e9034152a103a6a5327cb60877&t=1779537356', amount: '11,500' }
           ],
           time: '12小时',
           speed: '25'
-        },
-        {
-          name: 'Khora总图',
-          materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
-            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
-            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
-          ],
-          time: '72小时',
-          speed: '100'
         }
       ],
       prices: [
-        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '275' },
+        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '325' },
         { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: 'N/A' }
       ]
     },
     acquisition: {
       paragraphs: [
-        '当前Khora的蓝图可在商店中购买获得，Khora的部件蓝图可由以下方式获得：',
-        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Khora的所有蓝图都由普通级圣殿突袭掉落。',
         'Khora的蓝图也可以从无尽回廊中获得。'
       ],
       drops: [
-        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+        { item: '机体蓝图', source: '普通级圣殿突袭', probability: '8.33%', expected: '12-13次A轮' },
+        { item: '头部神经光元蓝图', source: '普通级圣殿突袭', probability: '9.09%', expected: '11-12次B轮' },
+        { item: '战甲蓝图', source: '普通级圣殿突袭', probability: '11.28%', expected: '13-14次C轮' },
+        { item: '系统蓝图', source: '普通级圣殿突袭', probability: '11.28%', expected: '13-14次C轮' }
       ],
       note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
     }
@@ -2235,35 +2153,34 @@ module.exports = [
   {
     title: 'Koumei',
     image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Koumei.png?sign=309b363e36258ec59bc2cd83b6e5830e&t=1779159507',
-    health: '455（30级时555）',
-    shield: '270（30级时370）',
-    armor: '105（30级时105）',
-    energy: '100（30级时150）',
-    sprintSpeed: '1.15',
-    helminthElement: '辐射',
-    helminthElementIcon: '',
+    health: '344（30级时344）',
+    shield: '122（30级时222）',
+    armor: '444（30级时444）',
+    energy: '122（30级时222）',
+    sprintSpeed: '1.0',
+    helminthElement: '冰冻',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Cold.png?sign=904b115c55038d7348dc01ff9179dee6&t=1779537616',
     forging: {
       components: [
         {
-          name: 'Koumei头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '25,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Helmet.png?sign=9a3f04dad4419d540d1d46464f7f9737&t=1779160938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chassis.png?sign=cbf1d7b63abd5e82c070bb7c94bde34c&t=1779160971', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Systems.png?sign=cb12d71a8f8e1d8231880ab9adbbc94c&t=1779160991', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/FatePearl.png?sign=fb33e54e3002fe34a5d35ad102fcfea2&t=1779537854', amount: '30' }
           ],
-          time: '3天',
+          time: '72小时',
           speed: '50'
         },
         {
           name: 'Koumei头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/FatePearl.png?sign=fb33e54e3002fe34a5d35ad102fcfea2&t=1779537854', amount: '24' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=d9e72514430c1461f6cdab9c76e95473&t=1779537917', amount: '100' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Neurodes.png?sign=4197338d9f53e6f96d3ded192480d0e3&t=1779537938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Iradite.png?sign=e984090425af07acd2e7e1745e079f46&t=1779537953', amount: '50' }
           ],
           time: '12小时',
           speed: '25'
@@ -2271,11 +2188,11 @@ module.exports = [
         {
           name: 'Koumei机体蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
-            { icon: '', amount: 'N/A' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/FatePearl.png?sign=fb33e54e3002fe34a5d35ad102fcfea2&t=1779537854', amount: '24' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=2d2dcd25f38eeef817cb506e1b589063&t=1779537975', amount: '300' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Grokdrul.png?sign=12d784559eed4ad26b0ae4d7bf3c920b&t=1779538010', amount: '30' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/EsherDevar.png?sign=ac7e63ba837998ea0a367d6ed9d29afc&t=1779538031', amount: '10' }
           ],
           time: '12小时',
           speed: '25'
@@ -2283,26 +2200,14 @@ module.exports = [
         {
           name: 'Koumei系统蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/FatePearl.png?sign=fb33e54e3002fe34a5d35ad102fcfea2&t=1779537854', amount: '24' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Circuits.png?sign=b438c12102f04b173713f3d08aa9dc9e&t=1779538049', amount: '150' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=ce6e075e1d177382d118a1ed7e919054&t=1779538095', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/TearAzurite.png?sign=3c8e6cbc98535cd1f0f6e943cd056a69&t=1779538150', amount: '10' }
           ],
           time: '12小时',
           speed: '25'
-        },
-        {
-          name: 'Koumei总图',
-          materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
-            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
-            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
-          ],
-          time: '72小时',
-          speed: '100'
         }
       ],
       prices: [
@@ -2312,56 +2217,44 @@ module.exports = [
     },
     acquisition: {
       paragraphs: [
-        '当前Koumei的蓝图可在商店中购买获得，Koumei的部件蓝图可由以下方式获得：',
-        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
-        'Koumei的蓝图也可以从无尽回廊中获得。'
-      ],
-      drops: [
-        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
-      ],
-      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+        'Koumei的部件蓝图和总图可以在地球的萨娅的异象节点完成祈运坛防御任务概率获取，此节点需要完成萨娅的守夜和悲剧的开端系列任务，并在收到邮件后拜访希图斯的萨娅后开启。',
+        '该任务首次进入是通过希图斯的Koumei祈运坛，之后也可以通过星图进入。',
+        '以上蓝图也可以在希图斯的Koumei祈运坛使用命运之珠购买，命运之珠会在祈运坛防御任务最后击杀感染恶鬼获取，每次14-18个（钢铁之路下20-24个）。',
+        '总图售价165个命运之珠，部件蓝图每个售价55个命运之珠，一套蓝图共需要330个命运之珠。'
+      ]
     }
   },
   {
     title: 'Kullervo',
     image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Kullervo.png?sign=33cbf5d10fcf5126ec2240bc8b381b5b&t=1779159524',
-    health: '455（30级时555）',
-    shield: '270（30级时370）',
-    armor: '105（30级时105）',
-    energy: '100（30级时150）',
-    sprintSpeed: '1.15',
-    helminthElement: '辐射',
-    helminthElementIcon: '',
+    health: '1005（30级时1205）',
+    shield: '0（30级时0）',
+    armor: '550（30级时650）',
+    energy: '175（30级时225）',
+    sprintSpeed: '1.1',
+    helminthElement: '火焰',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Fire.png?sign=02fedced8ae92118f873d653786dd56b&t=1779538261',
     forging: {
       components: [
         {
-          name: 'Kullervo头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '30,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Helmet.png?sign=9a3f04dad4419d540d1d46464f7f9737&t=1779160938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chassis.png?sign=cbf1d7b63abd5e82c070bb7c94bde34c&t=1779160971', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Systems.png?sign=cb12d71a8f8e1d8231880ab9adbbc94c&t=1779160991', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Patho-sclamp.png?sign=206ab2afcb67824bca047ff927a44df5&t=1779538506', amount: '10' }
           ],
-          time: '3天',
+          time: '72小时',
           speed: '50'
         },
         {
           name: 'Kullervo头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Lamentus.png?sign=f68cd1c25fc91902ed676abb07128e1b&t=1779538711', amount: '50' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Tasoma-extract.png?sign=a301525024d2a40cdc9138b14b873f9b&t=1779538728', amount: '50' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Saggen-pearl.png?sign=ad80c210f31f1d508d2da41e7b9a4f9a&t=1779538797', amount: '100' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Connla-sprout.png?sign=b5053b7065c5edd6e81b72de39c9ba02&t=1779538810', amount: '100' }
           ],
           time: '12小时',
           speed: '25'
@@ -2369,11 +2262,11 @@ module.exports = [
         {
           name: 'Kullervo机体蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
-            { icon: '', amount: 'N/A' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Nacreous-pebble.png?sign=2e185c4cc0acc9e392f1668359dd391b&t=1779538884', amount: '125' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Kovnik.png?sign=1dd7b78f872a3224234600b3faaeafcf&t=1779538947', amount: '100' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rune-marrow.png?sign=d1f6983d9ae72cea1aab0c849da1d107&t=1779538964', amount: '75' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Ueymag.png?sign=116e907063327d32d86039ebac75d94d&t=1779538997', amount: '100' }
           ],
           time: '12小时',
           speed: '25'
@@ -2381,85 +2274,59 @@ module.exports = [
         {
           name: 'Kullervo系统蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Aggristone.png?sign=b7b806dc215359eb144e8fa1494d2dc2&t=1779539106', amount: '100' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Eevani.png?sign=a0110babbc14961a7e9b76748ec02d60&t=1779539117', amount: '100' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Ariette-scale.png?sign=78a09fe88078c2df500e2e90981f4338&t=1779539126', amount: '360' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Ueymag.png?sign=116e907063327d32d86039ebac75d94d&t=1779538997', amount: '100' }
           ],
           time: '12小时',
           speed: '25'
-        },
-        {
-          name: 'Kullervo总图',
-          materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
-            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
-            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
-          ],
-          time: '72小时',
-          speed: '100'
         }
       ],
       prices: [
-        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '275' },
+        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '325' },
         { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: 'N/A' }
       ]
     },
     acquisition: {
       paragraphs: [
-        '当前Kullervo的蓝图可在商店中购买获得，Kullervo的部件蓝图可由以下方式获得：',
-        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
-        'Kullervo的蓝图也可以从无尽回廊中获得。'
-      ],
-      drops: [
-        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
-      ],
-      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+        'Kullervo的牢房只会在愤怒、悲伤和恐惧复眠螺旋中出现，主线与支线目标均可能涉及该浮岛。与浮岛上的监狱长对话便可进行与Kullervo的决斗。 完成复眠螺旋主线目标并击败Kullervo可获得4-6个Kullervo 的灾刃（钢铁之路中为6-8个）。可在言录使处用于兑换锐铁和Kullervo的蓝图和部件蓝图。',
+        'Kullervo 的灾刃可以用于购买Kullervo和锐铁相关的部件。'
+      ]
     }
   },
   {
     title: 'Lavos',
     image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Lavos.png?sign=b650b685c38180aefc1fcaf500b33216&t=1779159537',
-    health: '455（30级时555）',
+    health: '540（30级时740）',
     shield: '270（30级时370）',
-    armor: '105（30级时105）',
-    energy: '100（30级时150）',
+    armor: '575（30级时675）',
+    energy: '0（30级时0）',
     sprintSpeed: '1.15',
-    helminthElement: '辐射',
-    helminthElementIcon: '',
+    helminthElement: '磁力',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Magnetic.png?sign=ffaf0c4751f674bb265862049c6ef185&t=1779539201',
     forging: {
       components: [
         {
-          name: 'Lavos头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '25,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Helmet.png?sign=9a3f04dad4419d540d1d46464f7f9737&t=1779160938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chassis.png?sign=cbf1d7b63abd5e82c070bb7c94bde34c&t=1779160971', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Systems.png?sign=cb12d71a8f8e1d8231880ab9adbbc94c&t=1779160991', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/OrokinCell.png?sign=0f9ba8a0d571996039899c358c510e1c&t=1779161833', amount: '3' }
           ],
-          time: '3天',
+          time: '72小时',
           speed: '50'
         },
         {
           name: 'Lavos头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/TrapeziumXenorhast.png?sign=8643b31cc3c94d1dd2bdcd53f4a87d05&t=1779539403', amount: '6' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Titanium.png?sign=9e0a2bde4b202988347f1045699597ef&t=1779539439', amount: '2,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Oxium.png?sign=5b15f571a901e8d665816e4fa2bc485f&t=1779539472', amount: '750' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=ea7d92ef49838642f34a9937e74abc8b&t=1779539458', amount: '2,750' }
           ],
           time: '12小时',
           speed: '25'
@@ -2467,11 +2334,11 @@ module.exports = [
         {
           name: 'Lavos机体蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
-            { icon: '', amount: 'N/A' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ArgonCrystal.png?sign=f866ce077bbf9df12e1935c42a804c8e&t=1779539533', amount: '2' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NitainExtract.png?sign=7de080393ce1d384d8c5d9e0d99916af&t=1779539568', amount: '5' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Cryotic.png?sign=a23aeab0517ba69dab30f510dc85985a&t=1779539552', amount: '1,500' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=e4530c6c7032a2e44aca834bfa8f9fec&t=1779539577', amount: '5,500' }
           ],
           time: '12小时',
           speed: '25'
@@ -2479,85 +2346,58 @@ module.exports = [
         {
           name: 'Lavos系统蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/CabochonEmbolos.png?sign=f3c486ab610fcad7a51a446ef5feda18&t=1779539614', amount: '6' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NanoSpores.png?sign=db626b5bdcf710bfc8ff3ece7e40439e&t=1779539656', amount: '5,500' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/HexenonU1.png?sign=bc833ae3f03b732391b07f8cd6ee2150&t=1779539682', amount: '550' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Circuits.png?sign=d4eb3a38e91a2f4309423d5920d0d1d6&t=1779539634', amount: '3,000' }
           ],
           time: '12小时',
           speed: '25'
-        },
-        {
-          name: 'Lavos总图',
-          materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
-            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
-            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
-          ],
-          time: '72小时',
-          speed: '100'
         }
       ],
       prices: [
-        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '275' },
+        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '325' },
         { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: 'N/A' }
       ]
     },
     acquisition: {
       paragraphs: [
-        '当前Lavos的蓝图可在商店中购买获得，Lavos的部件蓝图可由以下方式获得：',
-        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
-        'Lavos的蓝图也可以从无尽回廊中获得。'
-      ],
-      drops: [
-        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
-      ],
-      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+        'Lavos的蓝图可在“父亲”处购买。战甲蓝图要求英择谛声望达到相识等级，部件蓝图则要达到同伴等级。每个蓝图需花费5,000声望，总计20,000声望。'
+      ]
     }
   },
   {
     title: 'Limbo',
     image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Limbo.png?sign=5e2b766b8e031d10f87751b493da4df7&t=1779159551',
-    health: '455（30级时555）',
-    shield: '270（30级时370）',
+    health: '270（30级时370）',
+    shield: '180（30级时280）',
     armor: '105（30级时105）',
-    energy: '100（30级时150）',
+    energy: '175（30级时225）',
     sprintSpeed: '1.15',
-    helminthElement: '辐射',
-    helminthElementIcon: '',
+    helminthElement: '电击',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Electricity.png?sign=ac4b0a3140f3bbbbf8cd45193d9e38be&t=1779539815',
     forging: {
       components: [
         {
-          name: 'Limbo头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '25,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Helmet.png?sign=9a3f04dad4419d540d1d46464f7f9737&t=1779160938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chassis.png?sign=cbf1d7b63abd5e82c070bb7c94bde34c&t=1779160971', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Systems.png?sign=cb12d71a8f8e1d8231880ab9adbbc94c&t=1779160991', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/OrokinCell.png?sign=0f9ba8a0d571996039899c358c510e1c&t=1779161833', amount: '3' }
           ],
-          time: '3天',
+          time: '72小时',
           speed: '50'
         },
         {
           name: 'Limbo头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/AlloyPlate.png?sign=268804a41d52df3f4925e696b92b91e6&t=1779539896', amount: '150' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Neurodes.png?sign=68e6a65df8559fa443244117ae0ea1da&t=1779539929', amount: '2' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=b5e1e51910df794562d38eddcdf420ea&t=1779539955', amount: '150' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=b4d7dcd58f08718bd4a30733988923de&t=1779539978', amount: '500' }
           ],
           time: '12小时',
           speed: '25'
@@ -2565,11 +2405,11 @@ module.exports = [
         {
           name: 'Limbo机体蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
-            { icon: '', amount: 'N/A' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NeuralSensor.png?sign=2f5782e502781608f5f687342bbb128d&t=1779539943', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Ferrite.png?sign=12d7d03ba6a8d5b4d3791d545e947095&t=1779540005', amount: '1,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=b4d7dcd58f08718bd4a30733988923de&t=1779539978', amount: '300' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ArgonCrystal.png?sign=6de4cd420defb88d98b7527dcd149177&t=1779540024', amount: '1' }
           ],
           time: '12小时',
           speed: '25'
@@ -2577,85 +2417,59 @@ module.exports = [
         {
           name: 'Limbo系统蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ControlModule.png?sign=6e4c5364f4f9d7bd62f2b64fd3ed5ce6&t=1779540039', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=46dbe5cc96495e0cbb978341d7354c44&t=1779540053', amount: '3' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Salvage.png?sign=3c8ef8679896cbc7f4e6b3d490694fa8&t=1779540078', amount: '500' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Plastids.png?sign=32fe5fb2d8e426e79d057dd18495f24d&t=1779540066', amount: '220' }
           ],
           time: '12小时',
           speed: '25'
-        },
-        {
-          name: 'Limbo总图',
-          materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
-            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
-            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
-          ],
-          time: '72小时',
-          speed: '100'
         }
       ],
       prices: [
-        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '275' },
-        { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: 'N/A' }
+        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '200' },
+        { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: '35,000' }
       ]
     },
     acquisition: {
       paragraphs: [
-        '当前Limbo的蓝图可在商店中购买获得，Limbo的部件蓝图可由以下方式获得：',
-        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        'Limbo的部件蓝图通过系列任务Limbo定理获得。战甲蓝图可在商店中直接购买。在完成系列任务后，可在中枢Simaris处以25,000声望的价格购买部件蓝图。',
         'Limbo的蓝图也可以从无尽回廊中获得。'
-      ],
-      drops: [
-        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
-      ],
-      note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
+      ]
     }
   },
   {
     title: 'Loki',
     image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Loki.png?sign=6d4a0be0abda5fa60922123bf95ab6f6&t=1779159566',
-    health: '455（30级时555）',
-    shield: '270（30级时370）',
+    health: '180（30级时280）',
+    shield: '180（30级时280）',
     armor: '105（30级时105）',
-    energy: '100（30级时150）',
-    sprintSpeed: '1.15',
+    energy: '175（30级时225）',
+    sprintSpeed: '1.25',
     helminthElement: '辐射',
-    helminthElementIcon: '',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Radiation.png?sign=21c99bcce1b77aa109937a132ab30e8d&t=1779540140',
     forging: {
       components: [
         {
-          name: 'Loki头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '25,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Helmet.png?sign=9a3f04dad4419d540d1d46464f7f9737&t=1779160938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chassis.png?sign=cbf1d7b63abd5e82c070bb7c94bde34c&t=1779160971', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Systems.png?sign=cb12d71a8f8e1d8231880ab9adbbc94c&t=1779160991', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/OrokinCell.png?sign=0f9ba8a0d571996039899c358c510e1c&t=1779161833', amount: '1' }
           ],
-          time: '3天',
+          time: '72小时',
           speed: '50'
         },
         {
           name: 'Loki头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/AlloyPlate.png?sign=62c9b2693ed0778429db363a46f7da42&t=1779540327', amount: '150' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NeuralSensor.png?sign=def7e852f2d7a7868eb482e55e113f53&t=1779540348', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=f652ac8a8783e62245ca96b5f689b9c7&t=1779540366', amount: '150' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=025a61e9393b39044da68a40c4ac161a&t=1779540389', amount: '500' }
           ],
           time: '12小时',
           speed: '25'
@@ -2663,10 +2477,10 @@ module.exports = [
         {
           name: 'Loki机体蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=b4a4e6b98e5aa0ec64cf6f1da99fbeb6&t=1779540433', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Ferrite.png?sign=a498fd70651647860063d973f4d0d10b&t=1779540458', amount: '1,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=025a61e9393b39044da68a40c4ac161a&t=1779540389', amount: '300' },
             { icon: '', amount: 'N/A' }
           ],
           time: '12小时',
@@ -2675,49 +2489,30 @@ module.exports = [
         {
           name: 'Loki系统蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ControlModule.png?sign=a2554f8ecf2701d52d384b25aa26ff37&t=1779540470', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=b4a4e6b98e5aa0ec64cf6f1da99fbeb6&t=1779540433', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Salvage.png?sign=d31b557ed2755641b868644ff5baa59e&t=1779540405', amount: '500' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Plastids.png?sign=e22ff61913698e134e741b196016ad05&t=1779540420', amount: '220' }
           ],
           time: '12小时',
           speed: '25'
-        },
-        {
-          name: 'Loki总图',
-          materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
-            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
-            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
-          ],
-          time: '72小时',
-          speed: '100'
         }
       ],
       prices: [
-        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '275' },
-        { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: 'N/A' }
+        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '175' },
+        { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: '35,000' }
       ]
     },
     acquisition: {
       paragraphs: [
-        '当前Loki的蓝图可在商店中购买获得，Loki的部件蓝图可由以下方式获得：',
-        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
+        '部件蓝图由鬣狗群掉落（Psamathe，海王星），战甲蓝图可在商店中直接购买。',
         'Loki的蓝图也可以从无尽回廊中获得。'
       ],
       drops: [
-        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+        { item: '机体蓝图', source: '海王星Psamathe', probability: '38.72%', expected: '3-4次' },
+        { item: '头部神经光元蓝图', source: '海王星Psamathe', probability: '38.72%', expected: '3-4次' },
+        { item: '系统蓝图', source: '海王星Psamathe', probability: '22.56%', expected: '4-5次' }
       ],
       note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
     }
