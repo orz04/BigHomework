@@ -3661,16 +3661,38 @@ module.exports = [
         'Revenant的部件蓝图由夜灵平野赏金任务获得。在获得、建造完成并领取至少一个Revenant的部件后，再次在夜灵平野的夜晚装备迷失者的面具进入平野就会开始任务的下一个阶段，至少制作两个部件，才能完成任务全部阶段。进入最后阶段并完成相应进程即可获得总蓝图。',
         '在系列任务完成之后，可在中枢Simaris处花费50,000声望来购买战甲蓝图。'
       ],
-      drops: [
-        { item: '机体蓝图', source: '夜灵平原赏金任务阶段2&3 等级30-50', probability: '8.51%', expected: '2-3次' },
-        { item: '机体蓝图', source: '夜灵平原赏金任务阶段4 等级30-50', probability: '8.33%', expected: '2-3次' },
-        { item: '机体蓝图', source: '夜灵平原赏金任务阶段5 等级30-50', probability: '19.05%', expected: '2-3次' },
-        { item: '头部神经光元蓝图', source: '夜灵平原赏金任务阶段4 等级40-60', probability: '6.76%', expected: '5-6次A轮' },
-        { item: '头部神经光元蓝图', source: '夜灵平原赏金任务阶段5 等级40-60', probability: '10.20%', expected: '5-6次' },
-        { item: '系统蓝图', source: '夜灵平原赏金任务阶段2&3 等级20-40', probability: '8.42%', expected: '2-3次' },
-        { item: '系统蓝图', source: '夜灵平原赏金任务阶段4 等级20-40', probability: '8.25%', expected: '2-3次' },
-        { item: '系统蓝图', source: '夜灵平原赏金任务阶段5 等级20-40', probability: '20.51%', expected: '2-3次' }
-      ],
+      drops: {
+        'A轮': [
+          { item: '机体蓝图', source: '夜灵平原赏金任务阶段2&3 等级30-50', probability: '8.51%', expected: '2-3次' },
+          { item: '机体蓝图', source: '夜灵平原赏金任务阶段4 等级30-50', probability: '8.33%', expected: '2-3次' },
+          { item: '机体蓝图', source: '夜灵平原赏金任务阶段5 等级30-50', probability: '19.05%', expected: '2-3次' },
+          { item: '头部神经光元蓝图', source: '夜灵平原赏金任务阶段4 等级40-60', probability: '6.76%', expected: '5-6次' },
+          { item: '头部神经光元蓝图', source: '夜灵平原赏金任务阶段5 等级40-60', probability: '10.20%', expected: '5-6次' },
+          { item: '系统蓝图', source: '夜灵平原赏金任务阶段2&3 等级20-40', probability: '8.42%', expected: '2-3次' },
+          { item: '系统蓝图', source: '夜灵平原赏金任务阶段4 等级20-40', probability: '8.25%', expected: '2-3次' },
+          { item: '系统蓝图', source: '夜灵平原赏金任务阶段5 等级20-40', probability: '20.51%', expected: '2-3次' }
+        ],
+        'B轮': [
+          { item: '机体蓝图', source: '夜灵平原赏金任务阶段2&3 等级30-50', probability: '8.51%', expected: '2-3次' },
+          { item: '机体蓝图', source: '夜灵平原赏金任务阶段4 等级30-50', probability: '8.33%', expected: '2-3次' },
+          { item: '机体蓝图', source: '夜灵平原赏金任务阶段5 等级30-50', probability: '19.05%', expected: '2-3次' },
+          { item: '头部神经光元蓝图', source: '夜灵平原赏金任务阶段4 等级40-60', probability: '6.76%', expected: '5-6次' },
+          { item: '头部神经光元蓝图', source: '夜灵平原赏金任务阶段5 等级40-60', probability: '10.20%', expected: '5-6次' },
+          { item: '系统蓝图', source: '夜灵平原赏金任务阶段2&3 等级20-40', probability: '9.68%', expected: '2-3次' },
+          { item: '系统蓝图', source: '夜灵平原赏金任务阶段4 等级20-40', probability: '9.47%', expected: '2-3次' },
+          { item: '系统蓝图', source: '夜灵平原赏金任务阶段5 等级20-40', probability: '21.95%', expected: '2-3次' }
+        ],
+        'C轮': [
+          { item: '机体蓝图', source: '夜灵平原赏金任务阶段2&3 等级30-50', probability: '8.33%', expected: '2-3次' },
+          { item: '机体蓝图', source: '夜灵平原赏金任务阶段4 等级30-50', probability: '8.16%', expected: '2-3次' },
+          { item: '机体蓝图', source: '夜灵平原赏金任务阶段5 等级30-50', probability: '20.00%', expected: '2-3次' },
+          { item: '头部神经光元蓝图', source: '夜灵平原赏金任务阶段4 等级40-60', probability: '6.76%', expected: '5-6次' },
+          { item: '头部神经光元蓝图', source: '夜灵平原赏金任务阶段5 等级40-60', probability: '10.20%', expected: '5-6次' },
+          { item: '系统蓝图', source: '夜灵平原赏金任务阶段2&3 等级20-40', probability: '8.51%', expected: '2-3次' },
+          { item: '系统蓝图', source: '夜灵平原赏金任务阶段4 等级20-40', probability: '8.33%', expected: '2-3次' },
+          { item: '系统蓝图', source: '夜灵平原赏金任务阶段5 等级20-40', probability: '19.05%', expected: '2-3次' }
+        ]
+      },
       note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
     }
   },
