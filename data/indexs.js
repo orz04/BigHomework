@@ -3592,35 +3592,34 @@ module.exports = [
   {
     title: 'Revenant',
     image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Revenant.png?sign=4f82fcd28065f5456dd9ec71ad1537ba&t=1779159846',
-    health: '455（30级时555）',
-    shield: '270（30级时370）',
-    armor: '105（30级时105）',
-    energy: '100（30级时150）',
-    sprintSpeed: '1.15',
-    helminthElement: '辐射',
-    helminthElementIcon: '',
+    health: '270（30级时370）',
+    shield: '635（30级时735）',
+    armor: '135（30级时135）',
+    energy: '140（30级时190）',
+    sprintSpeed: '1.0',
+    helminthElement: '冰冻',
+    helminthElementIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/element/Cold.png?sign=dcce1698f454a3a20512a36f0c9e6d0e&t=1779707662',
     forging: {
       components: [
         {
-          name: 'Revenant头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '25,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '1' },
-            { icon: '/images/resourceimg/OrokinCell.png', amount: '1' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '25,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Helmet.png?sign=9a3f04dad4419d540d1d46464f7f9737&t=1779160938', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Chassis.png?sign=cbf1d7b63abd5e82c070bb7c94bde34c&t=1779160971', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Systems.png?sign=cb12d71a8f8e1d8231880ab9adbbc94c&t=1779160991', amount: '1' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/OrokinCell.png?sign=0f9ba8a0d571996039899c358c510e1c&t=1779161833', amount: '1' }
           ],
-          time: '3天',
+          time: '72小时',
           speed: '50'
         },
         {
           name: 'Revenant头部神经光元蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '150' },
-            { icon: '/images/resourceimg/Neurodes.png', amount: '150' },
-            { icon: '/images/resourceimg/AlloyPlate.png', amount: '1' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '150' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NeuralSensor.png?sign=3b3007dcd6f8435a193a5aeb7af30fff&t=1779707796', amount: '3' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/IntactSentientCore.png?sign=ac556a7d71c504fcd9d8bfc443b212e5&t=1779707852', amount: '15' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=dff83e4f6534194372d0c9e6eb21415f&t=1779707967', amount: '6,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=41b4cd561b5794242944a42a8a3ac111&t=1779707924', amount: '2,200' }
           ],
           time: '12小时',
           speed: '25'
@@ -3628,11 +3627,11 @@ module.exports = [
         {
           name: 'Revenant机体蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1,000' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '300' },
-            { icon: '', amount: 'N/A' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=5cbb40dda5917abb87e440fc8e076a0f&t=1779707912', amount: '3' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/IntactSentientCore.png?sign=ac556a7d71c504fcd9d8bfc443b212e5&t=1779707852', amount: '10' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Rubedo.png?sign=41b4cd561b5794242944a42a8a3ac111&t=1779707924', amount: '1,500' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Iradite.png?sign=a155fae77e543357b300320f046bdf68&t=1779707894', amount: '50' }
           ],
           time: '12小时',
           speed: '25'
@@ -3640,49 +3639,37 @@ module.exports = [
         {
           name: 'Revenant系统蓝图',
           materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '15,000' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Ferrite.png', amount: '1' },
-            { icon: '/images/resourceimg/NanoSpore.png', amount: '500' },
-            { icon: '/images/resourceimg/Rubedo.png', amount: '500' }
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ControlModule.png?sign=c0453f5ef5e66bacef48020035aa2153&t=1779708001', amount: '3' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/CetusWisp.png?sign=ba93dede52ba796b329be6fcb32807da&t=1779708065', amount: '3' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Salvage.png?sign=ed2861726285b94313b62d023cd82f6c&t=1779707952', amount: '8,000' },
+            { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=dff83e4f6534194372d0c9e6eb21415f&t=1779707967', amount: '3,000' }
           ],
           time: '12小时',
           speed: '25'
-        },
-        {
-          name: 'Revenant总图',
-          materials: [
-            { icon: '/images/resourceimg/Credits.png', amount: '35,000' },
-            { icon: '/images/resourceimg/ControlModule.png', amount: '1' },
-            { icon: '/images/resourceimg/Morphics.png', amount: '1' },
-            { icon: '/images/resourceimg/Salvage.png', amount: '500' },
-            { icon: '/images/resourceimg/Plastids.png', amount: '500' }
-          ],
-          time: '72小时',
-          speed: '100'
         }
       ],
       prices: [
-        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '275' },
+        { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=9da802ddae4c2b0bebfb4dd0bde01237&t=1779166997', amount: '325' },
         { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=2525f83d7d4741d4de222cfc7ba3b509&t=1779167020', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=50f3e8c4e0a0d8aa29b0159f2ad85890&t=1779166040', amount: 'N/A' }
       ]
     },
     acquisition: {
       paragraphs: [
-        '当前Revenant的蓝图可在商店中购买获得，Revenant的部件蓝图可由以下方式获得：',
-        '九重天防御、生存任务A轮或九重天歼灭、爆发任务：金星比邻星域(系统蓝图)，海王星比邻星域(头部神经光元)，冥王星比邻星域(机体)。',
-        'Revenant的蓝图也可以从无尽回廊中获得。'
+        'Revenant的战甲蓝图通过完成Nakak系列任务获得，玩家需要在夜羽达到声望等级2观察者并在Nakak处购买迷失者的面具后才会解锁此任务。',
+        '迷失者的面具只有在与Nakak对话选择“面具？”选项后才会出现在售卖列表里。在夜灵平野的夜晚，装备迷失者的面具进入平野，就会开始该任务。',
+        'Revenant的部件蓝图由夜灵平野赏金任务获得。在获得、建造完成并领取至少一个Revenant的部件后，再次在夜灵平野的夜晚装备迷失者的面具进入平野就会开始任务的下一个阶段，至少制作两个部件，才能完成任务全部阶段。进入最后阶段并完成相应进程即可获得总蓝图。',
+        '在系列任务完成之后，可在中枢Simaris处花费50,000声望来购买战甲蓝图。'
       ],
       drops: [
-        { item: '机体蓝图', source: '冥王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '机体蓝图', source: '冥王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '头部神经光元蓝图', source: '海王星比邻星域歼灭/爆发', probability: '4.82%', expected: '20-21次' },
-        { item: '系统蓝图', source: '金星比邻星域防御', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域生存', probability: '13.33%', expected: '7-8次A轮' },
-        { item: '系统蓝图', source: '金星比邻星域歼灭/爆发', probability: '4.88%', expected: '20-21次' }
+        { item: '机体蓝图', source: '夜灵平原赏金任务阶段2&3 等级30-50', probability: '8.51%', expected: '2-3次' },
+        { item: '机体蓝图', source: '夜灵平原赏金任务阶段4 等级30-50', probability: '8.33%', expected: '2-3次' },
+        { item: '机体蓝图', source: '夜灵平原赏金任务阶段5 等级30-50', probability: '19.05%', expected: '2-3次' },
+        { item: '头部神经光元蓝图', source: '夜灵平原赏金任务阶段4 等级40-60', probability: '6.76%', expected: '5-6次A轮' },
+        { item: '头部神经光元蓝图', source: '夜灵平原赏金任务阶段5 等级40-60', probability: '10.20%', expected: '5-6次' },
+        { item: '系统蓝图', source: '夜灵平原赏金任务阶段2&3 等级20-40', probability: '8.42%', expected: '2-3次' },
+        { item: '系统蓝图', source: '夜灵平原赏金任务阶段4 等级20-40', probability: '8.25%', expected: '2-3次' },
+        { item: '系统蓝图', source: '夜灵平原赏金任务阶段5 等级20-40', probability: '20.51%', expected: '2-3次' }
       ],
       note: '期望是玩家基于各个部件的对应概率计算得期望能获得所有部件至少一次的次数。'
     }
