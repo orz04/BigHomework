@@ -1,5 +1,31 @@
-.list {
+.centered-title {
+  text-align: center;
+}
+
+.mod-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16rpx;
+}
+
+.mod-card {
   display: flex;
   flex-direction: column;
-  gap: 20rpx;
+  align-items: center;
+  gap: 8rpx;
+  padding: 16rpx;
+  box-sizing: border-box;
+}
+
+.mod-image {
+  width: 100%;
+  height: 200rpx;
+  flex-shrink: 0;
+}
+
+.mod-name {
+  font-size: 22rpx;
+  font-weight: 600;
+  color: #f8fafc;
+  text-align: center;
 }
