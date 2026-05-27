@@ -18,6 +18,11 @@ Page({
       title: mod.title
     })
 
+    if (mod.modSource && mod.modSource.rate) {
+      const rateValue = parseFloat(mod.modSource.rate.replace('%', ''))
+      mod.modSource.rateColor = rateValue <= 10 ? 'red' : 'green'
+    }
+
     this.setData({
       mod
     })

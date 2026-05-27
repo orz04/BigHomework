@@ -104,9 +104,16 @@
 }
 
 .source-container .source-rate {
-  color: #16a34a !important;
   font-size: 26rpx;
   font-weight: 700 !important;
+}
+
+.source-container .source-rate-red {
+  color: #dc2626 !important;
+}
+
+.source-container .source-rate-green {
+  color: #16a34a !important;
 }
 
 .detail-card {

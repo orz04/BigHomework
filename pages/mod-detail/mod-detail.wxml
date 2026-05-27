@@ -5,51 +5,51 @@
   </view>
 
   <view class="info-card panel">
-    <view class="card-title">基本信息</view>
+    <view class="card-title">{{mod.labels.basicInfo}}</view>
     <view class="info-table">
       <view class="table-row">
-        <view class="table-cell-left">极性</view>
+        <view class="table-cell-left">{{mod.labels.polarity}}</view>
         <view class="table-cell-right">
           <image class="polarity-icon" src="{{mod.polarityIcon}}" mode="aspectFit"></image>
           <text>{{mod.polarity}}</text>
         </view>
       </view>
       <view class="table-row">
-        <view class="table-cell-left">稀有度</view>
+        <view class="table-cell-left">{{mod.labels.rarity}}</view>
         <view class="table-cell-right">{{mod.rarity}}</view>
       </view>
       <view class="table-row">
-        <view class="table-cell-left">交易税</view>
+        <view class="table-cell-left">{{mod.labels.tradeTax}}</view>
         <view class="table-cell-right">
           <image class="tax-icon" src="{{mod.tradeTaxIcon}}" mode="aspectFit"></image>
           <text>{{mod.tradeTax}}</text>
         </view>
       </view>
       <view class="table-row">
-        <view class="table-cell-left">基础消耗量</view>
+        <view class="table-cell-left">{{mod.labels.drain}}</view>
         <view class="table-cell-right">{{mod.drain}}</view>
       </view>
       <view class="table-row">
-        <view class="table-cell-left">最高等级</view>
+        <view class="table-cell-left">{{mod.labels.maxRank}}</view>
         <view class="table-cell-right">{{mod.maxRank}}</view>
       </view>
       <view class="table-row">
-        <view class="table-cell-left">适用于</view>
+        <view class="table-cell-left">{{mod.labels.category}}</view>
         <view class="table-cell-right">{{mod.category}}</view>
       </view>
       <view class="table-row">
-        <view class="table-cell-left">获取来源</view>
+        <view class="table-cell-left">{{mod.labels.modSource}}</view>
         <view class="source-container">
           <text class="source-label">{{mod.modSource.type}}：</text>
           <text class="source-value">{{mod.modSource.location}}</text>
-          <text class="source-rate">{{mod.modSource.rate}}</text>
+          <text class="source-rate source-rate-{{mod.modSource.rateColor}}">{{mod.modSource.rate}}</text>
         </view>
       </view>
     </view>
   </view>
 
   <view class="detail-card panel">
-    <view class="card-title">详细信息</view>
+    <view class="card-title">{{mod.labels.detailInfo}}</view>
     <view class="detail-table">
       <view class="detail-row detail-header">
         <view wx:for="{{mod.upgradeHeader}}" wx:key="index" class="detail-cell">{{item}}</view>
