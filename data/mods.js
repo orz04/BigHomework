@@ -13,7 +13,12 @@ module.exports = {
       drain: '6',
       maxRank: '10',
       category: '霰弹枪',
-      modSource: '任务：火卫二 4.17%',
+      modSource: {
+        type: '任务',
+        location: '火卫二',
+        rate: '4.17%'
+      },
+      upgradeHeader: ['等级', '毒素伤害', '触发几率', '消耗'],
       upgradeData: [
         { level: '0', attr1: '+15%', attr2: '+15%', drain: '4' },
         { level: '1', attr1: '+30%', attr2: '+30%', drain: '5' },
@@ -34,7 +39,12 @@ module.exports = {
       drain: '6',
       maxRank: '10',
       category: '手枪',
-      modSource: '任务：火卫二 4.17%',
+      modSource: {
+        type: '任务',
+        location: '火卫二',
+        rate: '4.17%'
+      },
+      upgradeHeader: ['等级', '毒素伤害', '触发几率', '消耗'],
       upgradeData: [
         { level: '0', attr1: '+15%', attr2: '+15%', drain: '4' },
         { level: '1', attr1: '+30%', attr2: '+30%', drain: '5' },
@@ -55,7 +65,12 @@ module.exports = {
       drain: '6',
       maxRank: '10',
       category: '步枪',
-      modSource: '任务：火卫二 4.17%',
+      modSource: {
+        type: '任务',
+        location: '火卫二',
+        rate: '4.17%'
+      },
+      upgradeHeader: ['等级', '毒素伤害', '触发几率', '消耗'],
       upgradeData: [
         { level: '0', attr1: '+15%', attr2: '+15%', drain: '4' },
         { level: '1', attr1: '+30%', attr2: '+30%', drain: '5' },
@@ -76,7 +91,12 @@ module.exports = {
       drain: '6',
       maxRank: '10',
       category: '步枪',
-      modSource: '任务：火卫二 4.17%',
+      modSource: {
+        type: '任务',
+        location: '火卫二',
+        rate: '4.17%'
+      },
+      upgradeHeader: ['等级', '毒素伤害', '触发几率', '消耗'],
       upgradeData: [
         { level: '0', attr1: '+15%', attr2: '+15%', drain: '4' },
         { level: '1', attr1: '+30%', attr2: '+30%', drain: '5' },

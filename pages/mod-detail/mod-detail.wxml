@@ -40,9 +40,9 @@
       <view class="table-row">
         <view class="table-cell-left">获取来源</view>
         <view class="source-container">
-          <text class="source-label">任务：</text>
-          <text class="source-value">火卫二</text>
-          <text class="source-rate">4.17%</text>
+          <text class="source-label">{{mod.modSource.type}}：</text>
+          <text class="source-value">{{mod.modSource.location}}</text>
+          <text class="source-rate">{{mod.modSource.rate}}</text>
         </view>
       </view>
     </view>
@@ -52,10 +52,7 @@
     <view class="card-title">详细信息</view>
     <view class="detail-table">
       <view class="detail-row detail-header">
-        <view class="detail-cell">等级</view>
-        <view class="detail-cell">毒素伤害</view>
-        <view class="detail-cell">触发几率</view>
-        <view class="detail-cell">消耗</view>
+        <view wx:for="{{mod.upgradeHeader}}" wx:key="index" class="detail-cell">{{item}}</view>
       </view>
       <block wx:for="{{mod.upgradeData}}" wx:key="level">
         <view class="detail-row">
