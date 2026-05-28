@@ -1,26 +1,103 @@
-<view class="container">
-  <view class="page-header">
-    <view class="page-title">杜卡德金币计算器</view>
-    <view class="page-desc">首版先提供基础换算框架，后续可补 Prime 部件映射、批量清单和精确规则。</view>
-  </view>
-
-  <view class="form-card panel">
-    <view class="field">
-      <view class="field-label">部件稀有度</view>
-      <picker mode="selector" range="{{rarityOptions}}" range-key="label" value="{{rarityIndex}}" bindchange="handleRarityChange">
-        <view class="field-value">{{rarityOptions[rarityIndex].label}} · 单件 {{singleValue}} 金币</view>
-      </picker>
-    </view>
-
-    <view class="field">
-      <view class="field-label">件数</view>
-      <input class="field-input" type="number" value="{{quantity}}" bindinput="handleQuantityInput"></input>
+<view class="ducats-page">
+  <view class="hero">
+    <view class="hero-overlay"></view>
+    <view class="hero-content">
+      <view class="hero-logo">◆</view>
+      <view class="hero-title">{{title}}</view>
     </view>
   </view>
 
-  <view class="section panel result-card">
-    <view class="section-title">计算结果</view>
-    <view class="page-desc">当前预计可兑换</view>
-    <view class="result-value">{{totalValue}} 杜卡德金币</view>
+  <view class="content-panel">
+    <view class="faq-search-row">
+      <view class="search-block">
+        <view class="search-label">通过名称搜索</view>
+        <input
+          class="search-input"
+          placeholder=""
+          value="{{searchKeyword}}"
+          bindinput="handleSearchInput"
+        ></input>
+      </view>
+    </view>
+
+    <scroll-view class="table-shell" scroll-y="true" enhanced="true" show-scrollbar="false">
+      <view class="table-row table-header-row">
+        <view class="table-fixed-header table-item-cell">{{tableHeaders[0]}}</view>
+        <view class="table-cell table-head-cell ducats-cell">
+          <text>{{tableHeaders[1]}}</text>
+          <text class="add-header-spacer"></text>
+        </view>
+      </view>
+
+      <block wx:if="{{rows.length}}">
+        <block wx:for="{{rows}}" wx:key="name" wx:for-item="row">
+          <view class="table-row table-body-row">
+            <view class="table-fixed-cell item-name-cell table-item-cell">
+              <image wx:if="{{row.icon}}" class="item-icon" src="{{row.icon}}" mode="aspectFit"></image>
+              <view wx:else class="item-icon-placeholder"></view>
+              <text class="item-name-text">{{row.name}}</text>
+            </view>
+            <view class="table-cell ducats-cell">
+              <text>{{row.ducats}}</text>
+              <text class="add-btn" data-name="{{row.name}}" bindtap="handleAddItem">添加</text>
+            </view>
+          </view>
+        </block>
+      </block>
+
+      <view wx:else class="empty-row">
+        <view class="empty-fixed-cell">没有找到匹配的物品。</view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="floating-launcher" bindtap="openSelectionPopup">
+    <text class="floating-launcher-text">{{selectedItems.length}}</text>
+  </view>
+
+  <view wx:if="{{isSelectionPopupVisible}}" class="popup-mask" bindtap="closeSelectionPopup"></view>
+  <view wx:if="{{isSelectionPopupVisible}}" class="popup-panel">
+    <view class="popup-header">
+      <text class="popup-title">已选物品</text>
+      <text class="popup-close" bindtap="closeSelectionPopup">×</text>
+    </view>
+
+    <scroll-view class="popup-list" scroll-y="true" enhanced="true" show-scrollbar="false">
+      <block wx:if="{{selectedItems.length}}">
+        <block wx:for="{{selectedItems}}" wx:key="name" wx:for-item="item">
+          <view class="popup-item">
+            <image wx:if="{{item.icon}}" class="popup-item-icon" src="{{item.icon}}" mode="aspectFit"></image>
+            <view wx:else class="popup-item-icon-placeholder"></view>
+            <view class="popup-item-main">
+              <view class="popup-item-top">
+                <view class="popup-item-price-block">
+                  <text class="popup-item-label">单价</text>
+                  <text class="popup-item-price">{{item.ducats}}</text>
+                </view>
+                <view class="popup-item-price-block popup-item-total-block">
+                  <text class="popup-item-label">总价</text>
+                  <text class="popup-item-subtotal">{{item.subtotal}}</text>
+                </view>
+              </view>
+              <view class="popup-item-bottom">
+                <text class="popup-item-name">{{item.name}}</text>
+                <view class="popup-stepper">
+                  <text class="popup-stepper-btn" data-name="{{item.name}}" bindtap="decreaseSelectedItem">-</text>
+                  <text class="popup-stepper-count">{{item.count}}</text>
+                  <text class="popup-stepper-btn" data-name="{{item.name}}" bindtap="increaseSelectedItem">+</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </block>
+      <view wx:else class="popup-empty">暂未添加物品</view>
+    </scroll-view>
+
+    <view class="popup-footer">
+      <text class="popup-total-label">金币合计</text>
+      <text class="popup-total-value">{{selectedTotalDucats}}</text>
+    </view>
   </view>
 </view>
+
