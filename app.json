@@ -10,6 +10,7 @@
     "pages/melee/melee",
     "pages/factions/factions",
     "pages/mods/mods",
+    "pages/mod-detail/mod-detail",
     "pages/resources/resources",
     "pages/relics/relics",
     "pages/relics-void/relics-void",

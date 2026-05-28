@@ -1,0 +1,67 @@
+<view class="container">
+  <view class="mod-card panel">
+    <view class="mod-title">{{mod.title}}</view>
+    <image class="mod-image" src="{{mod.image}}" mode="aspectFit"></image>
+  </view>
+
+  <view class="info-card panel">
+    <view class="card-title">{{mod.labels.basicInfo}}</view>
+    <view class="info-table">
+      <view class="table-row">
+        <view class="table-cell-left">{{mod.labels.polarity}}</view>
+        <view class="table-cell-right">
+          <image class="polarity-icon" src="{{mod.polarityIcon}}" mode="aspectFit"></image>
+          <text>{{mod.polarity}}</text>
+        </view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{mod.labels.rarity}}</view>
+        <view class="table-cell-right">{{mod.rarity}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{mod.labels.tradeTax}}</view>
+        <view class="table-cell-right">
+          <image class="tax-icon" src="{{mod.tradeTaxIcon}}" mode="aspectFit"></image>
+          <text>{{mod.tradeTax}}</text>
+        </view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{mod.labels.drain}}</view>
+        <view class="table-cell-right">{{mod.drain}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{mod.labels.maxRank}}</view>
+        <view class="table-cell-right">{{mod.maxRank}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{mod.labels.category}}</view>
+        <view class="table-cell-right">{{mod.category}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{mod.labels.modSource}}</view>
+        <view class="source-container">
+          <text class="source-label">{{mod.modSource.type}}：</text>
+          <text class="source-value">{{mod.modSource.location}}</text>
+          <text class="source-rate source-rate-{{mod.modSource.rateColor}}">{{mod.modSource.rate}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="detail-card panel">
+    <view class="card-title">{{mod.labels.detailInfo}}</view>
+    <view class="detail-table">
+      <view class="detail-row detail-header">
+        <view wx:for="{{mod.upgradeHeader}}" wx:key="index" class="detail-cell">{{item}}</view>
+      </view>
+      <block wx:for="{{mod.upgradeData}}" wx:key="level">
+        <view class="detail-row">
+          <view class="detail-cell">{{item.level}}</view>
+          <view class="detail-cell">{{item.attr1}}</view>
+          <view class="detail-cell">{{item.attr2}}</view>
+          <view class="detail-cell">{{item.drain}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

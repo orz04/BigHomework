@@ -1,0 +1,19 @@
+**特殊**
+陨蜓机翼：PrimeWings.png
+陨蜓外甲：PrimeWingsChassis.png
+陨蜓系统：PrimeWingsSystems.png
+
+所有蓝图（战甲、武器、陨蜓）、Kubrow Collar Blueprint：blueprint.png
+
+所有头部：PrimeHelmet.png
+所有机体、外壳：PrimeChassis.png
+所有系统：PrimeSystems.png
+
+所有枪管：GenericGunPrimeBarrel.png
+所有枪机：GenericGunPrimeReceiver.png
+所有枪托、弓弦、链条：GenericGunPrimeStock.png
+所有连接器、饰物、项圈扣：GenericComponentPrimePlug.png
+所有拳套、握柄：GenericWeaponPrimeHilt.png
+所有刀刃、锤头、圆盘、星镖、上弓臂、下弓臂：GenericWeaponPrimeBlade.png
+所有弓身、镖袋、项圈带：GenericComponentPrimeLatch.png
+所有护手、靴子：GenericWeaponPrimeGuard.png

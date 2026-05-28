@@ -62,21 +62,34 @@
       <block wx:for="{{tenno.acquisition.paragraphs}}" wx:key="index">
         <view class="info-text">{{item}}</view>
       </block>
-      <view wx:if="{{tenno.acquisition.drops && tenno.acquisition.drops.length > 0}}" class="drops-table">
-        <view class="drops-header">
-          <view class="drops-cell">物品</view>
-          <view class="drops-cell">来源</view>
-          <view class="drops-cell">概率</view>
-          <view class="drops-cell">期望次数</view>
-        </view>
-        <block wx:for="{{tenno.acquisition.drops}}" wx:key="item">
-          <view class="drops-row">
-            <view class="drops-cell">{{item.item}}</view>
-            <view class="drops-cell">{{item.source}}</view>
-            <view class="drops-cell">{{item.probability}}</view>
-            <view class="drops-cell">{{item.expected}}</view>
+      <view wx:if="{{displayDrops && displayDrops.length > 0}}" class="drops-container">
+        <view wx:if="{{dropTabs && dropTabs.length > 0}}" class="drops-tabs">
+          <view 
+            wx:for="{{dropTabs}}" 
+            wx:key="*this" 
+            class="drops-tab {{currentDropTab === item ? 'active' : ''}}"
+            bindtap="setDropTab"
+            data-tab="{{item}}"
+          >
+            {{item}}
           </view>
-        </block>
+        </view>
+        <view class="drops-table">
+          <view class="drops-header">
+            <view class="drops-cell">物品</view>
+            <view class="drops-cell">来源</view>
+            <view class="drops-cell">概率</view>
+            <view class="drops-cell">期望次数</view>
+          </view>
+          <block wx:for="{{displayDrops}}" wx:key="item">
+            <view class="drops-row">
+              <view class="drops-cell">{{item.item}}</view>
+              <view class="drops-cell">{{item.source}}</view>
+              <view class="drops-cell">{{item.probability}}</view>
+              <view class="drops-cell">{{item.expected}}</view>
+            </view>
+          </block>
+        </view>
       </view>
       <view wx:if="{{tenno.acquisition.note}}" class="info-text note">{{tenno.acquisition.note}}</view>
     </view>

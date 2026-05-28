@@ -75,7 +75,10 @@ Page({
   data: {
     tenno: null,
     missing: false,
-    platinumIcon
+    platinumIcon,
+    currentDropTab: 'A轮',
+    dropTabs: [],
+    displayDrops: []
   },
   onLoad(options) {
     const title = decodeURIComponent(options.title || '')
@@ -91,13 +94,16 @@ Page({
     })
 
     const forging = buildForging(tenno.forging)
+    const acquisition = tenno.acquisition || { paragraphs: ['入手方式待补充'], drops: [], note: '' }
+    
+    this.processDrops(acquisition.drops)
 
     this.setData({
       tenno: {
         ...tenno,
         basicInfo: buildBasicInfo(tenno),
         forging,
-        acquisition: tenno.acquisition || { paragraphs: ['入手方式待补充'], drops: [], note: '' }
+        acquisition
       }
     })
 
@@ -107,5 +113,32 @@ Page({
         platinumIcon: imageMap[platinumIcon] || platinumIcon
       })
     })
+  },
+  processDrops(drops) {
+    if (typeof drops === 'object' && !Array.isArray(drops)) {
+      const tabs = Object.keys(drops)
+      this.setData({
+        dropTabs: tabs,
+        displayDrops: drops['A轮'] || []
+      })
+    } else {
+      this.setData({
+        dropTabs: [],
+        displayDrops: drops || []
+      })
+    }
+  },
+  setDropTab(e) {
+    const tab = e.currentTarget.dataset.tab
+    const tenno = this.data.tenno
+    if (tenno && tenno.acquisition && tenno.acquisition.drops) {
+      const drops = tenno.acquisition.drops
+      if (typeof drops === 'object' && !Array.isArray(drops)) {
+        this.setData({
+          currentDropTab: tab,
+          displayDrops: drops[tab] || []
+        })
+      }
+    }
   }
 })
