@@ -309,16 +309,16 @@ module.exports = {
       ]
     },
     {
-      title: '',
-      image: '',
-      polarity: '',
-      polarityIcon: '',
+      title: '降速暴击',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Orokinimg/%E9%99%8D%E9%80%9F%E6%9A%B4%E5%87%BB.png?sign=f049e126609506d93a494bb3b4ad1d37&t=1780065012',
+      polarity: 'Madurai',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Madurai.png?sign=59171931b5114a60ac57c2a6cd867833&t=1779862985',
       rarity: '稀有',
       tradeTax: '8,000',
       tradeTaxIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=b8c282aab22fffa1f3b6dac5e190a4f9&t=1779863207',
-      drain: '',
-      maxRank: '',
-      category: '',
+      drain: '4',
+      maxRank: '5',
+      category: '霰弹枪',
       labels: {
         basicInfo: '基本信息',
         polarity: '极性',
@@ -331,29 +331,31 @@ module.exports = {
         detailInfo: '详细信息'
       },
       modSource: {
-        type: '',
-        location: '',
-        rate: '%'
+        type: '任务',
+        location: '火卫二宝库',
+        rate: '4.17%'
       },
-      upgradeHeader: ['等级', '', '', '消耗'],
+      upgradeHeader: ['等级', '暴击几率', '射速', '消耗'],
       upgradeData: [
-        { level: '0', attr1: '+15%', attr2: '+15%', drain: '4' },
-        { level: '1', attr1: '+30%', attr2: '+30%', drain: '5' },
-        { level: '2', attr1: '+45%', attr2: '+45%', drain: '6' },
-        { level: '3', attr1: '+60%', attr2: '+60%', drain: '7' }
+        { level: '0', attr1: '+33.3%', attr2: '-3.3%', drain: '4' },
+        { level: '1', attr1: '+66.7%', attr2: '-6.7%', drain: '5' },
+        { level: '2', attr1: '+100%', attr2: '-10%', drain: '6' },
+        { level: '3', attr1: '+133.3%', attr2: '-13.3%', drain: '7' },
+        { level: '4', attr1: '+166.7%', attr2: '-16.7%', drain: '8' },
+        { level: '5', attr1: '+200%', attr2: '-20%', drain: '9' }
       ]
     },
     {
-      title: '',
-      image: '',
-      polarity: '',
-      polarityIcon: '',
+      title: '重装火力',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Orokinimg/%E9%87%8D%E8%A3%85%E7%81%AB%E5%8A%9B.png?sign=c9e3228c29c7557c29a16f0d2fdd9fdf&t=1780065188',
+      polarity: 'Madurai',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Madurai.png?sign=59171931b5114a60ac57c2a6cd867833&t=1779862985',
       rarity: '稀有',
       tradeTax: '8,000',
       tradeTaxIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=b8c282aab22fffa1f3b6dac5e190a4f9&t=1779863207',
-      drain: '',
-      maxRank: '',
-      category: '',
+      drain: '4',
+      maxRank: '10',
+      category: '手枪',
       labels: {
         basicInfo: '基本信息',
         polarity: '极性',
@@ -366,29 +368,36 @@ module.exports = {
         detailInfo: '详细信息'
       },
       modSource: {
-        type: '',
-        location: '',
-        rate: '%'
+        type: '任务',
+        location: '火卫二宝库',
+        rate: '4.17%'
       },
-      upgradeHeader: ['等级', '', '', '消耗'],
+      upgradeHeader: ['等级', '伤害', '精准度', '消耗'],
       upgradeData: [
-        { level: '0', attr1: '+15%', attr2: '+15%', drain: '4' },
-        { level: '1', attr1: '+30%', attr2: '+30%', drain: '5' },
-        { level: '2', attr1: '+45%', attr2: '+45%', drain: '6' },
-        { level: '3', attr1: '+60%', attr2: '+60%', drain: '7' }
+        { level: '0', attr1: '+15%', attr2: '-5%', drain: '4' },
+        { level: '1', attr1: '+30%', attr2: '-10%', drain: '5' },
+        { level: '2', attr1: '+45%', attr2: '-15%', drain: '6' },
+        { level: '3', attr1: '+60%', attr2: '-20%', drain: '7' },
+        { level: '4', attr1: '+75%', attr2: '-25%', drain: '8' },
+        { level: '5', attr1: '+90%', attr2: '-30%', drain: '9' },
+        { level: '6', attr1: '+105%', attr2: '-35%', drain: '10' },
+        { level: '7', attr1: '+120%', attr2: '-40%', drain: '11' },
+        { level: '8', attr1: '+135%', attr2: '-45%', drain: '12' },
+        { level: '9', attr1: '+150%', attr2: '-50%', drain: '13' },
+        { level: '10', attr1: '+165%', attr2: '-55%', drain: '14' }
       ]
     },
     {
-      title: '',
-      image: '',
-      polarity: '',
-      polarityIcon: '',
+      title: '邪恶蓄力',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Orokinimg/%E9%82%AA%E6%81%B6%E8%93%84%E5%8A%9B.png?sign=c075208ca41f8a3189bcc020a7f30bd2&t=1780065412',
+      polarity: 'Madurai',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Madurai.png?sign=59171931b5114a60ac57c2a6cd867833&t=1779862985',
       rarity: '稀有',
       tradeTax: '8,000',
       tradeTaxIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=b8c282aab22fffa1f3b6dac5e190a4f9&t=1779863207',
-      drain: '',
-      maxRank: '',
-      category: '',
+      drain: '4',
+      maxRank: '3',
+      category: '近战',
       labels: {
         basicInfo: '基本信息',
         polarity: '极性',
@@ -401,29 +410,29 @@ module.exports = {
         detailInfo: '详细信息'
       },
       modSource: {
-        type: '',
-        location: '',
-        rate: '%'
+        type: '任务',
+        location: '火卫二',
+        rate: '4.17%'
       },
-      upgradeHeader: ['等级', '', '', '消耗'],
+      upgradeHeader: ['等级', '初始连击', '连击持续时间', '消耗'],
       upgradeData: [
-        { level: '0', attr1: '+15%', attr2: '+15%', drain: '4' },
-        { level: '1', attr1: '+30%', attr2: '+30%', drain: '5' },
-        { level: '2', attr1: '+45%', attr2: '+45%', drain: '6' },
-        { level: '3', attr1: '+60%', attr2: '+60%', drain: '7' }
+        { level: '0', attr1: '+7.5%', attr2: '-12.5%', drain: '4' },
+        { level: '1', attr1: '+15%', attr2: '-25%', drain: '5' },
+        { level: '2', attr1: '+22.5%', attr2: '-37.5%', drain: '6' },
+        { level: '3', attr1: '+30%', attr2: '-50%', drain: '7' }
       ]
     },
     {
-      title: '',
-      image: '',
-      polarity: '',
-      polarityIcon: '',
+      title: '过载弹匣',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Orokinimg/%E8%BF%87%E8%BD%BD%E5%BC%B9%E5%8C%A3.png?sign=fceb31ac80ab7fd1f27b66ddbf3c8eea&t=1780065542',
+      polarity: 'Naramon',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Naramon.png?sign=017896a7c955469091218035aee54fac&t=1780065599',
       rarity: '稀有',
       tradeTax: '8,000',
       tradeTaxIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=b8c282aab22fffa1f3b6dac5e190a4f9&t=1779863207',
-      drain: '',
-      maxRank: '',
-      category: '',
+      drain: '6',
+      maxRank: '5',
+      category: '霰弹枪',
       labels: {
         basicInfo: '基本信息',
         polarity: '极性',
@@ -436,29 +445,31 @@ module.exports = {
         detailInfo: '详细信息'
       },
       modSource: {
-        type: '',
-        location: '',
-        rate: '%'
+        type: '任务',
+        location: '火卫二',
+        rate: '4.17%'
       },
-      upgradeHeader: ['等级', '', '', '消耗'],
+      upgradeHeader: ['等级', '装填速度', '弹匣容量', '消耗'],
       upgradeData: [
-        { level: '0', attr1: '+15%', attr2: '+15%', drain: '4' },
-        { level: '1', attr1: '+30%', attr2: '+30%', drain: '5' },
-        { level: '2', attr1: '+45%', attr2: '+45%', drain: '6' },
-        { level: '3', attr1: '+60%', attr2: '+60%', drain: '7' }
+        { level: '0', attr1: '-3%', attr2: '+10%', drain: '6' },
+        { level: '1', attr1: '-6%', attr2: '+20%', drain: '7' },
+        { level: '2', attr1: '-9%', attr2: '+30%', drain: '8' },
+        { level: '3', attr1: '-12%', attr2: '+40%', drain: '9' },
+        { level: '4', attr1: '-15%', attr2: '+50%', drain: '10' },
+        { level: '5', attr1: '-18%', attr2: '+60%', drain: '11' }
       ]
     },
     {
-      title: '',
-      image: '',
-      polarity: '',
-      polarityIcon: '',
+      title: '过度延展',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Orokinimg/%E8%BF%87%E5%BA%A6%E5%BB%B6%E5%B1%95.png?sign=d9b5a86ffcbfbf0716f6b84bf1ea1e03&t=1780065760',
+      polarity: 'Vazarin',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Vazarin.png?sign=033a71c7ae23c3049b759c680deb4206&t=1780065803',
       rarity: '稀有',
       tradeTax: '8,000',
       tradeTaxIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=b8c282aab22fffa1f3b6dac5e190a4f9&t=1779863207',
-      drain: '',
-      maxRank: '',
-      category: '',
+      drain: '6',
+      maxRank: '5',
+      category: '战甲',
       labels: {
         basicInfo: '基本信息',
         polarity: '极性',
@@ -471,29 +482,31 @@ module.exports = {
         detailInfo: '详细信息'
       },
       modSource: {
-        type: '',
-        location: '',
-        rate: '%'
+        type: '任务',
+        location: '火卫二',
+        rate: '4.17%'
       },
-      upgradeHeader: ['等级', '', '', '消耗'],
+      upgradeHeader: ['等级', '技能范围', '技能强度', '消耗'],
       upgradeData: [
-        { level: '0', attr1: '+15%', attr2: '+15%', drain: '4' },
-        { level: '1', attr1: '+30%', attr2: '+30%', drain: '5' },
-        { level: '2', attr1: '+45%', attr2: '+45%', drain: '6' },
-        { level: '3', attr1: '+60%', attr2: '+60%', drain: '7' }
+        { level: '0', attr1: '+15%', attr2: '-10%', drain: '6' },
+        { level: '1', attr1: '+30%', attr2: '-200%', drain: '7' },
+        { level: '2', attr1: '+45%', attr2: '-30%', drain: '8' },
+        { level: '3', attr1: '+60%', attr2: '-40%', drain: '9' },
+        { level: '4', attr1: '+75%', attr2: '-50%', drain: '10' },
+        { level: '5', attr1: '+90%', attr2: '-60%', drain: '11' }
       ]
     },
     {
-      title: '',
-      image: '',
-      polarity: '',
-      polarityIcon: '',
+      title: '虚弱动能',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Orokinimg/%E8%99%9A%E5%BC%B1%E5%8A%A8%E8%83%BD.png?sign=4c9e3b5af460a2bdd8f6f8ef044e0c68&t=1780065924',
+      polarity: 'Madurai',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Madurai.png?sign=59171931b5114a60ac57c2a6cd867833&t=1779862985',
       rarity: '稀有',
       tradeTax: '8,000',
       tradeTaxIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=b8c282aab22fffa1f3b6dac5e190a4f9&t=1779863207',
-      drain: '',
-      maxRank: '',
-      category: '',
+      drain: '4',
+      maxRank: '5',
+      category: '霰弹枪',
       labels: {
         basicInfo: '基本信息',
         polarity: '极性',
@@ -506,21 +519,23 @@ module.exports = {
         detailInfo: '详细信息'
       },
       modSource: {
-        type: '',
-        location: '',
-        rate: '%'
+        type: '任务',
+        location: '火卫二',
+        rate: '4.17%'
       },
-      upgradeHeader: ['等级', '', '', '消耗'],
+      upgradeHeader: ['等级', '射速', '伤害', '消耗'],
       upgradeData: [
-        { level: '0', attr1: '+15%', attr2: '+15%', drain: '4' },
-        { level: '1', attr1: '+30%', attr2: '+30%', drain: '5' },
-        { level: '2', attr1: '+45%', attr2: '+45%', drain: '6' },
-        { level: '3', attr1: '+60%', attr2: '+60%', drain: '7' }
+        { level: '0', attr1: '+15%', attr2: '-2.5%', drain: '4' },
+        { level: '1', attr1: '+30%', attr2: '-5%', drain: '5' },
+        { level: '2', attr1: '+45%', attr2: '-7.5%', drain: '6' },
+        { level: '3', attr1: '+60%', attr2: '-10%', drain: '7' },
+        { level: '4', attr1: '+75%', attr2: '-12.5%', drain: '8' },
+        { level: '5', attr1: '+90%', attr2: '-15%', drain: '9' }
       ]
     },
     {
-      title: '',
-      image: '',
+      title: '腐败弹匣',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Orokinimg/%E8%85%90%E8%B4%A5%E5%BC%B9%E5%8C%A3.png?sign=9ba94bd0eaf363e3fa1867eee52795e5&t=1780066052',
       polarity: '',
       polarityIcon: '',
       rarity: '稀有',
