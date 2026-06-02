@@ -1,0 +1,68 @@
+<view class="container">
+  <view wx:if="{{missing}}" class="missing-box">
+    <view class="missing-title">未找到该集团详情</view>
+  </view>
+
+  <view wx:elif="{{detail}}" class="detail-page">
+    <view class="detail-header panel">
+      <view class="detail-title">{{detail.title}}</view>
+      <image class="detail-image" src="{{detail.image}}" mode="aspectFit"></image>
+    </view>
+
+    <view class="detail-section panel">
+      <view class="section-title">阵营关系</view>
+      <view class="relation-list">
+        <block wx:for="{{detail.relations}}" wx:key="name" wx:for-item="relation">
+          <view class="relation-item">
+            <image class="relation-icon" src="{{relation.image}}" mode="aspectFit"></image>
+            <view class="relation-name">{{relation.name}}</view>
+            <view class="relation-standing {{relation.standingClass}}">{{relation.type}} {{relation.standing}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <view class="detail-section panel">
+      <view class="section-title">等级</view>
+      <view class="rank-table">
+        <view class="rank-row rank-head">
+          <view class="rank-cell">等级</view>
+          <view class="rank-cell">称号</view>
+          <view class="rank-cell rank-tribute-header" colspan="2">贡品</view>
+          <view class="rank-cell">奖励</view>
+          <view class="rank-cell">声望（最小值到最大值）</view>
+        </view>
+        <block wx:for="{{detail.ranks}}" wx:key="level" wx:for-item="rank">
+          <view class="rank-row">
+            <view class="rank-cell">{{rank.level}}</view>
+            <view class="rank-cell">{{rank.title}}</view>
+            <view class="rank-cell rank-tribute">
+              <view wx:if="{{rank.tributeIcon && rank.tributeIconUrl}}" class="rank-tribute-content">
+                <image class="rank-item-icon" src="{{rank.tributeIconUrl}}" mode="aspectFit"></image>
+                <view>{{rank.tribute}}</view>
+              </view>
+              <view wx:elif="{{rank.tributeIcon}}" class="rank-tribute-content">
+                <view class="rank-icon-placeholder">图标</view>
+                <view>{{rank.tribute}}</view>
+              </view>
+              <view wx:else>{{rank.tribute}}</view>
+            </view>
+            <view class="rank-cell rank-credit">
+              <view wx:if="{{rank.creditIcon && rank.creditIconUrl}}" class="rank-credit-content">
+                <image class="rank-item-icon" src="{{rank.creditIconUrl}}" mode="aspectFit"></image>
+                <view>{{rank.credit}}</view>
+              </view>
+              <view wx:elif="{{rank.creditIcon}}" class="rank-credit-content">
+                <view class="rank-icon-placeholder">图标</view>
+                <view>{{rank.credit}}</view>
+              </view>
+              <view wx:else>{{rank.credit}}</view>
+            </view>
+            <view class="rank-cell">{{rank.reward}}</view>
+            <view class="rank-cell">{{rank.standing}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
