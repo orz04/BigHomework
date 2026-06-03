@@ -1,5 +1,6 @@
 const homeData = require('../../data/home')
 const frameSections = require('../../data/indexs')
+const modData = require('../../data/mods')
 
 function normalizeText(value) {
   return String(value || '').trim().replace(/\s+/g, '')
@@ -22,6 +23,10 @@ function getFrameDetailPage(title) {
   return `/pages/index-detail/index-detail?title=${encodeURIComponent(title)}`
 }
 
+function getModDetailPage(title) {
+  return `/pages/mod-detail/mod-detail?title=${encodeURIComponent(title)}`
+}
+
 function getSearchResults(keyword) {
   const normalizedKeyword = normalizeText(keyword)
 
@@ -29,7 +34,7 @@ function getSearchResults(keyword) {
     return homeData.quickLinks
   }
 
-  return frameSections
+  const frameResults = frameSections
     .filter((item) => {
       const titleKey = normalizeText(item.title)
       const initials = getEnglishInitials(item.title)
@@ -45,6 +50,17 @@ function getSearchResults(keyword) {
       tag: 'Warframe',
       page: getFrameDetailPage(item.title)
     }))
+
+  const modResults = modData.items
+    .filter((item) => normalizeText(item.title).includes(normalizedKeyword))
+    .map((item) => ({
+      title: item.title,
+      desc: 'MOD详情',
+      tag: 'MOD',
+      page: getModDetailPage(item.title)
+    }))
+
+  return [...frameResults, ...modResults]
 }
 
 Page({
