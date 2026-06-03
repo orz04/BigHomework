@@ -6,19 +6,19 @@
 
   <view class="grid">
     <view class="grid-item panel">
-      <image class="grid-image" src="/images/relicimg/ancient.png" mode="aspectFit"></image>
+      <image class="grid-image" src="https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/relicimg/ancient.png?sign=3ddb8dee1aa5667b1324de1e389e4733&t=1780490120" mode="aspectFit"></image>
       <view class="grid-text">古纪（丽斯）</view>
     </view>
     <view class="grid-item panel">
-      <image class="grid-image" src="/images/relicimg/preceding.png" mode="aspectFit"></image>
+      <image class="grid-image" src="https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/relicimg/preceding.png?sign=de9a57a8068ca41d540161bf7c26b3c3&t=1780490134" mode="aspectFit"></image>
       <view class="grid-text">前纪（美索）</view>
     </view>
     <view class="grid-item panel">
-      <image class="grid-image" src="/images/relicimg/middle.png" mode="aspectFit"></image>
+      <image class="grid-image" src="https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/relicimg/middle.png?sign=54bc71e1106b4d4e8c91a5ef7c9161e9&t=1780490145" mode="aspectFit"></image>
       <view class="grid-text">中纪</view>
     </view>
     <view class="grid-item panel">
-      <image class="grid-image" src="/images/relicimg/later.png" mode="aspectFit"></image>
+      <image class="grid-image" src="https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/relicimg/later.png?sign=ec8d95abbd6267a6afd9f84777d6725e&t=1780490160" mode="aspectFit"></image>
       <view class="grid-text">后纪</view>
     </view>
   </view>
