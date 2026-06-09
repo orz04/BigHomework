@@ -9,6 +9,7 @@
     "pages/secondary/secondary",
     "pages/melee/melee",
     "pages/factions/factions",
+    "pages/faction-detail/faction-detail",
     "pages/mods/mods",
     "pages/mod-detail/mod-detail",
     "pages/resources/resources",

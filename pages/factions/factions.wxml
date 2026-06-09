@@ -10,8 +10,20 @@
         <view class="group-list" wx:if="{{item.groups}}">
           <block wx:for="{{item.groups}}" wx:key="name">
             <view class="group-card">
-              <image class="group-image" src="{{item.image}}" mode="aspectFit"></image>
-              <view class="group-name">{{item.name}}</view>
+              <view class="group-main">
+                <image class="group-image" src="{{item.image}}" mode="aspectFit"></image>
+                <view class="group-name">{{item.name}}</view>
+                <view wx:if="{{item.page}}" class="detail-btn" data-page="{{item.page}}" bindtap="goToGroupPage">查看详情</view>
+              </view>
+              <view wx:if="{{item.relations}}" class="relation-list">
+                <block wx:for="{{item.relations}}" wx:for-item="relation" wx:key="name">
+                  <view class="relation-item">
+                    <image class="relation-icon" src="{{relation.image}}" mode="aspectFit"></image>
+                    <view class="relation-name">{{relation.name}}</view>
+                    <view class="relation-standing {{relation.standingClass}}">{{relation.type}} {{relation.standing}}</view>
+                  </view>
+                </block>
+              </view>
             </view>
           </block>
         </view>
