@@ -21,8 +21,13 @@
       <view class="forging-materials">
         <block wx:for="{{weapon.forging.materials}}" wx:key="index">
           <view class="forging-material">
-            <image class="material-icon" src="{{item.icon}}" mode="aspectFit"></image>
-            <text class="material-amount">{{item.amount}}</text>
+            <view wx:if="{{item.icon}}" class="material-content">
+              <image class="material-icon" src="{{item.icon}}" mode="aspectFit"></image>
+              <text class="material-amount">{{item.amount}}</text>
+            </view>
+            <view wx:else class="material-content material-empty">
+              <text class="material-na">{{item.amount}}</text>
+            </view>
           </view>
         </block>
       </view>
@@ -116,6 +121,10 @@
         <view class="attack-cell-left">{{weapon.labels.fireRate}}</view>
         <view class="attack-cell-right">{{weapon.attackData.fireRate}}</view>
       </view>
+      <view wx:if="{{weapon.attackData.burstFire}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.burstFire}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.burstFire}}</view>
+      </view>
       <view wx:if="{{weapon.attackData.attackTrigger}}" class="attack-row">
         <view class="attack-cell-left">{{weapon.labels.attackTrigger}}</view>
         <view class="attack-cell-right">{{weapon.attackData.attackTrigger}}</view>
@@ -135,6 +144,10 @@
       <view class="attack-row">
         <view class="attack-cell-left">{{weapon.labels.noise}}</view>
         <view class="attack-cell-right">{{weapon.attackData.noise}}</view>
+      </view>
+      <view wx:if="{{weapon.attackData.damageDecay}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.damageDecay}}</view>
+        <view class="attack-cell-right"><rich-text nodes="{{weapon.attackData.damageDecay}}"></rich-text></view>
       </view>
       <view wx:if="{{weapon.attackData.projectileSpeed}}" class="attack-row">
         <view class="attack-cell-left">{{weapon.labels.projectileSpeed}}</view>

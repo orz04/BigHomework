@@ -1,4 +1,5 @@
-const weaponData = require('../../data/primary-detail')
+const primaryData = require('../../data/primary-detail')
+const secondaryData = require('../../data/secondary-detail')
 
 Page({
   data: {
@@ -7,7 +8,11 @@ Page({
   },
   onLoad(options) {
     const title = decodeURIComponent(options.title || '')
-    const weapon = weaponData.items.find((item) => item.title === title)
+    let weapon = primaryData.items.find((item) => item.title === title)
+    
+    if (!weapon) {
+      weapon = secondaryData.items.find((item) => item.title === title)
+    }
 
     if (!weapon) {
       this.setData({ missing: true })
