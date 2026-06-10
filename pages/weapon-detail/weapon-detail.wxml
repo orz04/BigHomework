@@ -62,11 +62,11 @@
         <view class="table-cell-left">{{weapon.labels.trigger}}</view>
         <view class="table-cell-right">{{weapon.trigger}}</view>
       </view>
-      <view class="table-row">
+      <view wx:if="{{weapon.ammoType}}" class="table-row">
         <view class="table-cell-left">{{weapon.labels.ammoType}}</view>
         <view class="table-cell-right">{{weapon.ammoType}}</view>
       </view>
-      <view class="table-row">
+      <view wx:if="{{weapon.ammoPickup}}" class="table-row">
         <view class="table-cell-left">{{weapon.labels.ammoPickup}}</view>
         <view class="table-cell-right">{{weapon.ammoPickup}}</view>
       </view>
@@ -78,13 +78,13 @@
         <view class="table-cell-left">{{weapon.labels.magazine}}</view>
         <view class="table-cell-right">{{weapon.magazine}}</view>
       </view>
-      <view class="table-row">
+      <view wx:if="{{weapon.ammoMax}}" class="table-row">
         <view class="table-cell-left">{{weapon.labels.ammoMax}}</view>
         <view class="table-cell-right">{{weapon.ammoMax}}</view>
       </view>
       <view class="table-row">
         <view class="table-cell-left">{{weapon.labels.reloadSpeed}}</view>
-        <view class="table-cell-right">{{weapon.reloadSpeed}}</view>
+        <view class="table-cell-right"><rich-text nodes="{{weapon.reloadSpeed}}"></rich-text></view>
       </view>
       <view class="table-row">
         <view class="table-cell-left">{{weapon.labels.polarity}}</view>
@@ -183,11 +183,11 @@
         <view class="attack-cell-left">{{weapon.labels.totalDamage}}</view>
         <view class="attack-cell-right">{{weapon.chargedAttackData.totalDamage}}</view>
       </view>
-      <view class="attack-row">
+      <view wx:if="{{weapon.chargedAttackData.chargeTime}}" class="attack-row">
         <view class="attack-cell-left">{{weapon.labels.chargeTime}}</view>
         <view class="attack-cell-right">{{weapon.chargedAttackData.chargeTime}}</view>
       </view>
-      <view class="attack-row">
+      <view wx:if="{{weapon.chargedAttackData.attackTrigger}}" class="attack-row">
         <view class="attack-cell-left">{{weapon.labels.attackTrigger}}</view>
         <view class="attack-cell-right">{{weapon.chargedAttackData.attackTrigger}}</view>
       </view>
@@ -199,13 +199,25 @@
         <view class="attack-cell-left">{{weapon.labels.punchThrough}}</view>
         <view class="attack-cell-right">{{weapon.chargedAttackData.punchThrough}}</view>
       </view>
+      <view wx:if="{{weapon.chargedAttackData.spread}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.spread}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.spread}}</view>
+      </view>
       <view class="attack-row">
         <view class="attack-cell-left">{{weapon.labels.noise}}</view>
         <view class="attack-cell-right">{{weapon.chargedAttackData.noise}}</view>
       </view>
+      <view wx:if="{{weapon.chargedAttackData.range}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.range}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.range}}</view>
+      </view>
       <view class="attack-row">
         <view class="attack-cell-left">{{weapon.labels.projectileSpeed}}</view>
         <view class="attack-cell-right">{{weapon.chargedAttackData.projectileSpeed}}</view>
+      </view>
+      <view wx:if="{{weapon.chargedAttackData.damageDecay}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.damageDecay}}</view>
+        <view class="attack-cell-right"><rich-text nodes="{{weapon.chargedAttackData.damageDecay}}"></rich-text></view>
       </view>
       <view class="attack-row">
         <view class="attack-cell-left">{{weapon.labels.ammoConsume}}</view>
@@ -215,6 +227,10 @@
         <view class="attack-cell-left">{{weapon.labels.statusChance}}</view>
         <view class="attack-cell-right">{{weapon.chargedAttackData.statusChance}}</view>
       </view>
+      <view wx:if="{{weapon.chargedAttackData.forcedStatus}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.forcedStatus}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.forcedStatus}}</view>
+      </view>
       <view class="attack-row">
         <view class="attack-cell-left">{{weapon.labels.criticalChance}}</view>
         <view class="attack-cell-right">{{weapon.chargedAttackData.criticalChance}}</view>
@@ -222,6 +238,10 @@
       <view class="attack-row">
         <view class="attack-cell-left">{{weapon.labels.criticalDamage}}</view>
         <view class="attack-cell-right">{{weapon.chargedAttackData.criticalDamage}}</view>
+      </view>
+      <view wx:if="{{weapon.chargedAttackData.headshotDamage}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.headshotDamage}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.headshotDamage}}</view>
       </view>
     </view>
   </view>
