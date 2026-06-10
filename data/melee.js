@@ -1,17 +1,17 @@
 module.exports = [
   {
     title: '刀剑与双剑',
-    desc: '后续可扩展常见近战武器类型与手感区别。',
-    tag: 'Blade'
+    tag: 'Blade',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Temple.png?sign=7b9e7a2b5c8d1e0f3a4b6c9d2e1f0a5b&t=1779160900'
   },
   {
     title: '长柄与重武',
-    desc: '后续可补范围、重击与段数表现差异。',
-    tag: 'Heavy'
+    tag: 'Heavy',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Temple.png?sign=7b9e7a2b5c8d1e0f3a4b6c9d2e1f0a5b&t=1779160900'
   },
   {
     title: '近战流派',
-    desc: '后续可整理连击流、重击流与范围清怪流。',
-    tag: 'Build'
+    tag: 'Build',
+    image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/tennoimg/Temple.png?sign=7b9e7a2b5c8d1e0f3a4b6c9d2e1f0a5b&t=1779160900'
   }
 ]

@@ -1,12 +1,22 @@
 <view class="container">
+  <view class="bg-decoration"></view>
+  
   <view class="page-header">
-    <view class="page-title">武器信息</view>
-    <view class="page-desc">先总览武器信息模块，再按主要武器、次要武器与近战武器继续细分。</view>
+    <view class="header-icon">⚔️</view>
+    <view class="page-title centered-title">武器信息</view>
   </view>
 
-  <view class="list">
+  <view class="weapon-list">
     <block wx:for="{{items}}" wx:key="title">
-      <section-card title="{{item.title}}" desc="{{item.desc}}" tag="{{item.tag}}" page="{{item.page}}"></section-card>
+      <view class="weapon-card panel" data-page="{{item.page}}" bindtap="goToDetail">
+        <view class="weapon-info">
+          <view class="weapon-tag">{{item.tag}}</view>
+          <view class="weapon-title">{{item.title}}</view>
+        </view>
+        <view class="weapon-right">
+          <view class="weapon-link">查看详情</view>
+        </view>
+      </view>
     </block>
   </view>
 </view>

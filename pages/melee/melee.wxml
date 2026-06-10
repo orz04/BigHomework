@@ -1,12 +1,14 @@
 <view class="container">
   <view class="page-header">
-    <view class="page-title">近战武器</view>
-    <view class="page-desc">先搭建近战武器的分类入口，后续再细化武器种类、手感差异与近战流派。</view>
+    <view class="page-title centered-title">近战武器</view>
   </view>
 
-  <view class="list">
+  <view class="tenno-list">
     <block wx:for="{{items}}" wx:key="title">
-      <section-card title="{{item.title}}" desc="{{item.desc}}" tag="{{item.tag}}"></section-card>
+      <view class="tenno-card panel" data-title="{{item.title}}" bindtap="goToDetail">
+        <image class="tenno-image" src="{{item.image}}" mode="aspectFit"></image>
+        <view class="tenno-name">{{item.title}}</view>
+      </view>
     </block>
   </view>
 </view>

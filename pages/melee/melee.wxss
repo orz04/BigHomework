@@ -1,5 +1,33 @@
-.list {
+.page-header {
+  margin-bottom: 24rpx;
+}
+
+.centered-title {
+  text-align: center;
+}
+
+.tenno-list {
   display: flex;
   flex-direction: column;
   gap: 20rpx;
+}
+
+.tenno-card {
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+  padding: 24rpx 28rpx;
+}
+
+.tenno-image {
+  width: 140rpx;
+  height: 140rpx;
+  flex-shrink: 0;
+}
+
+.tenno-name {
+  flex: 1;
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #f8fafc;
 }

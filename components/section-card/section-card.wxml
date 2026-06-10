@@ -1,6 +1,5 @@
 <view class="section-card panel {{compact ? 'compact' : ''}}" bindtap="handleTap">
   <view class="section-tag" wx:if="{{tag}}">{{tag}}</view>
   <view class="section-title">{{title}}</view>
-  <view class="section-desc">{{desc}}</view>
   <view class="section-link" wx:if="{{page}}">查看详情</view>
 </view>

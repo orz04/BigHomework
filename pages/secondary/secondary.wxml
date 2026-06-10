@@ -1,12 +1,14 @@
 <view class="container">
   <view class="page-header">
-    <view class="page-title">次要武器</view>
-    <view class="page-desc">先搭建次要武器的分类入口，后续再细化副武器类型、用途定位与强势流派。</view>
+    <view class="page-title centered-title">次要武器</view>
   </view>
 
-  <view class="list">
+  <view class="tenno-list">
     <block wx:for="{{items}}" wx:key="title">
-      <section-card title="{{item.title}}" desc="{{item.desc}}" tag="{{item.tag}}"></section-card>
+      <view class="tenno-card panel" data-title="{{item.title}}" bindtap="goToDetail">
+        <image class="tenno-image" src="{{item.image}}" mode="aspectFit"></image>
+        <view class="tenno-name">{{item.title}}</view>
+      </view>
     </block>
   </view>
 </view>
