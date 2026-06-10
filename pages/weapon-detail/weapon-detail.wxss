@@ -1,0 +1,244 @@
+.weapon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30rpx;
+}
+
+.weapon-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 20rpx;
+}
+
+.weapon-image {
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.source-card {
+  padding: 0;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+
+.source-content {
+  padding: 20rpx 24rpx;
+}
+
+.source-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rpx;
+}
+
+.source-label {
+  font-size: 26rpx;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.source-value {
+  font-size: 26rpx;
+  color: #ffffff;
+}
+
+.source-rate {
+  font-size: 26rpx;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.source-rate-red {
+  color: #f87171;
+}
+
+.source-rate-green {
+  color: #4ade80;
+}
+
+.info-card {
+  padding: 0;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+
+.card-title {
+  background: rgba(59, 130, 246, 0.12);
+  padding: 20rpx 24rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #e2e8f0;
+  text-align: center;
+}
+
+.info-table {
+  width: 100%;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1rpx solid rgba(148, 163, 184, 0.1);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-cell-left {
+  width: 40%;
+  padding: 20rpx 24rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+  font-weight: 700;
+  background: #000000;
+}
+
+.table-cell-right {
+  width: 60%;
+  padding: 20rpx 24rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rpx;
+  background: #1e293b;
+}
+
+.table-cell-right text {
+  font-size: 26rpx;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.polarity-icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.detail-card {
+  padding: 0;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+
+.attack-table {
+  width: 100%;
+}
+
+.attack-row {
+  display: flex;
+  border-bottom: 1rpx solid rgba(148, 163, 184, 0.1);
+}
+
+.attack-row:last-child {
+  border-bottom: none;
+}
+
+.attack-cell-left {
+  width: 40%;
+  padding: 20rpx 24rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+  font-weight: 700;
+  background: #000000;
+}
+
+.attack-cell-right {
+  width: 60%;
+  padding: 20rpx 24rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+  font-weight: 500;
+  background: #1e293b;
+}
+
+.forging-card {
+  padding: 0;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+
+.forging-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1rpx solid rgba(148, 163, 184, 0.1);
+}
+
+.forging-materials {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.forging-material {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+  flex: 1;
+}
+
+.material-icon {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.material-amount {
+  font-size: 22rpx;
+  color: #ffffff;
+  text-align: center;
+}
+
+.forging-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+  margin-left: 20rpx;
+}
+
+.forging-time {
+  font-size: 24rpx;
+  color: #ffffff;
+}
+
+.forging-speed {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+}
+
+.speed-icon {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.forging-price-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+  padding: 20rpx;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.forging-price-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+}
+
+.price-icon {
+  width: 24rpx;
+  height: 24rpx;
+}

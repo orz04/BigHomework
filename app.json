@@ -17,7 +17,8 @@
     "pages/relics-void/relics-void",
     "pages/relics-void-item1/relics-void-item1",
     "pages/relics-void-item2/relics-void-item2",
-    "pages/ducats/ducats"
+    "pages/ducats/ducats",
+    "pages/weapon-detail/weapon-detail"
   ],
   "window": {
     "navigationBarTitleText": "Warframe Wiki",

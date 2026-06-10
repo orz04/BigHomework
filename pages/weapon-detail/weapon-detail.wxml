@@ -1,0 +1,228 @@
+<view class="container">
+  <view class="weapon-card panel">
+    <view class="weapon-title">{{weapon.title}}</view>
+    <image class="weapon-image" src="{{weapon.image}}" mode="aspectFit"></image>
+  </view>
+
+  <view wx:if="{{weapon.source}}" class="source-card panel">
+    <view class="card-title">{{weapon.labels.source}}</view>
+    <view class="source-content">
+      <view class="source-item">
+        <text class="source-label">{{weapon.source.type}}：</text>
+        <text class="source-value">{{weapon.source.location}}</text>
+        <text class="source-rate source-rate-{{weapon.source.rateColor}}">{{weapon.source.rate}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{weapon.forging}}" class="forging-card panel">
+    <view class="card-title">{{weapon.labels.forging}}</view>
+    <view class="forging-row">
+      <view class="forging-materials">
+        <block wx:for="{{weapon.forging.materials}}" wx:key="index">
+          <view class="forging-material">
+            <image class="material-icon" src="{{item.icon}}" mode="aspectFit"></image>
+            <text class="material-amount">{{item.amount}}</text>
+          </view>
+        </block>
+      </view>
+      <view class="forging-info">
+        <view class="forging-time">用时: {{weapon.forging.time}}</view>
+        <view class="forging-speed">加速: <image class="speed-icon" src="https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=d7c751289a29089233f327a45b1b9d43&t=1779161854" mode="aspectFit"></image> {{weapon.forging.speed}}</view>
+      </view>
+    </view>
+    <view class="forging-price-row">
+      <block wx:for="{{weapon.forging.prices}}" wx:key="type">
+        <view class="forging-price-cell">
+          <text>{{item.type}}价格：</text>
+          <image wx:if="{{item.currencyIcon}}" class="price-icon" src="{{item.currencyIcon}}" mode="aspectFit"></image>
+          <text>{{item.amount}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="info-card panel">
+    <view class="card-title">{{weapon.labels.basicInfo}}</view>
+    <view class="info-table">
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.type}}</view>
+        <view class="table-cell-right">{{weapon.type}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.slot}}</view>
+        <view class="table-cell-right">{{weapon.slot}}</view>
+      </view>
+
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.mastery}}</view>
+        <view class="table-cell-right">{{weapon.mastery}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.trigger}}</view>
+        <view class="table-cell-right">{{weapon.trigger}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.ammoType}}</view>
+        <view class="table-cell-right">{{weapon.ammoType}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.ammoPickup}}</view>
+        <view class="table-cell-right">{{weapon.ammoPickup}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.accuracy}}</view>
+        <view class="table-cell-right">{{weapon.accuracy}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.magazine}}</view>
+        <view class="table-cell-right">{{weapon.magazine}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.ammoMax}}</view>
+        <view class="table-cell-right">{{weapon.ammoMax}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.reloadSpeed}}</view>
+        <view class="table-cell-right">{{weapon.reloadSpeed}}</view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.polarity}}</view>
+        <view class="table-cell-right">
+          <image class="polarity-icon" src="{{weapon.polarityIcon}}" mode="aspectFit"></image>
+          <text>{{weapon.polarity}}</text>
+        </view>
+      </view>
+      <view class="table-row">
+        <view class="table-cell-left">{{weapon.labels.riftPolarity}}</view>
+        <view class="table-cell-right">{{weapon.riftPolarity}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="detail-card panel">
+    <view class="card-title">{{weapon.labels.attackInfo}}</view>
+
+    <view class="attack-table">
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.multishot}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.multishot}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.totalDamage}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.totalDamage}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.fireRate}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.fireRate}}</view>
+      </view>
+      <view wx:if="{{weapon.attackData.attackTrigger}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.attackTrigger}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.attackTrigger}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.damageType}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.damageType}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.punchThrough}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.punchThrough}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.spread}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.spread}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.noise}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.noise}}</view>
+      </view>
+      <view wx:if="{{weapon.attackData.projectileSpeed}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.projectileSpeed}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.projectileSpeed}}</view>
+      </view>
+      <view wx:if="{{weapon.attackData.range}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.range}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.range}}</view>
+      </view>
+      <view wx:if="{{weapon.attackData.damageDecay}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.damageDecay}}</view>
+        <view class="attack-cell-right"><rich-text nodes="{{weapon.attackData.damageDecay}}"></rich-text></view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.ammoConsume}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.ammoConsume}}</view>
+      </view>
+      <view wx:if="{{weapon.attackData.ammoConsumeRate}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.ammoConsumeRate}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.ammoConsumeRate}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.statusChance}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.statusChance}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.criticalChance}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.criticalChance}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.criticalDamage}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.criticalDamage}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{weapon.chargedAttackData}}" class="detail-card panel">
+    <view class="card-title">{{weapon.labels.chargedAttackInfo}}</view>
+
+    <view class="attack-table">
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.multishot}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.multishot}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.totalDamage}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.totalDamage}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.chargeTime}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.chargeTime}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.attackTrigger}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.attackTrigger}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.damageType}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.damageType}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.punchThrough}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.punchThrough}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.noise}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.noise}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.projectileSpeed}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.projectileSpeed}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.ammoConsume}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.ammoConsume}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.statusChance}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.statusChance}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.criticalChance}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.criticalChance}}</view>
+      </view>
+      <view class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.criticalDamage}}</view>
+        <view class="attack-cell-right">{{weapon.chargedAttackData.criticalDamage}}</view>
+      </view>
+    </view>
+  </view>
+</view>
