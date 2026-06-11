@@ -456,6 +456,69 @@ module.exports = {
         criticalChance: '8.0%',
         criticalDamage: '1.6x'
       }
+    },
+    {
+      title: '拉托',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/secondaryimg/Lato.png?sign=1cbc1cb212a086ed2a07c7669834f890&t=1781088162',
+      labels: {
+        basicInfo: '基本信息',
+        attackInfo: '普通攻击',
+        type: '武器类型',
+        slot: '武器槽位',
+        mastery: '精通段位要求',
+        trigger: '扳机类型',
+        ammoType: '弹药类型',
+        ammoPickup: '弹药拾取量',
+        accuracy: '精准度',
+        magazine: '弹匣容量',
+        ammoMax: '弹药上限',
+        reloadSpeed: '装填速度',
+        polarity: '极性',
+        riftPolarity: '裂罅倾向',
+        multishot: '多重射击',
+        totalDamage: '总伤害',
+        fireRate: '射速',
+        damageType: '伤害判定类型',
+        punchThrough: '穿透',
+        spread: '散布',
+        noise: '噪音等级',
+        range: '射程',
+        ammoConsume: '弹药消耗',
+        statusChance: '触发几率',
+        criticalChance: '暴击几率',
+        criticalDamage: '暴击伤害'
+      },
+      source: {
+        type: '入手方式',
+        description: '玩家在觉醒教程中可以选择拉托作为第一把副武器。<br/>该武器可以在商店中以现金10,000购买成品。'
+      },
+      type: '手枪',
+      slot: '次要',
+      mastery: '无',
+      trigger: '半自动',
+      ammoType: '次要武器',
+      ammoPickup: '40',
+      accuracy: '18.2',
+      magazine: '15',
+      ammoMax: '210',
+      reloadSpeed: '装填用时:1.0秒',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Madurai.png?sign=abc123&t=1781074816',
+      polarity: 'Madurai',
+      riftPolarity: '1.4',
+      attackData: {
+        multishot: '1(每个弹片40伤害)',
+        totalDamage: '40(50.0%)',
+        fireRate: '4.5发/秒',
+        damageType: '即时命中',
+        punchThrough: '0米',
+        spread: '0.0~10.0',
+        noise: '引起警戒',
+        range: '300米',
+        ammoConsume: '单次射击消耗1发弹药',
+        statusChance: '6.0%',
+        criticalChance: '10.0%',
+        criticalDamage: '1.8x'
+      }
     }
   ]
 }

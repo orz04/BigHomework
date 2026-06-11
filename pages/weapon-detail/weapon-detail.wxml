@@ -5,13 +5,24 @@
   </view>
 
   <view wx:if="{{weapon.source}}" class="source-card panel">
-    <view class="card-title">{{weapon.labels.source}}</view>
+    <view class="card-title">{{weapon.source.type}}</view>
     <view class="source-content">
-      <view class="source-item">
-        <text class="source-label">{{weapon.source.type}}：</text>
-        <text class="source-value">{{weapon.source.location}}</text>
-        <text class="source-rate source-rate-{{weapon.source.rateColor}}">{{weapon.source.rate}}</text>
-      </view>
+      <block wx:if="{{weapon.source.description}}">
+        <rich-text class="source-description" nodes="{{weapon.source.description}}"></rich-text>
+      </block>
+      <block wx:elif="{{weapon.source.dropList}}">
+        <view wx:for="{{weapon.source.dropList}}" wx:key="enemy" class="source-item">
+          <text class="source-label">{{item.enemy}}：</text>
+          <text class="source-rate source-rate-{{item.rate === '常见' ? 'green' : item.rate === '罕见' ? 'yellow' : 'red'}}">{{item.rate}}</text>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="source-item">
+          <text class="source-label">{{weapon.source.type}}：</text>
+          <text class="source-value">{{weapon.source.location}}</text>
+          <text class="source-rate source-rate-{{weapon.source.rateColor}}">{{weapon.source.rate}}</text>
+        </view>
+      </block>
     </view>
   </view>
 

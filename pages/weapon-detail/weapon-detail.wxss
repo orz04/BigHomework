@@ -45,6 +45,12 @@
   color: #ffffff;
 }
 
+.source-description {
+  font-size: 26rpx;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
 .source-rate {
   font-size: 26rpx;
   font-weight: 700;
