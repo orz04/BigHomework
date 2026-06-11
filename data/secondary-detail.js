@@ -657,6 +657,85 @@ module.exports = {
         criticalChance: '20.0%',
         criticalDamage: '2x'
       }
+    },
+    {
+      title: '蝰蛇',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/secondaryimg/Viper.png?sign=cdc3d2ed969ed54ee4782e29a864ed94&t=1781088219',
+      labels: {
+        forging: '铸造需求',
+        basicInfo: '基本信息',
+        attackInfo: '普通攻击',
+        type: '武器类型',
+        slot: '武器槽位',
+        mastery: '精通段位要求',
+        trigger: '扳机类型',
+        ammoType: '弹药类型',
+        ammoPickup: '弹药拾取量',
+        accuracy: '精准度',
+        magazine: '弹匣容量',
+        ammoMax: '弹药上限',
+        reloadSpeed: '装填速度',
+        polarity: '极性',
+        riftPolarity: '裂罅倾向',
+        multishot: '多重射击',
+        totalDamage: '总伤害',
+        fireRate: '射速',
+        damageType: '伤害判定类型',
+        punchThrough: '穿透',
+        spread: '散布',
+        noise: '噪音等级',
+        range: '射程',
+        ammoConsume: '弹药消耗',
+        statusChance: '触发几率',
+        criticalChance: '暴击几率',
+        criticalDamage: '暴击伤害'
+      },
+      source: {
+        type: '入手方式',
+        description: '蝰蛇可以在商店中购买蓝图。'
+      },
+      forging: {
+        materials: [
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '20,000' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Salvage.png?sign=14505a13b8e25c00b6f7aa5787a188f8&t=1781188065', amount: '300' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Ferrite.png?sign=746ff0dc437f6c3b873493f54aab1379&t=1781187617', amount: '600' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NanoSpores.png?sign=58f48d8d7d6e083abaf6125362a56a08&t=1781188079', amount: '900' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=666591df02baef95daf2aad1081cc015&t=1781188090', amount: '1' }
+        ],
+        time: '12小时',
+        speed: '25',
+        prices: [
+          { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=5cd80582566639d1f3e7404674d1d499&t=1779161920', amount: '75' },
+          { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=928ea774ea82886cfacd530b63ddafb9&t=1779161893', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '20,000' }
+        ]
+      },
+      type: '手枪',
+      slot: '次要',
+      mastery: '4',
+      trigger: '全自动',
+      ammoType: '次要武器',
+      ammoPickup: '40',
+      accuracy: '15.4',
+      magazine: '14',
+      ammoMax: '420',
+      reloadSpeed: '装填用时:0.7秒',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Naramon.png?sign=abc123&t=1781074816',
+      polarity: 'Naramon',
+      riftPolarity: '1.45',
+      attackData: {
+        multishot: '1(每个弹片17.0伤害)',
+        totalDamage: '17.0(60.0%)',
+        fireRate: '14.4发/秒',
+        damageType: '即时命中',
+        punchThrough: '0米',
+        spread: '2.0~12.0',
+        noise: '引起警戒',
+        range: '300米',
+        ammoConsume: '单次射击消耗1发弹药',
+        statusChance: '11.0%',
+        criticalChance: '15.0%',
+        criticalDamage: '1.5x'
+      }
     }
   ]
 }
