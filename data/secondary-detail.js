@@ -228,6 +228,87 @@ module.exports = {
         criticalChance: '6.0%',
         criticalDamage: '2x'
       }
+    },
+    {
+      title: '绝望',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/secondaryimg/Despair.png?sign=1bb67662d515979607800aa4d6b46314&t=1781088045',
+      labels: {
+        forging: '铸造需求',
+        basicInfo: '基本信息',
+        attackInfo: '普通攻击',
+        type: '武器类型',
+        slot: '武器槽位',
+        mastery: '精通段位要求',
+        trigger: '扳机类型',
+        ammoType: '弹药类型',
+        ammoPickup: '弹药拾取量',
+        accuracy: '精准度',
+        magazine: '弹匣容量',
+        ammoMax: '弹药上限',
+        reloadSpeed: '装填速度',
+        polarity: '极性',
+        riftPolarity: '裂罅倾向',
+        multishot: '多重射击',
+        totalDamage: '总伤害',
+        fireRate: '射速',
+        damageType: '伤害判定类型',
+        punchThrough: '穿透',
+        noise: '噪音等级',
+        projectileSpeed: '投射物速度',
+        ammoConsume: '弹药消耗',
+        statusChance: '触发几率',
+        criticalChance: '暴击几率',
+        criticalDamage: '暴击伤害'
+      },
+      forging: {
+        materials: [
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=ae28c5213a185646c13ed2599db0ad10&t=1781075735', amount: '10' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Ferrite.png?sign=6f5a9d29eff8e959fbabbd0c26e6f66d&t=1781186018', amount: '5,000' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/AlloyPlate.png?sign=283ac3a8e13ec0573eb63f47c1d7ff21&t=1781186036', amount: '800' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Salvage.png?sign=59e439bb7273b8411f679261507c6612&t=1781186050', amount: '4,500' }
+        ],
+        time: '12小时',
+        speed: '50',
+        prices: [
+          { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=5cd80582566639d1f3e7404674d1d499&t=1779161920', amount: 'N/A' },
+          { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=928ea774ea82886cfacd530b63ddafb9&t=1779161893', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: 'N/A' }
+        ]
+      },
+      source: {
+        type: '入手方式',
+        dropList: [
+          { enemy: 'Grineer船舰', rate: '常见' },
+          { enemy: 'Corpus船舰', rate: '常见' },
+          { enemy: 'Infested船舰', rate: '常见' }
+        ]
+      },
+      type: '投掷类武器',
+      slot: '次要',
+      mastery: '4',
+      trigger: '全自动',
+      ammoType: '次要武器',
+      ammoPickup: '40',
+      accuracy: '100.0',
+      magazine: '10',
+      ammoMax: '210',
+      reloadSpeed: '装填用时:0.75秒',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Naramon.png?sign=abc123&t=1781074816',
+      polarity: 'Naramon',
+      riftPolarity: '1.3',
+      attackData: {
+        multishot: '1(每个弹片58.0伤害)',
+        totalDamage: '58.0(80.0%)',
+        fireRate: '3.33发/秒',
+        damageType: '投射物',
+        punchThrough: '0米',
+        noise: '无声',
+        projectileSpeed: '70米/秒',
+        ammoConsume: '单次射击消耗1发弹药',
+        statusChance: '16.0%',
+        criticalChance: '16.0%',
+        criticalDamage: '1.6x'
+      }
     }
   ]
 }
