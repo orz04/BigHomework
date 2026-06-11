@@ -301,6 +301,83 @@ module.exports = {
         criticalChance: '16.0%',
         criticalDamage: '1.6x'
       }
+    },
+    {
+      title: '德特昂',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/secondaryimg/Detron.png?sign=686ddc0354e036ec88ed4c745dd66264&t=1781088122',
+      labels: {
+        forging: '铸造需求',
+        basicInfo: '基本信息',
+        attackInfo: '普通攻击',
+        type: '武器类型',
+        slot: '武器槽位',
+        mastery: '精通段位要求',
+        trigger: '扳机类型',
+        ammoType: '弹药类型',
+        ammoPickup: '弹药拾取量',
+        accuracy: '精准度',
+        magazine: '弹匣容量',
+        ammoMax: '弹药上限',
+        reloadSpeed: '装填速度',
+        polarity: '极性',
+        riftPolarity: '裂罅倾向',
+        multishot: '多重射击',
+        totalDamage: '总伤害',
+        fireRate: '射速',
+        damageType: '伤害判定类型',
+        punchThrough: '穿透',
+        spread: '散布',
+        noise: '噪音等级',
+        projectileSpeed: '投射物速度',
+        damageDecay: '伤害衰减',
+        ammoConsume: '弹药消耗',
+        statusChance: '触发几率',
+        criticalChance: '暴击几率',
+        criticalDamage: '暴击伤害'
+      },
+      forging: {
+        materials: [
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=ae28c5213a185646c13ed2599db0ad10&t=1781075735', amount: '3' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Plastids.png?sign=29b14b98a8d3ab83c370377b28755517&t=1781075770', amount: '400' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=32880d48cf6dff3a7735e69ed6f27337&t=1781075791', amount: '400' },
+          { icon: '', amount: 'N/A' }
+        ],
+        time: '12小时',
+        speed: '45',
+        prices: [
+          { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=5cd80582566639d1f3e7404674d1d499&t=1779161920', amount: '225' },
+          { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=928ea774ea82886cfacd530b63ddafb9&t=1779161893', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '20,000' }
+        ]
+      },
+      type: '副手霰弹枪',
+      slot: '次要',
+      mastery: '6',
+      trigger: '半自动',
+      ammoType: '次要武器',
+      ammoPickup: '20',
+      accuracy: '7.1',
+      magazine: '5',
+      ammoMax: '210',
+      reloadSpeed: '装填用时:1.05秒',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Madurai.png?sign=abc123&t=1781074816',
+      polarity: 'Madurai',
+      riftPolarity: '1.15',
+      attackData: {
+        multishot: '7(每个弹片40伤害)',
+        totalDamage: '280(100.0%)',
+        fireRate: '3.33发/秒',
+        damageType: '投射物',
+        punchThrough: '0米',
+        spread: '12~16',
+        noise: '引起警戒',
+        projectileSpeed: '150米/秒',
+        damageDecay: '13米内100%伤害<br/>22米外37.7%伤害',
+        ammoConsume: '单次射击消耗1发弹药',
+        statusChance: '12.86%',
+        criticalChance: '4.0%',
+        criticalDamage: '1.5x'
+      }
     }
   ]
 }
