@@ -275,14 +275,6 @@ module.exports = {
           { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=928ea774ea82886cfacd530b63ddafb9&t=1779161893', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: 'N/A' }
         ]
       },
-      source: {
-        type: '入手方式',
-        dropList: [
-          { enemy: 'Grineer船舰', rate: '常见' },
-          { enemy: 'Corpus船舰', rate: '常见' },
-          { enemy: 'Infested船舰', rate: '常见' }
-        ]
-      },
       type: '投掷类武器',
       slot: '次要',
       mastery: '4',
