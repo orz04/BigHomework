@@ -58,7 +58,10 @@
         <view class="table-cell-left">{{weapon.labels.slot}}</view>
         <view class="table-cell-right">{{weapon.slot}}</view>
       </view>
-
+      <view wx:if="{{weapon.tradeable}}" class="table-row">
+        <view class="table-cell-left">{{weapon.labels.tradeable}}</view>
+        <view class="table-cell-right">{{weapon.tradeable}}</view>
+      </view>
       <view class="table-row">
         <view class="table-cell-left">{{weapon.labels.mastery}}</view>
         <view class="table-cell-right">{{weapon.mastery}}</view>
@@ -94,8 +97,16 @@
       <view class="table-row">
         <view class="table-cell-left">{{weapon.labels.polarity}}</view>
         <view class="table-cell-right">
-          <image class="polarity-icon" src="{{weapon.polarityIcon}}" mode="aspectFit"></image>
-          <text>{{weapon.polarity}}</text>
+          <block wx:if="{{weapon.polarityIcons && weapon.polarityIcons.length > 0}}">
+            <view wx:for="{{weapon.polarityIcons}}" wx:key="label" class="polarity-item">
+              <image class="polarity-icon" src="{{item.icon}}" mode="aspectFit"></image>
+              <text>{{item.label}}: {{item.icon.includes('Madurai') ? 'Madurai' : item.icon.includes('Naramon') ? 'Naramon' : item.icon.includes('Vazarin') ? 'Vazarin' : 'Zenurik'}}</text>
+            </view>
+          </block>
+          <block wx:else>
+            <image class="polarity-icon" src="{{weapon.polarityIcon}}" mode="aspectFit"></image>
+            <text>{{weapon.polarity}}</text>
+          </block>
         </view>
       </view>
       <view class="table-row">

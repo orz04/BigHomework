@@ -378,6 +378,84 @@ module.exports = {
         criticalChance: '4.0%',
         criticalDamage: '1.5x'
       }
+    },
+    {
+      title: '苦无',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/secondaryimg/Kunai.png?sign=43fd73866c2c1654d162d9fdbfdbd3a0&t=1781088143',
+      labels: {
+        forging: '铸造需求',
+        basicInfo: '基本信息',
+        attackInfo: '普通攻击',
+        type: '武器类型',
+        slot: '武器槽位',
+        tradeable: '交易属性',
+        mastery: '精通段位要求',
+        trigger: '扳机类型',
+        ammoType: '弹药类型',
+        ammoPickup: '弹药拾取量',
+        accuracy: '精准度',
+        magazine: '弹匣容量',
+        ammoMax: '弹药上限',
+        reloadSpeed: '装填速度',
+        polarity: '极性',
+        riftPolarity: '裂罅倾向',
+        multishot: '多重射击',
+        totalDamage: '总伤害',
+        fireRate: '射速',
+        damageType: '伤害判定类型',
+        punchThrough: '穿透',
+        noise: '噪音等级',
+        projectileSpeed: '投射物速度',
+        ammoConsume: '弹药消耗',
+        statusChance: '触发几率',
+        criticalChance: '暴击几率',
+        criticalDamage: '暴击伤害'
+      },
+      forging: {
+        materials: [
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Morphics.png?sign=b5a9c8ef7ced370227d720c2e61bcd65&t=1781186966', amount: '5' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Ferrite.png?sign=a42ba2fd4643e9e296b6e3e12582d45b&t=1781187007', amount: '3,000' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NanoSpores.png?sign=060a1e73eea6be09ae72bb421fa752be&t=1781187033', amount: '4,000' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Salvage.png?sign=ab3ebce33a6ad5ceb34889d70e15a429&t=1781187043', amount: '4,000' }
+        ],
+        time: '12小时',
+        speed: '45',
+        prices: [
+          { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=5cd80582566639d1f3e7404674d1d499&t=1779161920', amount: '175' },
+          { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=928ea774ea82886cfacd530b63ddafb9&t=1779161893', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' }
+        ]
+      },
+      type: '投掷类武器',
+      slot: '次要',
+      tradeable: '不可交易',
+      mastery: '无',
+      trigger: '全自动',
+      ammoType: '次要武器',
+      ammoPickup: '40',
+      accuracy: '100.0',
+      magazine: '10',
+      ammoMax: '210',
+      reloadSpeed: '装填用时:0.75秒',
+      polarityIcons: [
+        { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Madurai.png?sign=abc123&t=1781074816', label: '常规' },
+        { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Naramon.png?sign=abc123&t=1781074816', label: '特殊功能槽' }
+      ],
+      polarity: 'Madurai / Naramon',
+      riftPolarity: '1.51',
+      attackData: {
+        multishot: '1(每个弹片46.0伤害)',
+        totalDamage: '46.0(75.0%)',
+        fireRate: '3.33发/秒',
+        damageType: '投射物',
+        punchThrough: '0米',
+        noise: '无声',
+        projectileSpeed: '70米/秒',
+        ammoConsume: '单次射击消耗1发弹药',
+        statusChance: '8.0%',
+        criticalChance: '8.0%',
+        criticalDamage: '1.6x'
+      }
     }
   ]
 }
