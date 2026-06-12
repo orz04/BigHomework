@@ -359,6 +359,96 @@ module.exports = {
         criticalChance: '25.0%',
         criticalDamage: '3x'
       }
+    },
+    {
+      title: '加扎勒反曲刀',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/meleeimg/GazalMachete.png?sign=ec08ac918ce69c7f5977d9e92e3b81d0&t=1781254315',
+      labels: {
+        forging: '铸造需求',
+        basicInfo: '基础信息',
+        attackInfo: '普通攻击',
+        groundAttackInfo: '震地攻击',
+        heavyGroundAttackInfo: '重型震地攻击',
+        type: '武器类型',
+        slot: '武器槽位',
+        mastery: '精通段位要求',
+        range: '攻击范围',
+        normalRadius: '法向延展半径',
+        attackSpeed: '攻击速度',
+        blockAngle: '格挡角度',
+        comboDuration: '连击持续时间',
+        damagePenetration: '伤害穿透系数',
+        polarity: '极性',
+        riftPolarity: '裂罅倾向',
+        totalDamage: '总伤害',
+        noise: '噪音等级',
+        statusChance: '触发几率',
+        criticalChance: '暴击几率',
+        criticalDamage: '暴击伤害',
+        damageType: '伤害判定类型',
+        damageRange: '伤害范围',
+        damageDecay: '伤害衰减',
+        forcedStatus: '强制触发'
+      },
+      forging: {
+        materials: [
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '20,000' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ArgonCrystal.png?sign=06d8b53d8e3bfb3d8a41e4a2d243e9be&t=1781257287', amount: '2' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Salvage.png?sign=27f4f465c3f7d93895238c14d62e5299&t=1781257311', amount: '2,600' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/AlloyPlate.png?sign=994370af0d86f954191f78db2e439d1e&t=1781257296', amount: '1,900' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Plastids.png?sign=dd91e24cd1abbc10d63c790059cd29e8&t=1781257330', amount: '1,400' }
+        ],
+        time: '12小时',
+        speed: '35',
+        prices: [
+          { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=5cd80582566639d1f3e7404674d1d499&t=1779161920', amount: '175' },
+          { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=928ea774ea82886cfacd530b63ddafb9&t=1779161893', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '15,000' }
+        ]
+      },
+      type: '大砍刀',
+      slot: '近战',
+      mastery: '5',
+      range: '2.6米',
+      normalRadius: '0.25米',
+      attackSpeed: '1倍基准攻速',
+      blockAngle: '55°',
+      comboDuration: '5.0秒',
+      damagePenetration: '70%',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Zenurik.png?sign=269b90555495a8edb7396f82a0dd7c24&t=1781256980',
+      polarity: 'Zenurik',
+      riftPolarity: '1.4',
+      attackData: {
+        totalDamage: '178.0(75.0%)',
+        attackSpeed: '1倍',
+        noise: '无声',
+        statusChance: '30.0%',
+        criticalChance: '10.0%',
+        criticalDamage: '2x'
+      },
+      groundAttackData: {
+        totalDamage: '356(100.0%)',
+        attackSpeed: '1倍',
+        damageType: '范围伤害',
+        noise: '无声',
+        damageRange: '8米',
+        damageDecay: '0米内100%伤害<br/>8米外50.0%伤害',
+        statusChance: '10.0%',
+        forcedStatus: '冲击',
+        criticalChance: '10.0%',
+        criticalDamage: '2x'
+      },
+      heavyGroundAttackData: {
+        totalDamage: '534(100.0%)',
+        attackSpeed: '1倍',
+        damageType: '范围伤害',
+        noise: '无声',
+        damageRange: '9米',
+        damageDecay: '0米内100%伤害<br/>9米外70.0%伤害',
+        statusChance: '10.0%',
+        forcedStatus: '浮空',
+        criticalChance: '10.0%',
+        criticalDamage: '2x'
+      }
     }
   ]
 }
