@@ -135,9 +135,80 @@
         <view class="attack-cell-left">{{weapon.labels.criticalChance}}</view>
         <view class="attack-cell-right">{{weapon.attackData.criticalChance}}</view>
       </view>
+      <view wx:if="{{weapon.attackData.multiShot}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.multiShot}}</view>
+        <view class="attack-cell-right">{{weapon.attackData.multiShot}}</view>
+      </view>
       <view wx:if="{{weapon.attackData.criticalDamage}}" class="attack-row">
         <view class="attack-cell-left">{{weapon.labels.criticalDamage}}</view>
         <view class="attack-cell-right">{{weapon.attackData.criticalDamage}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{weapon.shootData}}" class="detail-card panel">
+    <view class="card-title">{{weapon.labels.shootInfo}}</view>
+
+    <view class="attack-table">
+      <view wx:if="{{weapon.shootData.multiShot}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.multiShot}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.multiShot}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.totalDamage}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.totalDamage}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.totalDamage}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.chargeTime}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.chargeTime}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.chargeTime}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.triggerType}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.triggerType}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.triggerType}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.damageType}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.damageType}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.damageType}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.accuracy}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.accuracy}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.accuracy}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.penetration}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.penetration}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.penetration}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.spread}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.spread}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.spread}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.noise}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.noise}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.noise}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.damageRange}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.damageRange}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.damageRange}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.damageDecay}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.damageDecay}}</view>
+        <view class="attack-cell-right"><rich-text nodes="{{weapon.shootData.damageDecay}}"></rich-text></view>
+      </view>
+      <view wx:if="{{weapon.shootData.statusChance}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.statusChance}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.statusChance}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.forcedStatus}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.forcedStatus}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.forcedStatus}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.criticalChance}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.criticalChance}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.criticalChance}}</view>
+      </view>
+      <view wx:if="{{weapon.shootData.criticalDamage}}" class="attack-row">
+        <view class="attack-cell-left">{{weapon.labels.criticalDamage}}</view>
+        <view class="attack-cell-right">{{weapon.shootData.criticalDamage}}</view>
       </view>
     </view>
   </view>
