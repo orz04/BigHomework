@@ -834,6 +834,96 @@ module.exports = {
         criticalChance: '5.0%',
         criticalDamage: '1.5x'
       }
+    },
+    {
+      title: '提佩多',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/meleeimg/Tipedo.png?sign=8bac422f1b35cc553b864c71a510db15&t=1781254513',
+      labels: {
+        forging: '铸造需求',
+        basicInfo: '基础信息',
+        attackInfo: '普通攻击',
+        groundAttackInfo: '震地攻击',
+        heavyGroundAttackInfo: '重型震地攻击',
+        type: '武器类型',
+        slot: '武器槽位',
+        mastery: '精通段位要求',
+        range: '攻击范围',
+        normalRadius: '法向延展半径',
+        attackSpeed: '攻击速度',
+        blockAngle: '格挡角度',
+        comboDuration: '连击持续时间',
+        damagePenetration: '伤害穿透系数',
+        polarity: '极性',
+        riftPolarity: '裂罅倾向',
+        totalDamage: '总伤害',
+        noise: '噪音等级',
+        statusChance: '触发几率',
+        criticalChance: '暴击几率',
+        criticalDamage: '暴击伤害',
+        damageType: '伤害判定类型',
+        damageRange: '伤害范围',
+        damageDecay: '伤害衰减',
+        forcedStatus: '强制触发'
+      },
+      forging: {
+        materials: [
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '20,000' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/NeuralSensor.png?sign=f39203a890025b0537d5296b6d955142&t=1781263003', amount: '2' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/PolymerBundle.png?sign=cb8af42a3172d1c51fa83cf776d7a4c6&t=1781263025', amount: '1,600' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/secondaryimg/Kunai.png?sign=e8433870f7f7d3164332f5046f3b1ed4&t=1781263066', amount: '1' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/meleeimg/Bo.png?sign=55b778558e91111eec0334a05b59e3c1&t=1781254146', amount: '1' }
+        ],
+        time: '12小时',
+        speed: '30',
+        prices: [
+          { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=5cd80582566639d1f3e7404674d1d499&t=1779161920', amount: '125' },
+          { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=928ea774ea82886cfacd530b63ddafb9&t=1779161893', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '20,000' }
+        ]
+      },
+      type: '长棍',
+      slot: '近战',
+      mastery: '3',
+      range: '3.0米',
+      normalRadius: '0.25米',
+      attackSpeed: '1.33倍基准攻速',
+      blockAngle: '60°',
+      comboDuration: '5.0秒',
+      damagePenetration: '50%',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Unairu.png?sign=df993f2c7a19149c37d18609d118b5a3&t=1781263096',
+      polarity: 'Unairu',
+      riftPolarity: '1.31',
+      attackData: {
+        totalDamage: '124.0(80.0%)',
+        attackSpeed: '1.33倍',
+        noise: '无声',
+        statusChance: '20.0%',
+        criticalChance: '20.0%',
+        criticalDamage: '2x'
+      },
+      groundAttackData: {
+        totalDamage: '248(100.0%)',
+        attackSpeed: '1.33倍',
+        damageType: '范围伤害',
+        noise: '无声',
+        damageRange: '6米',
+        damageDecay: '0米内100%伤害<br/>6米外50.0%伤害',
+        statusChance: '10.0%',
+        forcedStatus: '冲击',
+        criticalChance: '20.0%',
+        criticalDamage: '2x'
+      },
+      heavyGroundAttackData: {
+        totalDamage: '372(100.0%)',
+        attackSpeed: '1.33倍',
+        damageType: '范围伤害',
+        noise: '无声',
+        damageRange: '7米',
+        damageDecay: '0米内100%伤害<br/>7米外70.0%伤害',
+        statusChance: '10.0%',
+        forcedStatus: '浮空',
+        criticalChance: '20.0%',
+        criticalDamage: '2x'
+      }
     }
   ]
 }
