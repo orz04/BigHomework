@@ -1,13 +1,12 @@
 <view class="container">
-  <view class="page-header">
-    <view class="page-title centered-title">近战武器</view>
-  </view>
-
-  <view class="tenno-list">
+  <view class="weapon-list">
     <block wx:for="{{items}}" wx:key="title">
-      <view class="tenno-card panel" data-title="{{item.title}}" bindtap="goToDetail">
-        <image class="tenno-image" src="{{item.image}}" mode="aspectFit"></image>
-        <view class="tenno-name">{{item.title}}</view>
+      <view class="weapon-item panel" data-title="{{item.title}}" bindtap="goToDetail">
+        <image class="weapon-image" src="{{item.image}}" mode="aspectFit"></image>
+        <view class="weapon-info">
+          <text class="weapon-name">{{item.title}}</text>
+          <text class="weapon-tag">{{item.tag}}</text>
+        </view>
       </view>
     </block>
   </view>

@@ -11,7 +11,7 @@ Page({
     }
 
     wx.navigateTo({
-      url: `/pages/weapon-detail/weapon-detail?title=${encodeURIComponent(title)}`
+      url: `/pages/melee-detail/melee-detail?title=${encodeURIComponent(title)}`
     })
   }
 })

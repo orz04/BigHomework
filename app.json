@@ -8,6 +8,7 @@
     "pages/primary/primary",
     "pages/secondary/secondary",
     "pages/melee/melee",
+    "pages/melee-detail/melee-detail",
     "pages/factions/factions",
     "pages/faction-detail/faction-detail",
     "pages/mods/mods",
