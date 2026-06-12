@@ -629,6 +629,121 @@ module.exports = {
         criticalChance: '28.0%',
         criticalDamage: '2.2x'
       }
+    },
+    {
+      title: '救赎者',
+      image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/meleeimg/Redeemer.png?sign=767316a18b8324c0519e1de854b1766e&t=1781254456',
+      labels: {
+        forging: '铸造需求',
+        basicInfo: '基础信息',
+        attackInfo: '普通攻击',
+        shootInfo: '射击',
+        groundAttackInfo: '震地攻击',
+        heavyGroundAttackInfo: '重型震地攻击',
+        type: '武器类型',
+        slot: '武器槽位',
+        mastery: '精通段位要求',
+        range: '攻击范围',
+        normalRadius: '法向延展半径',
+        attackSpeed: '攻击速度',
+        blockAngle: '格挡角度',
+        comboDuration: '连击持续时间',
+        damagePenetration: '伤害穿透系数',
+        polarity: '极性',
+        riftPolarity: '裂罅倾向',
+        multiShot: '多重射击',
+        totalDamage: '总伤害',
+        chargeTime: '蓄力时间',
+        triggerType: '扳机类型',
+        damageType: '伤害判定类型',
+        accuracy: '精准度',
+        penetration: '穿透',
+        spread: '散布',
+        noise: '噪音等级',
+        damageRange: '伤害范围',
+        damageDecay: '伤害衰减',
+        statusChance: '触发几率',
+        forcedStatus: '强制触发',
+        criticalChance: '暴击几率',
+        criticalDamage: '暴击伤害'
+      },
+      forging: {
+        materials: [
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '2,000' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/meleeimg/Vasto.png?sign=f98d7ce734ca6548d71d011b071a285c&t=1781258298', amount: '1' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/secondaryimg/DualSkana.png?sign=159d6c38f8e728f8fe8ee40fbd9ba79f&t=1781258250', amount: '1' },
+          { icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/ArgonCrystal.png?sign=776a049388288aea0c573b2e2983f597&t=1781258203', amount: '2' },
+          { icon: '', amount: 'N/A' }
+        ],
+        time: '12小时',
+        speed: '35',
+        prices: [
+          { type: '商店', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/MarketIcon.png?sign=0a23c025a7c0550b41bebaea9945f50c&t=1779161909', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Platinum.png?sign=5cd80582566639d1f3e7404674d1d499&t=1779161920', amount: '175' },
+          { type: '蓝图', icon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Blueprint2.svg.png?sign=928ea774ea82886cfacd530b63ddafb9&t=1779161893', currencyIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/resourceimg/Credits.png?sign=c2794ea8bbdccdccf862eaacb90d57ba&t=1779161854', amount: '20,000' }
+        ]
+      },
+      type: '枪刃',
+      slot: '近战',
+      mastery: '4',
+      range: '2.0米',
+      normalRadius: '0.25米',
+      attackSpeed: '0.833倍基准攻速',
+      blockAngle: '55°',
+      comboDuration: '5.0秒',
+      damagePenetration: '50%',
+      polarityIcon: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/modimg/Polarityimg/Madurai.png?sign=44e7ab77b8d407b67db571d5b82bb262&t=1781258429',
+      polarity: 'Madurai',
+      riftPolarity: '1.05',
+      attackData: {
+        multiShot: '1(每个弹片180伤害)',
+        totalDamage: '180(70.0%)',
+        attackSpeed: '0.833倍',
+        noise: '无声',
+        statusChance: '22.0%',
+        criticalChance: '10.0%',
+        criticalDamage: '1.8x'
+      },
+      shootData: {
+        multiShot: '10(每个弹片30伤害)',
+        totalDamage: '300(100.0%)',
+        chargeTime: '0.39秒',
+        triggerType: '蓄力',
+        damageType: '即时命中',
+        accuracy: '7.0',
+        penetration: '1米',
+        spread: '10~20',
+        noise: '引起警戒',
+        damageRange: '300米',
+        damageDecay: '10米内100%伤害<br/>20米外16.7%伤害',
+        statusChance: '6.6%',
+        forcedStatus: '冲击',
+        criticalChance: '10.0%',
+        criticalDamage: '1.8x'
+      },
+      groundAttackData: {
+        totalDamage: '360(100.0%)',
+        attackSpeed: '0.833倍',
+        damageType: '范围伤害',
+        noise: '无声',
+        damageRange: '5米',
+        damageDecay: '0米内100%伤害<br/>5米外50.0%伤害',
+        statusChance: '10.0%',
+        forcedStatus: '冲击',
+        criticalChance: '10.0%',
+        criticalDamage: '1.8x'
+      },
+      heavyGroundAttackData: {
+        totalDamage: '540(100.0%)',
+        attackSpeed: '0.833倍',
+        damageType: '范围伤害',
+        noise: '无声',
+        damageRange: '6米',
+        damageDecay: '0米内100%伤害<br/>6米外70.0%伤害',
+        statusChance: '10.0%',
+        forcedStatus: '浮空',
+        criticalChance: '10.0%',
+        criticalDamage: '1.8x'
+      }
     }
   ]
 }
