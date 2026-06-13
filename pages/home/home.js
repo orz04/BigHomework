@@ -1,6 +1,9 @@
 const homeData = require('../../data/home')
 const frameSections = require('../../data/indexs')
 const modData = require('../../data/mods')
+const primaryData = require('../../data/primary')
+const secondaryData = require('../../data/secondary')
+const meleeData = require('../../data/melee')
 
 function normalizeText(value) {
   return String(value || '').trim().replace(/\s+/g, '')
@@ -25,6 +28,25 @@ function getFrameDetailPage(title) {
 
 function getModDetailPage(title) {
   return `/pages/mod-detail/mod-detail?title=${encodeURIComponent(title)}`
+}
+
+function getWeaponDetailPage(title) {
+  return `/pages/weapon-detail/weapon-detail?title=${encodeURIComponent(title)}`
+}
+
+function getMeleeDetailPage(title) {
+  return `/pages/melee-detail/melee-detail?title=${encodeURIComponent(title)}`
+}
+
+function tagMatches(item, keyword) {
+  const tag = String(item.tag || '').toLowerCase().replace(/\s+/g, '')
+  return tag.includes(keyword.toLowerCase())
+}
+
+function weaponMatches(item, keyword) {
+  return (
+    normalizeText(item.title).includes(keyword) || tagMatches(item, keyword)
+  )
 }
 
 function getSearchResults(keyword) {
@@ -60,7 +82,40 @@ function getSearchResults(keyword) {
       page: getModDetailPage(item.title)
     }))
 
-  return [...frameResults, ...modResults]
+  const primaryResults = primaryData
+    .filter((item) => weaponMatches(item, normalizedKeyword))
+    .map((item) => ({
+      title: item.title,
+      desc: '武器详情',
+      tag: '主要武器',
+      page: getWeaponDetailPage(item.title)
+    }))
+
+  const secondaryResults = secondaryData
+    .filter((item) => weaponMatches(item, normalizedKeyword))
+    .map((item) => ({
+      title: item.title,
+      desc: '武器详情',
+      tag: '次要武器',
+      page: getWeaponDetailPage(item.title)
+    }))
+
+  const meleeResults = meleeData
+    .filter((item) => weaponMatches(item, normalizedKeyword))
+    .map((item) => ({
+      title: item.title,
+      desc: '武器详情',
+      tag: '近战武器',
+      page: getMeleeDetailPage(item.title)
+    }))
+
+  return [
+    ...frameResults,
+    ...modResults,
+    ...primaryResults,
+    ...secondaryResults,
+    ...meleeResults
+  ]
 }
 
 Page({

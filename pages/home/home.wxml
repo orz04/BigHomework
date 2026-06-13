@@ -5,7 +5,7 @@
 
   <view class="search-wrap">
     <search-bar
-      placeholder="搜索词条、MOD、遗物、资源"
+      placeholder="搜索战甲、武器、MOD、遗物、资源"
       value="{{keyword}}"
       bind:change="handleSearchChange"
       bind:search="handleSearch"
