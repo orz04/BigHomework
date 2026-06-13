@@ -9,7 +9,20 @@
       <image class="detail-image" src="{{detail.image}}" mode="aspectFit"></image>
     </view>
 
-    <view class="detail-section panel">
+    <view wx:if="{{detail.intro && detail.intro.length}}" class="detail-section panel">
+      <view class="section-title">集团介绍</view>
+      <block wx:for="{{detail.intro}}" wx:key="key" wx:for-item="paragraph">
+        <view wx:if="{{paragraph.type === 'list'}}" class="intro-list">
+          <view wx:for="{{paragraph.items}}" wx:key="*this" wx:for-item="item" class="intro-list-item">
+            <view class="intro-list-bullet">•</view>
+            <view class="intro-list-text">{{item}}</view>
+          </view>
+        </view>
+        <view wx:else class="intro-paragraph {{paragraph.quote ? 'intro-quote' : ''}}">{{paragraph.text}}</view>
+      </block>
+    </view>
+
+    <view wx:if="{{detail.relations && detail.relations.length}}" class="detail-section panel">
       <view class="section-title">阵营关系</view>
       <view class="relation-list">
         <block wx:for="{{detail.relations}}" wx:key="name" wx:for-item="relation">
@@ -22,22 +35,35 @@
       </view>
     </view>
 
-    <view class="detail-section panel">
+    <view wx:else class="detail-section panel">
+      <view class="section-title">阵营关系</view>
+      <view class="neutral-indicator">此集团为中立</view>
+    </view>
+
+    <view wx:if="{{detail.ranks && detail.ranks.length}}" class="detail-section panel">
       <view class="section-title">等级</view>
       <view class="rank-table">
         <view class="rank-row rank-head">
-          <view class="rank-cell">等级</view>
-          <view class="rank-cell">称号</view>
+          <view class="rank-cell rank-col-level">等级</view>
+          <view class="rank-cell rank-col-title">称号</view>
           <view class="rank-cell rank-tribute-header" colspan="2">贡品</view>
-          <view class="rank-cell">奖励</view>
-          <view class="rank-cell">声望（最小值到最大值）</view>
+          <view class="rank-cell rank-col-reward">奖励</view>
+          <view class="rank-cell rank-col-standing">声望</view>
         </view>
         <block wx:for="{{detail.ranks}}" wx:key="level" wx:for-item="rank">
           <view class="rank-row">
-            <view class="rank-cell">{{rank.level}}</view>
-            <view class="rank-cell">{{rank.title}}</view>
-            <view class="rank-cell rank-tribute">
-              <view wx:if="{{rank.tributeIcon && rank.tributeIconUrl}}" class="rank-tribute-content">
+            <view class="rank-cell rank-col-level">{{rank.level}}</view>
+            <view class="rank-cell rank-col-title">{{rank.title}}</view>
+            <view class="rank-cell rank-tribute rank-col-tribute">
+              <block wx:if="{{rank.tributes && rank.tributes.length}}">
+                <view wx:for="{{rank.tributes}}" wx:for-item="tribute" wx:key="name" class="tribute-row">
+                  <view class="tribute-count">×{{tribute.count}}</view>
+                  <image wx:if="{{tribute.iconUrl}}" class="rank-item-icon tribute-icon-small" src="{{tribute.iconUrl}}" mode="aspectFit"></image>
+                  <view wx:else class="rank-icon-placeholder tribute-icon-small">图标</view>
+                  <view class="tribute-name">{{tribute.name}}</view>
+                </view>
+              </block>
+              <view wx:elif="{{rank.tributeIcon && rank.tributeIconUrl}}" class="rank-tribute-content">
                 <image class="rank-item-icon" src="{{rank.tributeIconUrl}}" mode="aspectFit"></image>
                 <view>{{rank.tribute}}</view>
               </view>
@@ -47,7 +73,7 @@
               </view>
               <view wx:else>{{rank.tribute}}</view>
             </view>
-            <view class="rank-cell rank-credit">
+            <view class="rank-cell rank-credit rank-col-credit">
               <view wx:if="{{rank.creditIcon && rank.creditIconUrl}}" class="rank-credit-content">
                 <image class="rank-item-icon" src="{{rank.creditIconUrl}}" mode="aspectFit"></image>
                 <view>{{rank.credit}}</view>
@@ -57,11 +83,27 @@
                 <view>{{rank.credit}}</view>
               </view>
               <view wx:else>{{rank.credit}}</view>
+              <view wx:if="{{rank.standingCost}}" class="rank-credit-content rank-standing-cost">
+                <image wx:if="{{rank.standingIconUrl}}" class="rank-item-icon rank-standing-icon" src="{{rank.standingIconUrl}}" mode="aspectFit"></image>
+                <view>{{rank.standingCost}}</view>
+              </view>
             </view>
-            <view class="rank-cell">{{rank.reward}}</view>
-            <view class="rank-cell">{{rank.standing}}</view>
+            <view class="rank-cell rank-col-reward">{{rank.reward}}</view>
+            <view class="rank-cell rank-col-standing">{{rank.standing}}</view>
           </view>
         </block>
+      </view>
+    </view>
+
+    <view wx:if="{{detail.auxiliaryTable}}" class="detail-section panel">
+      <view class="section-title">{{detail.auxiliaryTable.title}}</view>
+      <view class="aux-table">
+        <view class="aux-row aux-head">
+          <view class="aux-cell" wx:for="{{detail.auxiliaryTable.headers}}" wx:key="*this" wx:for-item="header">{{header}}</view>
+        </view>
+        <view class="aux-row" wx:for="{{detail.auxiliaryTable.rows}}" wx:for-item="row" wx:key="*this">
+          <view class="aux-cell" wx:for="{{row}}" wx:for-item="cell" wx:key="*this">{{cell}}</view>
+        </view>
       </view>
     </view>
   </view>
