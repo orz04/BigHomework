@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/user/user",
+    "pages/favorites/favorites",
+    "pages/history/history",
     "pages/indexs/indexs",
     "pages/index-detail/index-detail",
     "pages/weapons/weapons",
@@ -27,6 +30,23 @@
     "navigationBarTextStyle": "white",
     "backgroundColor": "#050b16",
     "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#94a3b8",
+    "selectedColor": "#f4c96b",
+    "backgroundColor": "#0b1220",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",

@@ -1,6 +1,16 @@
 <view class="container">
   <view class="mod-card panel">
-    <view class="mod-title">{{mod.title}}</view>
+    <view class="mod-title-row">
+      <view class="mod-title">{{mod.title}}</view>
+      <view
+        class="favorite-btn {{isFavorited ? 'favorite-btn--active' : ''}}"
+        bindtap="toggleFavorite"
+        hover-class="favorite-btn--hover"
+        aria-label="收藏"
+      >
+        <text class="favorite-icon">{{isFavorited ? '★' : '☆'}}</text>
+      </view>
+    </view>
     <image class="mod-image" src="{{mod.image}}" mode="aspectFit"></image>
   </view>
 

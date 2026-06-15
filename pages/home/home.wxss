@@ -1,5 +1,5 @@
 .home-page {
-  padding-bottom: 56rpx;
+  padding-bottom: calc(160rpx + env(safe-area-inset-bottom));
 }
 
 .hero {

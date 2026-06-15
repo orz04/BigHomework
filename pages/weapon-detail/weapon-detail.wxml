@@ -1,6 +1,16 @@
 <view class="container">
   <view class="weapon-card panel">
-    <view class="weapon-title">{{weapon.title}}</view>
+    <view class="weapon-title-row">
+      <view class="weapon-title">{{weapon.title}}</view>
+      <view
+        class="favorite-btn {{isFavorited ? 'favorite-btn--active' : ''}}"
+        bindtap="toggleFavorite"
+        hover-class="favorite-btn--hover"
+        aria-label="收藏"
+      >
+        <text class="favorite-icon">{{isFavorited ? '★' : '☆'}}</text>
+      </view>
+    </view>
     <image class="weapon-image" src="{{weapon.image}}" mode="aspectFit"></image>
   </view>
 

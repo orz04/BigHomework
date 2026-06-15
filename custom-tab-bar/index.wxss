@@ -1,0 +1,111 @@
+.tab-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: stretch;
+  height: calc(106rpx + env(safe-area-inset-bottom));
+  padding-bottom: env(safe-area-inset-bottom);
+  background: linear-gradient(180deg, rgba(11, 18, 32, 0.96) 0%, rgba(5, 11, 22, 0.98) 100%);
+  box-shadow: 0 -10rpx 30rpx rgba(0, 0, 0, 0.35);
+  z-index: 999;
+}
+
+.tab-bar-accent {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  right: 30%;
+  height: 2rpx;
+  background: linear-gradient(90deg, transparent 0%, rgba(244, 201, 107, 0.6) 50%, transparent 100%);
+}
+
+.tab-bar-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rpx;
+  color: #94a3b8;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.tab-bar-item--active {
+  color: #f4c96b;
+  transform: translateY(-2rpx);
+}
+
+.tab-bar-icon {
+  position: relative;
+  width: 44rpx;
+  height: 44rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-bar-text {
+  font-size: 22rpx;
+  letter-spacing: 2rpx;
+  font-weight: 600;
+}
+
+/* House icon */
+.icon-home {
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.icon-home__roof {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 32rpx;
+  height: 22rpx;
+  background: currentColor;
+  transform: translateX(-50%);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.icon-home__body {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 28rpx;
+  height: 18rpx;
+  background: currentColor;
+  border-radius: 2rpx 2rpx 4rpx 4rpx;
+  transform: translateX(-50%);
+}
+
+/* User icon */
+.icon-user {
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.icon-user__head {
+  position: absolute;
+  top: 2rpx;
+  left: 50%;
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 50%;
+  background: currentColor;
+  transform: translateX(-50%);
+}
+
+.icon-user__body {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 34rpx;
+  height: 20rpx;
+  background: currentColor;
+  border-radius: 18rpx 18rpx 6rpx 6rpx;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,56 @@
+<view class="container favorites-page">
+  <view class="page-header">
+    <view class="page-title">我的收藏</view>
+    <view class="page-desc">这里汇集了你收藏的所有词条，点击即可回到详情页。</view>
+  </view>
+
+  <view class="toolbar">
+    <view class="toolbar-count">共 {{total}} 条</view>
+    <view
+      class="toolbar-action {{total === 0 ? 'toolbar-action--disabled' : ''}}"
+      bindtap="handleClear"
+    >清空收藏</view>
+  </view>
+
+  <view class="filter-bar" wx:if="{{tags.length > 1}}">
+    <block wx:for="{{tags}}" wx:for-item="tag" wx:key="key">
+      <view
+        class="filter-chip {{activeTag === tag.key ? 'filter-chip--active' : ''}}"
+        data-tag="{{tag.key}}"
+        bindtap="onTagTap"
+      >
+        {{tag.label}}
+        <text class="filter-chip__count">{{tag.count}}</text>
+      </view>
+    </block>
+  </view>
+
+  <block wx:if="{{visibleList.length === 0}}">
+    <view class="empty-card panel">
+      <view class="empty-title">{{total === 0 ? '还没有收藏内容' : '当前分类下暂无收藏'}}</view>
+      <view class="empty-desc">{{total === 0 ? '去首页或详情页点击 ☆ 即可收藏。' : '试试切换上方分类标签。'}}</view>
+      <view wx:if="{{total === 0}}" class="empty-action" bindtap="goHome">回到首页</view>
+    </view>
+  </block>
+
+  <block wx:else>
+    <view class="entry-list">
+      <block wx:for="{{visibleList}}" wx:for-item="fav" wx:key="id">
+        <view class="entry-item" data-page="{{fav.page}}" bindtap="goEntry">
+          <view class="entry-item__main">
+            <view class="entry-item__title">{{fav.title}}</view>
+            <view class="entry-item__meta">
+              <text class="entry-item__tag" wx:if="{{fav.tag}}">{{fav.tag}}</text>
+              <text class="entry-item__time">收藏于 {{fav.timeText}}</text>
+            </view>
+          </view>
+          <view
+            class="entry-item__remove"
+            data-id="{{fav.id}}"
+            catchtap="handleRemove"
+          >移除</view>
+        </view>
+      </block>
+    </view>
+  </block>
+</view>

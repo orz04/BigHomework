@@ -1,5 +1,6 @@
 const tennoList = require('../../data/indexs')
 const { resolveCloudImages } = require('../../utils/cloud-image')
+const favorites = require('../../utils/favorites')
 
 const platinumIcon = '/images/resourceimg/Platinum.png'
 
@@ -78,7 +79,9 @@ Page({
     platinumIcon,
     currentDropTab: 'A轮',
     dropTabs: [],
-    displayDrops: []
+    displayDrops: [],
+    favoriteId: '',
+    isFavorited: false
   },
   onLoad(options) {
     const title = decodeURIComponent(options.title || '')
@@ -95,8 +98,16 @@ Page({
 
     const forging = buildForging(tenno.forging)
     const acquisition = tenno.acquisition || { paragraphs: ['入手方式待补充'], drops: [], note: '' }
-    
+
     this.processDrops(acquisition.drops)
+
+    const favoriteId = `tenno:${tenno.title}`
+    favorites.addHistory({
+      id: favoriteId,
+      title: tenno.title,
+      page: `/pages/index-detail/index-detail?title=${encodeURIComponent(tenno.title)}`,
+      tag: '战甲'
+    })
 
     this.setData({
       tenno: {
@@ -104,7 +115,9 @@ Page({
         basicInfo: buildBasicInfo(tenno),
         forging,
         acquisition
-      }
+      },
+      favoriteId,
+      isFavorited: favorites.isFavorited(favoriteId)
     })
 
     resolveCloudImages(collectForgingImagePaths(tenno, forging)).then((imageMap) => {
@@ -112,6 +125,28 @@ Page({
         tenno: applyForgingImageMap(tenno, forging, imageMap),
         platinumIcon: imageMap[platinumIcon] || platinumIcon
       })
+    })
+  },
+  onShow() {
+    if (this.data.favoriteId) {
+      this.setData({ isFavorited: favorites.isFavorited(this.data.favoriteId) })
+    }
+  },
+  toggleFavorite() {
+    const { favoriteId, tenno } = this.data
+    if (!favoriteId || !tenno) {
+      return
+    }
+    const favorited = favorites.toggleFavorite({
+      id: favoriteId,
+      title: tenno.title,
+      page: `/pages/index-detail/index-detail?title=${encodeURIComponent(tenno.title)}`,
+      tag: '战甲'
+    })
+    this.setData({ isFavorited: favorited })
+    wx.showToast({
+      title: favorited ? '已加入收藏' : '已取消收藏',
+      icon: 'none'
     })
   },
   processDrops(drops) {

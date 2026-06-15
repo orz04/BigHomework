@@ -1,0 +1,113 @@
+<view class="container user-page">
+  <view class="hero panel">
+    <view class="hero-title">用户</view>
+  </view>
+
+  <!-- 未登录态：登录卡片（保留原有交互） -->
+  <view wx:if="{{!userInfo}}" class="section panel login-card">
+    <view class="login-heading">
+      <view class="section-title">微信登录</view>
+      <view class="login-mark">01</view>
+    </view>
+    <view class="login-desc">点击头像选择微信头像，输入昵称后即可完成登录。</view>
+
+    <view class="avatar-wrap">
+      <button
+        class="avatar-button"
+        open-type="chooseAvatar"
+        bind:chooseavatar="onChooseAvatar"
+      >
+        <image class="avatar-image" src="{{avatarUrl}}" mode="aspectFill" />
+        <view class="avatar-hint">点击选择头像</view>
+      </button>
+    </view>
+
+    <view class="form-row">
+      <view class="form-label">昵称</view>
+      <input
+        class="form-input"
+        type="nickname"
+        placeholder="请输入昵称"
+        placeholder-class="form-placeholder"
+        value="{{nickname}}"
+        bindinput="onNicknameInput"
+        bindblur="onNicknameInput"
+      />
+    </view>
+
+    <button
+      class="primary-button {{loading ? 'primary-button--disabled' : ''}}"
+      bindtap="handleLogin"
+      disabled="{{loading}}"
+      loading="{{loading}}"
+    >
+      {{loading ? '登录中…' : '微信登录'}}
+    </button>
+
+    <view wx:if="{{statusText}}" class="status status--{{statusKind}}">{{statusText}}</view>
+  </view>
+
+  <!-- 已登录态：按草图重新布局 -->
+  <block wx:if="{{userInfo}}">
+    <view class="profile-block">
+      <image class="profile-avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill" />
+      <view class="profile-nickname">{{userInfo.nickname}}</view>
+      <view class="profile-id" bindtap="copyId">
+        ID · {{userInfo.idShort}}
+        <text class="profile-id__copy">复制</text>
+      </view>
+    </view>
+
+    <view class="entry-card panel" bindtap="goFavorites">
+      <view class="entry-header">
+        <view class="entry-title">我的收藏</view>
+        <view class="entry-link" catchtap="goFavorites">
+          查看全部收藏
+          <text class="entry-link__arrow">›</text>
+        </view>
+      </view>
+      <block wx:if="{{favorites.length === 0}}">
+        <view class="entry-empty">暂无收藏，去首页探索吧</view>
+      </block>
+      <block wx:else>
+        <view class="entry-list">
+          <block wx:for="{{favorites}}" wx:for-item="fav" wx:key="id">
+            <view class="entry-item" data-page="{{fav.page}}" catchtap="goEntry">
+              <view class="entry-item__title">{{fav.title}}</view>
+              <view class="entry-item__tag" wx:if="{{fav.tag}}">{{fav.tag}}</view>
+            </view>
+          </block>
+        </view>
+      </block>
+    </view>
+
+    <view class="entry-card panel" bindtap="goHistory">
+      <view class="entry-header">
+        <view class="entry-title">浏览历史</view>
+        <view class="entry-link" catchtap="goHistory">
+          查看全部浏览历史
+          <text class="entry-link__arrow">›</text>
+        </view>
+      </view>
+      <block wx:if="{{history.length === 0}}">
+        <view class="entry-empty">暂无浏览记录</view>
+      </block>
+      <block wx:else>
+        <view class="entry-list">
+          <block wx:for="{{history}}" wx:for-item="hist" wx:key="id">
+            <view class="entry-item" data-page="{{hist.page}}" catchtap="goEntry">
+              <view class="entry-item__title">{{hist.title}}</view>
+              <view class="entry-item__time">{{hist.timeText}}</view>
+            </view>
+          </block>
+        </view>
+      </block>
+    </view>
+
+    <view class="logout-wrap">
+      <button class="logout-button" bindtap="handleLogout">退出登录</button>
+    </view>
+
+    <view wx:if="{{statusText}}" class="status status--{{statusKind}}">{{statusText}}</view>
+  </block>
+</view>

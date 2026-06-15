@@ -2,7 +2,17 @@
   <view wx:if="{{missing}}" class="empty panel">未找到战甲信息</view>
 
   <view wx:else class="detail">
-    <view class="page-title centered-title">{{tenno.title}}</view>
+    <view class="page-title-row">
+      <view class="page-title centered-title">{{tenno.title}}</view>
+      <view
+        class="favorite-btn {{isFavorited ? 'favorite-btn--active' : ''}}"
+        bindtap="toggleFavorite"
+        hover-class="favorite-btn--hover"
+        aria-label="收藏"
+      >
+        <text class="favorite-icon">{{isFavorited ? '★' : '☆'}}</text>
+      </view>
+    </view>
 
     <view class="image-card panel">
       <image class="tenno-detail-image" src="{{tenno.image}}" mode="aspectFit"></image>

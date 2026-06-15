@@ -1,0 +1,51 @@
+<view class="container history-page">
+  <view class="page-header">
+    <view class="page-title">浏览历史</view>
+    <view class="page-desc">最近浏览的词条按时间分组，最多保留最近 100 条。</view>
+  </view>
+
+  <view class="toolbar">
+    <view class="toolbar-count">共 {{total}} 条</view>
+    <view
+      class="toolbar-action {{total === 0 ? 'toolbar-action--disabled' : ''}}"
+      bindtap="handleClear"
+    >清空历史</view>
+  </view>
+
+  <block wx:if="{{groups.length === 0}}">
+    <view class="empty-card panel">
+      <view class="empty-title">还没有浏览记录</view>
+      <view class="empty-desc">浏览任意武器、MOD 或势力详情后会自动出现在这里。</view>
+      <view class="empty-action" bindtap="goHome">回到首页</view>
+    </view>
+  </block>
+
+  <block wx:else>
+    <block wx:for="{{groups}}" wx:for-item="group" wx:key="key">
+      <view class="group-block">
+        <view class="group-header">
+          <view class="group-title">{{group.label}}</view>
+          <view class="group-count">{{group.items.length}} 条</view>
+        </view>
+        <view class="entry-list">
+          <block wx:for="{{group.items}}" wx:for-item="hist" wx:key="id">
+            <view class="entry-item" data-page="{{hist.page}}" bindtap="goEntry">
+              <view class="entry-item__main">
+                <view class="entry-item__title">{{hist.title}}</view>
+                <view class="entry-item__meta">
+                  <text class="entry-item__tag" wx:if="{{hist.tag}}">{{hist.tag}}</text>
+                  <text class="entry-item__time">{{hist.timeText}}</text>
+                </view>
+              </view>
+              <view
+                class="entry-item__remove"
+                data-id="{{hist.id}}"
+                catchtap="handleRemove"
+              >删除</view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </block>
+</view>

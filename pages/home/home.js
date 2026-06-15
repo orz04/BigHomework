@@ -126,6 +126,11 @@ Page({
     hasSearched: false,
     resultCount: homeData.quickLinks.length
   },
+  onShow() {
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({ selected: 0 })
+    }
+  },
   runSearch(keyword = this.data.keyword) {
     const filteredQuickLinks = getSearchResults(keyword)
     this.setData({
