@@ -3,7 +3,7 @@
     <view class="hero-title">Warframe Wiki</view>
   </view>
 
-  <view class="search-wrap">
+  <view class="search-wrap panel">
     <search-bar
       placeholder="搜索战甲、武器、MOD、遗物、资源"
       value="{{keyword}}"
