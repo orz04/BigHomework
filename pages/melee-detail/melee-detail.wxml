@@ -8,7 +8,7 @@
         hover-class="favorite-btn--hover"
         aria-label="收藏"
       >
-        <text class="favorite-icon">{{isFavorited ? '★' : '☆'}}</text>
+        <text class="favorite-icon">★</text>
       </view>
     </view>
     <image class="weapon-image" src="{{weapon.image}}" mode="aspectFit"></image>

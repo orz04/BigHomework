@@ -79,6 +79,11 @@
   background: rgba(15, 23, 42, 0.65);
 }
 
+.avatar-image--empty {
+  border-style: dashed;
+  background: rgba(15, 23, 42, 0.45);
+}
+
 .avatar-hint {
   font-size: 22rpx;
   color: #94a3b8;
@@ -113,7 +118,8 @@
 }
 
 .primary-button {
-  margin-top: 32rpx;
+  margin: 32rpx 0 0;
+  padding: 0;
   height: 88rpx;
   line-height: 88rpx;
   border-radius: 20rpx;
@@ -122,6 +128,10 @@
   font-size: 28rpx;
   font-weight: 700;
   letter-spacing: 2rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .primary-button::after {

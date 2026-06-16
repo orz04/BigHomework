@@ -41,6 +41,8 @@
   background: rgba(15, 23, 42, 0.6);
   border: 2rpx solid rgba(148, 163, 184, 0.3);
   transition: transform 0.2s ease, background 0.2s ease;
+  line-height: 1;
+  padding: 0;
 }
 
 .favorite-btn--hover {
@@ -53,13 +55,17 @@
 }
 
 .favorite-icon {
-  font-size: 44rpx;
-  line-height: 44rpx;
+  font-size: 42rpx;
+  line-height: 1;
   color: rgba(148, 163, 184, 0.95);
-  font-weight: 700;
+  font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 42rpx;
+  height: 42rpx;
+  /* 通过负 margin 抵消字符基线偏移，让视觉居中 */
+  margin-top: -4rpx;
 }
 
 .favorite-btn--active .favorite-icon {

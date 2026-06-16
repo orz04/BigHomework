@@ -1,4 +1,4 @@
-const DEFAULT_AVATAR = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FkxEWnoBgLZGanQXJEFNICu7d4XJ8C6CPMxTAJUMu8w4LRA/0'
+const DEFAULT_AVATAR = ''
 const favorites = require('../../utils/favorites')
 const PREVIEW_LIMIT = 3
 
@@ -83,14 +83,36 @@ Page({
     return ''
   },
   onChooseAvatar(event) {
-    const { avatarUrl } = event.detail || {}
+    // 静默处理用户取消操作，避免控制台报错
+    if (!event || !event.detail) {
+      return
+    }
+    const { avatarUrl } = event.detail
     if (!avatarUrl) {
       return
     }
     this.setData({ avatarUrl })
   },
+  onChooseAvatarError(event) {
+    // 用户在 chooseAvatar 弹窗中点击取消时会触发此事件，静默处理
+  },
   onNicknameInput(event) {
     this.setData({ nickname: (event.detail && event.detail.value) || '' })
+  },
+  onNicknameBlur(event) {
+    // 失焦时只更新一次值，避免与 bindinput 冲突导致输入框闪烁
+    const value = (event.detail && event.detail.value) || ''
+    if (value !== this.data.nickname) {
+      this.setData({ nickname: value })
+    }
+  },
+  onNicknameReview(event) {
+    // 用户点击"用微信昵称"按钮后会触发此事件
+    const nickname = (event.detail && event.detail.nickname) || ''
+    if (nickname) {
+      this.setData({ nickname })
+      wx.showToast({ title: '已使用微信昵称', icon: 'success' })
+    }
   },
   resolveOpenId() {
     return new Promise((resolve) => {

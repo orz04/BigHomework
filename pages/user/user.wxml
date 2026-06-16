@@ -17,7 +17,12 @@
         open-type="chooseAvatar"
         bind:chooseavatar="onChooseAvatar"
       >
-        <image class="avatar-image" src="{{avatarUrl}}" mode="aspectFill" />
+        <block wx:if="{{avatarUrl}}">
+          <image class="avatar-image" src="{{avatarUrl}}" mode="aspectFill" />
+        </block>
+        <block wx:else>
+          <view class="avatar-image avatar-image--empty"></view>
+        </block>
         <view class="avatar-hint">点击选择头像</view>
       </button>
     </view>
@@ -31,7 +36,8 @@
         placeholder-class="form-placeholder"
         value="{{nickname}}"
         bindinput="onNicknameInput"
-        bindblur="onNicknameInput"
+        bindblur="onNicknameBlur"
+        bindnicknamereview="onNicknameReview"
       />
     </view>
 
