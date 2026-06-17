@@ -181,7 +181,7 @@ module.exports = {
       }
     },
     {
-      title: '烈焰双刀',
+      title: '烈焰双剑',
       image: 'https://636c-cloud1-d5gj26hlf342afe88-1433985605.tcb.qcloud.la/images/weaponimg/meleeimg/DualHeatSwords.png?sign=1545e13b8d9dfcbcda9b592c647ef030&t=1781254246',
       labels: {
         forging: '铸造需求',

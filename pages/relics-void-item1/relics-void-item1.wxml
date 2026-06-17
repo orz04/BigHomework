@@ -3,15 +3,13 @@
     <view class="reward-title">遗物奖励</view>
   </view>
 
-  <scroll-view class="reward-scroll" scroll-y>
+  <scroll-view class="reward-scroll" scroll-y bindscrolltolower="onScrollLower">
     <view class="reward-table">
       <block wx:for="{{rewards}}" wx:key="name" wx:for-item="group">
-        <!-- 一组代表一个武器，左侧是武器名，右侧是多行配件 -->
         <view class="reward-group">
           <view class="item-name">{{group.name}}</view>
           <view class="group-body">
             <block wx:for="{{group.rows}}" wx:key="part" wx:for-item="row">
-              <!-- 一行代表一个配件及其对应遗物 -->
               <view class="reward-row">
                 <view class="part-name">{{row.part}}</view>
                 <view class="relic-list">
@@ -26,6 +24,13 @@
           </view>
         </view>
       </block>
+    </view>
+    
+    <view wx:if="{{loading}}" class="loading">
+      <text>加载中...</text>
+    </view>
+    <view wx:if="{{!loading && !hasMore && rewards.length > 0}}" class="loading">
+      <text>已加载全部</text>
     </view>
   </scroll-view>
 </view>
